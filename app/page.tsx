@@ -89,7 +89,7 @@ export default function Home() {
 
         {/* Decorative dotted circle */}
         <div className="absolute top-10 right-10 hidden lg:block">
-          <div className="w-64 h-64 border-4 border-dashed border-[#EBB37E] rounded-none opacity-60"></div>
+          
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
