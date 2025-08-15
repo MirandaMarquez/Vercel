@@ -592,14 +592,18 @@ export default function Home() {
             </div>
 
             {/* Espacios promocionales para otros patrocinadores */}
-            {[1, 2, 3, 4].map((index) => (
-              <div
-                key={index}
-                className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300"
-              >
-                <span className="text-gray-400 font-medium text-sm text-center px-2">{t("sponsors.yourLogoHere")}</span>
-              </div>
-            ))}
+            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+            </div>
+            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+            </div>
+            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+            </div>
+            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+            </div>
           </div>
         </div>
       </section>
