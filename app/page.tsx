@@ -157,17 +157,13 @@ export default function Home() {
       <section className="py-16 bg-[#3A3226] relative">
         {/* Decorative dotted line */}
         <div className="absolute top-16 lg:top-0 left-8 hidden md:block">
-          <div className="flex space-x-2">
-            {[...Array(20)].map((_, i) => (
-              <div key={i} className="w-2 h-2 bg-[#EBB37E] rounded-full"></div>
-            ))}
-          </div>
+          
         </div>
 
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed border-[]">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 border-t-4 border-[rgba(235,179,126,1)] border-dashed mx-[] px-0 my-[] py-10">
               <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8">{t("location.title")}</h2>
 
               <div className="space-y-4">
