@@ -580,12 +580,24 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-8">{t("sponsors.ourSponsors")}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {[1, 2, 3, 4, 5].map((sponsor, index) => (
+            {/* Logo real de Pressing */}
+            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm p-4">
+              <Image
+                src="/logo-pressing.svg"
+                alt="Pressing Group"
+                width={180}
+                height={60}
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            {/* Espacios promocionales para otros patrocinadores */}
+            {[1, 2, 3, 4].map((index) => (
               <div
                 key={index}
-                className="w-32 md:w-40 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm"
+                className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300"
               >
-                <span className="text-[#3A3226] font-medium">Logo {sponsor}</span>
+                <span className="text-gray-400 font-medium text-sm text-center px-2">{t("sponsors.yourLogoHere")}</span>
               </div>
             ))}
           </div>
