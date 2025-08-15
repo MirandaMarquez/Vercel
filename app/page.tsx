@@ -89,17 +89,17 @@ export default function Home() {
 
         {/* Decorative dotted circle */}
         <div className="absolute top-10 right-10 hidden lg:block">
-          <div className="w-64 h-64 border-4 border-dashed border-[#EBB37E] rounded-full opacity-60"></div>
+          <div className="w-64 h-64 border-4 border-dashed border-[#EBB37E] rounded-none opacity-60"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
+          <h2 className="text-2xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Day 1 - Friday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
+                <div className="w-8 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 text-[#3A3226]"
@@ -123,7 +123,7 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -150,7 +150,7 @@ export default function Home() {
             {/* Day 2 - Saturday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
+                <div className="w-8 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 text-[#3A3226]"
@@ -172,9 +172,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="space-y-2 max-h-64 overflow-y-auto">
+              <div className="space-y-2">
+                {/* Primeros 3 eventos siempre visibles */}
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -196,7 +197,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -218,7 +219,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -239,256 +240,271 @@ export default function Home() {
                     <p className="text-xs text-[#3A3226]">{t("program.day2.event3")}</p>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+
+                {/* Eventos adicionales que se muestran/ocultan */}
+                {isExpanded && (
+                  <div className="space-y-2 mt-2">
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">11:30h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event4")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">12:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event5")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">12:30h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event6")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">13:15h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event7")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">14:15h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event8")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">15:15h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event9")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">16:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event10")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">17:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event11")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">21:30h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event12")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">23:45h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event13")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-3 w-3 text-[#3A3226]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">00:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event14")}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">11:30h</p>
-                    <p className="text-xs text-[#3A3226]">Catering</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">12:00h</p>
-                    <p className="text-xs text-[#3A3226]">
-                      Presentación de la exposición "Sastrería, del taller a la calle"
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">12:30h</p>
-                    <p className="text-xs text-[#3A3226]">Representación sectorial</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">13:15h</p>
-                    <p className="text-xs text-[#3A3226]">Sostenibilidad en la industria textil</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">14:15h</p>
-                    <p className="text-xs text-[#3A3226]">Catering</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">15:15h</p>
-                    <p className="text-xs text-[#3A3226]">Representación sectorial</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">16:00h</p>
-                    <p className="text-xs text-[#3A3226]">Formación artesanal e industrial</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">17:00h</p>
-                    <p className="text-xs text-[#3A3226]">Sastrería internacional - Inspiraciones y evolución</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">21:30h</p>
-                    <p className="text-xs text-[#3A3226]">Cena (Lugar a confirmar)</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">23:45h</p>
-                    <p className="text-xs text-[#3A3226]">Entrega de Premios AES (Lugar a confirmar)</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#3A3226]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#3A3226] text-sm">00:00h</p>
-                    <p className="text-xs text-[#3A3226]">Clausura (Lugar a confirmar)</p>
-                  </div>
-                </div>
-                <div className="pt-6">
+                )}
+
+                {/* Botón para expandir/contraer */}
+                <div className="pt-4 text-center">
                   <button
                     onClick={() => setIsExpanded(!isExpanded)}
-                    className="inline-flex items-center bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-md transition-colors text-lg"
+                    className="text-[#EBB37E] hover:text-[#d4a06b] font-medium text-sm transition-colors flex items-center mx-auto"
                   >
-                    {isExpanded ? t("program.viewLess") : t("program.viewMore")}
+                    {isExpanded ? "Ver menos eventos" : "Ver más eventos"}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`h-4 w-4 ml-1 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -497,7 +513,7 @@ export default function Home() {
             {/* Day 3 - Sunday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
+                <div className="w-8 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 text-[#3A3226]"
@@ -521,7 +537,7 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -781,7 +797,7 @@ export default function Home() {
           </div>
           <div className="mt-8 pt-8 border-t border-[#EBB37E]/30 text-center text-[#F2DBC5] text-sm">
             <p>
-              © {new Date().getFullYear()} AES - Asociación Española de Sastrería. {t("footer.rights")}.
+              © {new Date().getFullYear()} AES - Asociación Española de Sastrería. {t("footer.rights")}
             </p>
           </div>
         </div>
