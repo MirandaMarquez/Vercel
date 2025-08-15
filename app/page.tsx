@@ -44,13 +44,13 @@ export default function Home() {
       {/* Countdown */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center text-[#3A3226] mb-4">{t("countdown.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("countdown.title")}</h2>
           <p className="text-center text-[#3A3226] mb-12">{t("countdown.subtitle")}</p>
           <CountdownTimer targetDate="2025-11-21T20:00:00" />
         </div>
       </section>
 
-      {/* Official Poster - CON TEXTURA DE TELA */}
+      {/* Official Poster */}
       <section className="py-16 relative">
         <div
           className="absolute inset-0 opacity-30"
@@ -66,7 +66,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("poster.title")}</h2>
           <div className="flex justify-center">
             <div className="relative w-full max-w-md h-[600px] shadow-xl">
-              <Image src="/aes-congress-poster.png" alt={t("poster.alt")} fill className="object-cover rounded-md" />
+              <Image src="/cartel-oficial-2025.jpg" alt={t("poster.alt")} fill className="object-cover rounded-md" />
             </div>
           </div>
         </div>
@@ -107,10 +107,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sponsor Logos - SIN TEXTURA */}
+      {/* Sponsor Logos */}
       <section className="py-10 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center text-[#3A3226] mb-8">{t("sponsors.ourSponsors")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-8">{t("sponsors.ourSponsors")}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {[1, 2, 3, 4, 5].map((sponsor, index) => (
               <div
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sponsors Information - CON TEXTURA DE TELA */}
+      {/* Sponsors Information */}
       <section className="py-16 relative">
         <div
           className="absolute inset-0 opacity-30"
@@ -153,7 +153,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location - Updated Design */}
+      {/* Location */}
       <section className="py-16 bg-[#3A3226] relative">
         {/* Decorative dotted line */}
         <div className="absolute top-16 lg:top-0 left-8 hidden md:block">
@@ -168,7 +168,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Left Content */}
             <div className="space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F2DBC5] mb-8">{t("location.title")}</h2>
+              <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8">{t("location.title")}</h2>
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-[#F2DBC5]">{t("location.venue")}</h3>
@@ -197,7 +197,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery - SIN TEXTURA */}
+      {/* Gallery */}
       <section className="py-16 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("gallery.title")}</h2>
@@ -205,7 +205,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Email Collection - CON TEXTURA DE TELA */}
+      {/* Email Collection */}
       <section className="py-16 relative">
         <div
           className="absolute inset-0 opacity-30"
