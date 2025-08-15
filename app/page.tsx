@@ -77,7 +77,7 @@ export default function Home() {
       <section className="py-16 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-100 mx-[100] mr-[] ml-[50%] mb-[-20px]"
           style={{
             backgroundImage:
               "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector_Fondo-npC32PdUcLedJAtDTbRMPSlGGdNjcY.svg')",
