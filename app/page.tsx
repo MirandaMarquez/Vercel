@@ -75,24 +75,16 @@ export default function Home() {
       {/* Program */}
       <section className="py-16 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <svg
-            width="1058"
-            height="769"
-            viewBox="0 0 1058 769"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
-          >
-            <path
-              d="M1053.69 1C1053.69 1 1072.98 433.454 808.354 560.201C522.966 696.911 368.692 532.683 327.257 405.35C307.081 343.335 311.891 230.573 429.218 198.873C518.428 174.791 637.259 288.859 572.59 436.304C515.246 567.101 322.077 754.025 1 765"
-              stroke="#EBB37E"
-              strokeWidth="7"
-              strokeMiterlimit="10"
-              strokeDasharray="11.6 11.6"
-            />
-          </svg>
-        </div>
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector_Fondo-npC32PdUcLedJAtDTbRMPSlGGdNjcY.svg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
 
         <div className="container mx-auto px-4 relative z-10">
           <ProgramSchedule />
