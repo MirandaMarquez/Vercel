@@ -90,12 +90,12 @@ const translations = {
 
     // Gallery
     "gallery.title": "EDICIÓN ANTERIOR - OVIEDO 2022",
-    "gallery.caption1": "Masterclass de sastrería tradicional, 2022",
-    "gallery.caption2": "Exposición de materiales y herramientas, 2022",
-    "gallery.caption3": "Taller práctico de patronaje, 2022",
-    "gallery.caption4": "Conferencia inaugural, 2022",
-    "gallery.caption5": "Demostración de técnicas avanzadas, 2022",
-    "gallery.caption6": "Networking entre profesionales, 2022",
+    "gallery.caption1": "Cóctel de networking y bienvenida - Congreso AES 2022",
+    "gallery.caption2": "Exposición de materiales y catálogos especializados - Oviedo 2022",
+    "gallery.caption3": "Telas premium Barberis Canonico - Muestra de calidad italiana",
+    "gallery.caption4": "Networking entre profesionales del sector - Ambiente distendido",
+    "gallery.caption5": "Conferencia magistral sobre tendencias en sastrería - Ponente experto",
+    "gallery.caption6": "Exposición de trajes de alta costura - Artesanía y tradición",
     "gallery.prevImage": "Imagen anterior",
     "gallery.nextImage": "Imagen siguiente",
 
@@ -209,12 +209,12 @@ const translations = {
 
     // Gallery
     "gallery.title": "PREVIOUS EDITION - OVIEDO 2022",
-    "gallery.caption1": "Traditional tailoring masterclass, 2022",
-    "gallery.caption2": "Materials and tools exhibition, 2022",
-    "gallery.caption3": "Practical pattern-making workshop, 2022",
-    "gallery.caption4": "Opening conference, 2022",
-    "gallery.caption5": "Advanced techniques demonstration, 2022",
-    "gallery.caption6": "Professional networking, 2022",
+    "gallery.caption1": "Networking and welcome cocktail - AES Congress 2022",
+    "gallery.caption2": "Exhibition of specialized materials and catalogs - Oviedo 2022",
+    "gallery.caption3": "Premium Barberis Canonico fabrics - Italian quality showcase",
+    "gallery.caption4": "Professional networking among industry experts - Relaxed atmosphere",
+    "gallery.caption5": "Keynote conference on tailoring trends - Expert speaker",
+    "gallery.caption6": "High fashion suits exhibition - Craftsmanship and tradition",
     "gallery.prevImage": "Previous image",
     "gallery.nextImage": "Next image",
 

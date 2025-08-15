@@ -10,33 +10,33 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Congreso AES 2023",
+      src: "/gallery/networking-evento.jpg",
+      alt: "Networking Congreso AES",
       caption: t("gallery.caption1"),
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Congreso AES 2023",
+      src: "/gallery/exposicion-materiales.jpg",
+      alt: "Exposición de materiales",
       caption: t("gallery.caption2"),
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Congreso AES 2022",
+      src: "/gallery/telas-barberis.jpg",
+      alt: "Telas Barberis Canonico",
       caption: t("gallery.caption3"),
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Congreso AES 2022",
+      src: "/gallery/networking-profesional.jpg",
+      alt: "Networking profesional",
       caption: t("gallery.caption4"),
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Congreso AES 2021",
+      src: "/gallery/conferencia-magistral.jpg",
+      alt: "Conferencia magistral",
       caption: t("gallery.caption5"),
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
-      alt: "Congreso AES 2021",
+      src: "/gallery/exposicion-trajes.jpg",
+      alt: "Exposición de trajes",
       caption: t("gallery.caption6"),
     },
   ]
