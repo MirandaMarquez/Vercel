@@ -7,9 +7,11 @@ import CountdownTimer from "@/components/countdown-timer"
 import Gallery from "@/components/gallery"
 import EmailSignup from "@/components/email-signup"
 import { useLanguage } from "@/contexts/language-context"
+import { useState } from "react"
 
 export default function Home() {
   const { t } = useLanguage()
+  const [isExpanded, setIsExpanded] = useState(false)
 
   return (
     <div className="min-h-screen bg-[#F7F3EF]">
@@ -97,7 +99,7 @@ export default function Home() {
             {/* Day 1 - Friday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 text-[#3A3226]"
@@ -121,7 +123,7 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -148,7 +150,7 @@ export default function Home() {
             {/* Day 2 - Saturday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 text-[#3A3226]"
@@ -172,7 +174,7 @@ export default function Home() {
 
               <div className="space-y-2 max-h-64 overflow-y-auto">
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -194,7 +196,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -216,7 +218,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -237,8 +239,257 @@ export default function Home() {
                     <p className="text-xs text-[#3A3226]">{t("program.day2.event3")}</p>
                   </div>
                 </div>
-                <div className="text-center py-2">
-                  <p className="text-xs text-[#3A3226] opacity-70">... y 11 eventos más</p>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">11:30h</p>
+                    <p className="text-xs text-[#3A3226]">Catering</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">12:00h</p>
+                    <p className="text-xs text-[#3A3226]">
+                      Presentación de la exposición "Sastrería, del taller a la calle"
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">12:30h</p>
+                    <p className="text-xs text-[#3A3226]">Representación sectorial</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">13:15h</p>
+                    <p className="text-xs text-[#3A3226]">Sostenibilidad en la industria textil</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">14:15h</p>
+                    <p className="text-xs text-[#3A3226]">Catering</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">15:15h</p>
+                    <p className="text-xs text-[#3A3226]">Representación sectorial</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">16:00h</p>
+                    <p className="text-xs text-[#3A3226]">Formación artesanal e industrial</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">17:00h</p>
+                    <p className="text-xs text-[#3A3226]">Sastrería internacional - Inspiraciones y evolución</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">21:30h</p>
+                    <p className="text-xs text-[#3A3226]">Cena (Lugar a confirmar)</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">23:45h</p>
+                    <p className="text-xs text-[#3A3226]">Entrega de Premios AES (Lugar a confirmar)</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 text-[#3A3226]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">00:00h</p>
+                    <p className="text-xs text-[#3A3226]">Clausura (Lugar a confirmar)</p>
+                  </div>
+                </div>
+                <div className="pt-6">
+                  <button
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className="inline-flex items-center bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-md transition-colors text-lg"
+                  >
+                    {isExpanded ? t("program.viewLess") : t("program.viewMore")}
+                  </button>
                 </div>
               </div>
             </div>
@@ -246,7 +497,7 @@ export default function Home() {
             {/* Day 3 - Sunday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 text-[#3A3226]"
@@ -270,7 +521,7 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-[#EBB37E] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#EBB37E] rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-3 w-3 text-[#3A3226]"
@@ -293,22 +544,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="#programa-completo"
-              className="inline-flex items-center text-[#F2DBC5] font-medium hover:text-[#EBB37E] transition-colors"
-            >
-              {t("program.viewFull")}
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>
@@ -431,7 +666,7 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-8">{t("email.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("email.title")}</h2>
           <p className="text-center text-[#3A3226] max-w-2xl mx-auto mb-10">{t("email.description")}</p>
           <EmailSignup />
         </div>
