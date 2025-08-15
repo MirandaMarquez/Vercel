@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Download } from "lucide-react"
 import CountdownTimer from "@/components/countdown-timer"
 import Gallery from "@/components/gallery"
 import EmailSignup from "@/components/email-signup"
@@ -603,35 +602,6 @@ export default function Home() {
             </div>
             <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sponsors Information */}
-      <section className="py-16 relative">
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/83a3df5c6e214b6c369f6b4360604de279697fcb.jpg-NPCaXInxOoRMy3O4QXwHTQ2nkyrAH8.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("sponsors.title")}</h2>
-          <div className="max-w-3xl mx-auto bg-[#F7F3EF] p-8 rounded-lg shadow-md">
-            <p className="text-[#3A3226] mb-6 text-center">{t("sponsors.description")}</p>
-            <div className="flex justify-center">
-              <Link
-                href="#dossier"
-                className="inline-flex items-center bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-md transition-colors"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                {t("sponsors.download")}
-              </Link>
             </div>
           </div>
         </div>
