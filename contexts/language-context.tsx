@@ -80,8 +80,8 @@ const translations = {
 
     // Location
     "location.title": "LOCALIZACIÓN",
-    "location.venue": "Palacio de Congresos de Madrid",
-    "location.address": "Paseo de la Castellana, 99, 28046 Madrid",
+    "location.venue": "Museo del Traje de Madrid",
+    "location.address": "Av. de Juan de Herrera, 2, Moncloa - Aravaca, 28040 Madrid",
     "location.contact": "Contacto",
     "location.phone": "Teléfono",
     "location.email": "info@congresoaes.com",
@@ -199,8 +199,8 @@ const translations = {
 
     // Location
     "location.title": "LOCATION",
-    "location.venue": "Madrid Convention Center",
-    "location.address": "Paseo de la Castellana, 99, 28046 Madrid",
+    "location.venue": "Madrid Costume Museum",
+    "location.address": "Av. de Juan de Herrera, 2, Moncloa - Aravaca, 28040 Madrid",
     "location.contact": "Contact",
     "location.phone": "Phone",
     "location.email": "info@congresoaes.com",

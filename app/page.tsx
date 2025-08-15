@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin, Mail, Phone, Download } from "lucide-react"
+import { Mail, Phone, Download } from "lucide-react"
 import CountdownTimer from "@/components/countdown-timer"
 import Gallery from "@/components/gallery"
 import EmailSignup from "@/components/email-signup"
@@ -153,50 +153,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location - SIN TEXTURA */}
-      <section className="py-16 bg-[#3A3226]">
+      {/* Location - Updated Design */}
+      <section className="py-16 bg-[#3A3226] relative">
+        {/* Decorative dotted line */}
+        <div className="absolute top-8 left-8 hidden md:block">
+          <div className="flex space-x-2">
+            {[...Array(20)].map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-[#EBB37E] rounded-full"></div>
+            ))}
+          </div>
+        </div>
+
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#F7F3EF] mb-12">{t("location.title")}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <MapPin className="text-[#EBB37E] mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-[#F7F3EF]">{t("location.venue")}</h3>
-                  <p className="text-[#F2DBC5]">{t("location.address")}</p>
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            {/* Left Content */}
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#F7F3EF] mb-8">{t("location.title")}</h2>
+
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold text-[#F7F3EF]">{t("location.venue")}</h3>
+                <p className="text-[#F2DBC5] text-lg leading-relaxed">{t("location.address")}</p>
               </div>
-              <div className="flex items-start">
-                <Mail className="text-[#EBB37E] mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-[#F7F3EF]">{t("location.contact")}</h3>
-                  <p className="text-[#F2DBC5]">{t("location.email")}</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <Phone className="text-[#EBB37E] mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-[#F7F3EF]">{t("location.phone")}</h3>
-                  <p className="text-[#F2DBC5]">{t("location.phoneNumber")}</p>
-                </div>
-              </div>
-              <div className="pt-4">
+
+              <div className="pt-6">
                 <Link
-                  href="#mapa"
-                  className="inline-flex items-center bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-md transition-colors"
+                  href="https://maps.app.goo.gl/VaJcoBBA11WAqJnr5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-4 rounded-lg transition-colors text-lg"
                 >
                   {t("location.map")}
                 </Link>
               </div>
             </div>
-            <div className="h-[400px] bg-[#F2DBC5] rounded-lg overflow-hidden shadow-md">
-              <Image
-                src="/modern-congress-center.png"
-                alt={t("location.venue")}
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
-              />
+
+            {/* Right Image */}
+            <div className="relative">
+              <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                <Image src="/museo-del-traje.jpg" alt={t("location.venue")} fill className="object-cover" />
+              </div>
             </div>
           </div>
         </div>
