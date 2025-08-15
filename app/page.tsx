@@ -705,14 +705,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Organiza */}
             <div className="text-center md:text-left">
-              <h4 className="text-xl font-bold text-[#EBB37E] mb-6">Organiza:</h4>
+              <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Organiza:</h4>
               <div className="flex justify-center md:justify-start">
-                <div className="w-32 h-20">
+                <div className="w-28 h-16">
                   <Image
                     src="/logo-aes-blanco.svg"
                     alt="AES - Asociación Española de Sastrería"
-                    width={128}
-                    height={80}
+                    width={112}
+                    height={64}
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -721,36 +721,36 @@ export default function Home() {
 
             {/* Colabora */}
             <div className="text-center md:text-left">
-              <h4 className="text-xl font-bold text-[#EBB37E] mb-6">Colabora:</h4>
-              <div className="flex flex-col items-center md:items-start space-y-4">
-                <div className="w-40 h-12">
+              <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Colabora:</h4>
+              <div className="flex items-center justify-center md:justify-start space-x-6">
+                <div className="w-32 h-10">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
                     alt="Ayuntamiento de Madrid"
-                    width={160}
-                    height={48}
+                    width={128}
+                    height={40}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-40 h-16">
+                <div className="w-32 h-12">
                   <Image
                     src="/logo-museo-traje.svg"
                     alt="Museo del Traje"
-                    width={160}
-                    height={64}
-                    className="w-full h-full object-contain filter invert"
+                    width={128}
+                    height={48}
+                    className="w-full h-full object-contain brightness-0 invert"
                   />
                 </div>
               </div>
             </div>
 
             {/* Contacto */}
-            <div className="text-center md:text-left">
-              <h4 className="text-xl font-bold text-[#EBB37E] mb-6">Contacto:</h4>
-              <div className="space-y-3 text-[#F2DBC5]">
+            <div className="text-center md:text-right">
+              <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Contacto:</h4>
+              <div className="space-y-1 text-[#F2DBC5] text-sm">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
-                <div className="pt-2">
+                <div className="pt-2 space-y-0">
                   <p>Paseo de la</p>
                   <p>Castellana 210 5-9,</p>
                   <p>28046 Madrid</p>
@@ -760,42 +760,24 @@ export default function Home() {
           </div>
 
           {/* Entidad subvencionada */}
-          <div className="text-center mb-8">
-            <p className="text-[#F2DBC5] text-sm">Entidad subvencionada por el Ayuntamiento de Madrid</p>
+          <div className="text-center mb-6">
+            <p className="text-[#F2DBC5] text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
           </div>
 
           {/* Footer bottom */}
-          <div className="border-t border-[#EBB37E]/30 pt-8">
+          <div className="border-t border-[#EBB37E]/30 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="flex flex-wrap justify-center md:justify-start gap-6 mb-4 md:mb-0">
+              <div className="mb-4 md:mb-0">
                 <Link
                   href="https://www.aesastreria.es/politica-de-privacidad/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-sm"
+                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-xs"
                 >
                   Política de Privacidad
                 </Link>
-                <span className="text-[#F2DBC5] text-sm">·</span>
-                <Link
-                  href="https://www.aesastreria.es/politica-de-privacidad/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-sm"
-                >
-                  Política de cookies
-                </Link>
-                <span className="text-[#F2DBC5] text-sm">·</span>
-                <Link
-                  href="https://www.aesastreria.es/politica-de-privacidad/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-sm"
-                >
-                  Aviso Legal
-                </Link>
               </div>
-              <p className="text-[#F2DBC5] text-sm">
+              <p className="text-[#F2DBC5] text-xs">
                 © {new Date().getFullYear()} AES Asociación Española de Sastrería
               </p>
             </div>
