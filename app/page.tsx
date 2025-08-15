@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Mail, Phone, Download } from "lucide-react"
+import { Download } from "lucide-react"
 import CountdownTimer from "@/components/countdown-timer"
 import Gallery from "@/components/gallery"
 import EmailSignup from "@/components/email-signup"
@@ -88,9 +88,7 @@ export default function Home() {
         />
 
         {/* Decorative dotted circle */}
-        <div className="absolute top-10 right-10 hidden lg:block">
-          
-        </div>
+        <div className="absolute top-10 right-10 hidden lg:block"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
@@ -702,103 +700,105 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#3A3226] text-[#F7F3EF] py-12">
+      <footer className="bg-[#3A3226] text-[#F7F3EF] py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="bg-[#F7F3EF] p-4 mb-4 inline-block rounded-lg">
-                <div className="w-16 h-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            {/* Organiza */}
+            <div className="text-center md:text-left">
+              <h4 className="text-xl font-bold text-[#EBB37E] mb-6">Organiza:</h4>
+              <div className="flex justify-center md:justify-start">
+                <div className="w-32 h-20">
                   <Image
-                    src="/logo-aes.svg"
-                    alt="AES Logo"
-                    width={64}
-                    height={64}
+                    src="/logo-aes-blanco.svg"
+                    alt="AES - Asociación Española de Sastrería"
+                    width={128}
+                    height={80}
                     className="w-full h-full object-contain"
                   />
                 </div>
               </div>
-              <p className="text-[#F2DBC5] mb-4">{t("footer.location")}</p>
-              <p className="text-[#F2DBC5] text-sm">{t("footer.description")}</p>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4 text-[#EBB37E]">{t("footer.contact")}</h4>
-              <ul className="space-y-2 text-[#F2DBC5] text-sm">
-                <li className="flex items-center">
-                  <Mail className="mr-2 h-4 w-4" />
-                  {t("location.email")}
-                </li>
-                <li className="flex items-center">
-                  <Phone className="mr-2 h-4 w-4" />
-                  {t("location.phoneNumber")}
-                </li>
-              </ul>
+
+            {/* Colabora */}
+            <div className="text-center md:text-left">
+              <h4 className="text-xl font-bold text-[#EBB37E] mb-6">Colabora:</h4>
+              <div className="flex flex-col items-center md:items-start space-y-4">
+                <div className="w-40 h-12">
+                  <Image
+                    src="/logo-ayuntamiento-madrid.svg"
+                    alt="Ayuntamiento de Madrid"
+                    width={160}
+                    height={48}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="w-40 h-16">
+                  <Image
+                    src="/logo-museo-traje.svg"
+                    alt="Museo del Traje"
+                    width={160}
+                    height={64}
+                    className="w-full h-full object-contain filter invert"
+                  />
+                </div>
+              </div>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4 text-[#EBB37E]">{t("footer.information")}</h4>
-              <ul className="space-y-2 text-[#F2DBC5] text-sm">
-                <li>{t("footer.program")}</li>
-                <li>{t("footer.sponsors")}</li>
-                <li>{t("footer.location2")}</li>
-                <li>{t("footer.registration")}</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4 text-[#EBB37E]">{t("footer.follow")}</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                  </svg>
-                </a>
-                <a href="#" className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
-                <a href="#" className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                  </svg>
-                </a>
+
+            {/* Contacto */}
+            <div className="text-center md:text-left">
+              <h4 className="text-xl font-bold text-[#EBB37E] mb-6">Contacto:</h4>
+              <div className="space-y-3 text-[#F2DBC5]">
+                <p>info@aesastreria.es</p>
+                <p>www.aesastreria.es</p>
+                <div className="pt-2">
+                  <p>Paseo de la</p>
+                  <p>Castellana 210 5-9,</p>
+                  <p>28046 Madrid</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-[#EBB37E]/30 text-center text-[#F2DBC5] text-sm">
-            <p>
-              © {new Date().getFullYear()} AES - Asociación Española de Sastrería. {t("footer.rights")}
-            </p>
+
+          {/* Entidad subvencionada */}
+          <div className="text-center mb-8">
+            <p className="text-[#F2DBC5] text-sm">Entidad subvencionada por el Ayuntamiento de Madrid</p>
+          </div>
+
+          {/* Footer bottom */}
+          <div className="border-t border-[#EBB37E]/30 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="flex flex-wrap justify-center md:justify-start gap-6 mb-4 md:mb-0">
+                <Link
+                  href="https://www.aesastreria.es/politica-de-privacidad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-sm"
+                >
+                  Política de Privacidad
+                </Link>
+                <span className="text-[#F2DBC5] text-sm">·</span>
+                <Link
+                  href="https://www.aesastreria.es/politica-de-privacidad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-sm"
+                >
+                  Política de cookies
+                </Link>
+                <span className="text-[#F2DBC5] text-sm">·</span>
+                <Link
+                  href="https://www.aesastreria.es/politica-de-privacidad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-sm"
+                >
+                  Aviso Legal
+                </Link>
+              </div>
+              <p className="text-[#F2DBC5] text-sm">
+                © {new Date().getFullYear()} AES Asociación Española de Sastrería
+              </p>
+            </div>
           </div>
         </div>
       </footer>
