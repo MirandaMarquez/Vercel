@@ -20,8 +20,8 @@ export default function Gallery() {
       caption: t("gallery.caption2"),
     },
     {
-      src: "/gallery/telas-barberis.jpg",
-      alt: "Telas Barberis Canonico",
+      src: "/gallery/mesa-redonda.jpg",
+      alt: "Mesa redonda profesional",
       caption: t("gallery.caption3"),
     },
     {
