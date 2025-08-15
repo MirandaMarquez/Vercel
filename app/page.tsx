@@ -20,7 +20,7 @@ export default function Home() {
         <Image src="/cabecera-hero.jpg" alt={t("header.title")} fill className="object-cover" priority />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
           <div className="bg-white p-6 mb-8 shadow-lg rounded-lg">
-            <div className="w-24 h-24 mx-auto mb-4">
+            <div className="w-24 h-24 mx-auto mb-0">
               <Image
                 src="/logo-aes.svg"
                 alt="AES Logo"
@@ -76,7 +76,7 @@ export default function Home() {
       <section className="py-16 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-100"
           style={{
             backgroundImage:
               "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector_Fondo-npC32PdUcLedJAtDTbRMPSlGGdNjcY.svg')",
@@ -89,19 +89,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <ProgramSchedule />
           <div className="text-center mt-10">
-            <Link
-              href="#programa-completo"
-              className="inline-flex items-center text-[#F7F3EF] font-medium hover:text-[#EBB37E] transition-colors"
-            >
-              {t("program.viewFull")}
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Link>
+            
           </div>
         </div>
       </section>
