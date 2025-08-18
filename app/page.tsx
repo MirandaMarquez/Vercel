@@ -65,7 +65,14 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("poster.title")}</h2>
           <div className="flex justify-center">
-            <div className="relative w-full max-w-md h-[95vh] shadow-2xl rounded-lg overflow-hidden">
+            <div
+              className="relative w-full shadow-2xl rounded-lg overflow-hidden"
+              style={{
+                maxWidth: "67.5vh", // 95vh * (210/297) para mantener proporción A4
+                height: "95vh",
+                aspectRatio: "210/297", // Proporción A4
+              }}
+            >
               <Image src="/cartel-oficial-2025.jpg" alt={t("poster.alt")} fill className="object-contain" />
             </div>
           </div>
