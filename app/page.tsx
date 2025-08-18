@@ -31,12 +31,14 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">{t("header.subtitle")}</h2>
-          <p className="text-lg md:text-xl text-white mb-8 max-w-2xl">{t("header.description")}</p>
+          <p className="text-lg md:text-xl text-white mb-8 max-w-2xl">
+            Un encuentro único que reúne a la comunidad de la sastrería internacional.
+          </p>
           <Link
             href="#entradas"
             className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-3 rounded-md transition-colors"
           >
-            {t("header.cta").toLowerCase()}
+            Inscripciones próximamente
           </Link>
         </div>
       </header>
@@ -65,7 +67,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("poster.title")}</h2>
           <div className="flex justify-center">
-            <div className="relative w-full max-w-md h-[600px] shadow-xl">
+            <div className="relative w-full max-w-sm h-[700px] shadow-xl">
               <Image src="/cartel-oficial-2025.jpg" alt={t("poster.alt")} fill className="object-cover rounded-md" />
             </div>
           </div>
