@@ -673,38 +673,40 @@ export default function Home() {
             {/* Organiza */}
             <div className="text-center md:text-left">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Organiza:</h4>
-              <div className="flex justify-center md:justify-start">
-                <div className="w-28 h-16">
+              <div className="flex justify-center md:justify-start mb-4">
+                <div className="w-36 h-20">
                   <Image
                     src="/logo-aes-blanco.svg"
                     alt="AES - Asociación Española de Sastrería"
-                    width={112}
-                    height={64}
+                    width={144}
+                    height={80}
                     className="w-full h-full object-contain"
                   />
                 </div>
               </div>
+              {/* Entidad subvencionada moved here */}
+              <p className="text-white text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
             </div>
 
             {/* Colabora */}
             <div className="text-center md:text-left">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Colabora:</h4>
               <div className="flex items-center justify-center md:justify-start space-x-6">
-                <div className="w-32 h-10">
+                <div className="w-40 h-12">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
                     alt="Ayuntamiento de Madrid"
-                    width={128}
-                    height={40}
+                    width={160}
+                    height={48}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-32 h-12">
+                <div className="w-36 h-14">
                   <Image
                     src="/logo-museo-traje.svg"
                     alt="Museo del Traje"
-                    width={128}
-                    height={48}
+                    width={144}
+                    height={56}
                     className="w-full h-full object-contain brightness-0 invert"
                   />
                 </div>
@@ -714,7 +716,7 @@ export default function Home() {
             {/* Contacto */}
             <div className="text-center md:text-right">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Contacto:</h4>
-              <div className="space-y-1 text-[#F2DBC5] text-sm">
+              <div className="space-y-1 text-white text-sm">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
                 <div className="pt-2 space-y-0">
@@ -726,11 +728,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Entidad subvencionada */}
-          <div className="text-center mb-6">
-            <p className="text-[#F2DBC5] text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
-          </div>
-
           {/* Footer bottom */}
           <div className="border-t border-[#EBB37E]/30 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
@@ -739,14 +736,12 @@ export default function Home() {
                   href="https://www.aesastreria.es/politica-de-privacidad/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-xs"
+                  className="text-white hover:text-[#EBB37E] transition-colors text-xs"
                 >
                   Política de Privacidad
                 </Link>
               </div>
-              <p className="text-[#F2DBC5] text-xs">
-                © {new Date().getFullYear()} AES Asociación Española de Sastrería
-              </p>
+              <p className="text-white text-xs">© {new Date().getFullYear()} AES Asociación Española de Sastrería</p>
             </div>
           </div>
         </div>
