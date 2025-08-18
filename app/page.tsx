@@ -36,7 +36,7 @@ export default function Home() {
             href="#entradas"
             className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-3 rounded-md transition-colors"
           >
-            Inscripciones próximamente
+            inscripciones próximamente
           </Link>
         </div>
       </header>
@@ -561,10 +561,10 @@ export default function Home() {
       {/* Sponsor Logos */}
       <section className="py-20 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("sponsors.ourSponsors")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-7">{t("sponsors.ourSponsors")}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {/* Logo real de Pressing */}
-            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm p-4">
+            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm p-4 h-[120px]">
               <Image
                 src="/logo-pressing.svg"
                 alt="Pressing Group"
@@ -575,13 +575,13 @@ export default function Home() {
             </div>
 
             {/* Espacios promocionales para otros patrocinadores */}
-            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300 h-28">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
             </div>
-            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300 h-28">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
             </div>
-            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300 h-28">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
             </div>
           </div>
@@ -646,10 +646,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed border-[]">
             {/* Left Content */}
             <div className="space-y-8 border-t-4 border-[rgba(235,179,126,1)] border-dashed mx-[] px-0 my-[] py-12">
-              <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8 leading-3">{t("location.title")}</h2>
+              <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8 leading-7">{t("location.title")}</h2>
 
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold text-[#F2DBC5] leading-4">{t("location.venue")}</h3>
+                <h3 className="font-bold text-[#F2DBC5] leading-4 text-xl">{t("location.venue")}</h3>
                 <p className="text-[#F2DBC5] text-lg leading-relaxed leading-4">{t("location.address")}</p>
               </div>
 
@@ -718,9 +718,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#3A3226] text-[#F2DBC5] py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-7">
             {/* Organiza */}
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left leading-4">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Organiza:</h4>
               <div className="flex justify-center md:justify-start mb-4">
                 <div className="w-36 h-20">
@@ -734,7 +734,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Entidad subvencionada moved here */}
-              <p className="text-[#F2DBC5] text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
+              <p className="text-[#F2DBC5] text-xs text-white">Entidad subvencionada por el Ayuntamiento de Madrid</p>
             </div>
 
             {/* Colabora */}
@@ -766,31 +766,31 @@ export default function Home() {
             <div className="text-center md:text-right">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Contacto:</h4>
               <div className="space-y-1 text-[#F2DBC5] text-sm">
-                <p>info@aesastreria.es</p>
-                <p>www.aesastreria.es</p>
+                <p className="text-white">info@aesastreria.es</p>
+                <p className="text-white">www.aesastreria.es</p>
                 <div className="pt-2 space-y-0">
-                  <p>Paseo de la</p>
-                  <p>Castellana 210 5-9,</p>
-                  <p>28046 Madrid</p>
+                  <p className="text-white">Paseo de la</p>
+                  <p className="text-white">Castellana 210 5-9,</p>
+                  <p className="text-white">28046 Madrid</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Footer bottom */}
-          <div className="border-t border-[#EBB37E]/30 pt-6">
+          <div className="border-t border-[#EBB37E]/30 pt-2">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
                 <Link
                   href="https://www.aesastreria.es/politica-de-privacidad/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-xs"
+                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-xs text-white"
                 >
                   Política de Privacidad
                 </Link>
               </div>
-              <p className="text-[#F2DBC5] text-xs">
+              <p className="text-[#F2DBC5] text-xs text-white">
                 © {new Date().getFullYear()} AES Asociación Española de Sastrería
               </p>
             </div>
