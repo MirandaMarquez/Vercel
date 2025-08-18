@@ -99,14 +99,14 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
             {/* Day 1 - Friday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
-              <div className="flex mb-4 items-start">
-                <div className="h-6 bg-transparent rounded-none flex justify-center mr-[px] w-8 items-start text-left">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[400px]">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-[#EBB37E] text-left"
+                    className="h-5 w-5 text-[#EBB37E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -120,17 +120,17 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">{"VIERNES 21 NOVIEMBRE"}</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226]">VIERNES 21 NOVIEMBRE</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location1")}</p>
                 </div>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0 w-4">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-[#EBB37E] w-[24] h-4"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -152,12 +152,12 @@ export default function Home() {
             </div>
 
             {/* Day 2 - Saturday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
-              <div className="flex items-start mb-2.5 gap-0">
-                <div className="w-8 h-6 bg-transparent rounded-none flex items-start justify-start mr-[px]">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md min-h-[400px]">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="text-[#EBB37E] w-[22px] h-[22px]"
+                    className="h-5 w-5 text-[#EBB37E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -171,7 +171,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">SÁBADO 22 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226]">SÁBADO 22 NOVIEMBRE</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location2")}</p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-[#EBB37E] h-[18px] w-4"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -204,7 +204,7 @@ export default function Home() {
                   <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-[#EBB37E] w-4 h-4"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -226,7 +226,7 @@ export default function Home() {
                   <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-[#EBB37E] w-[18px] h-4"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -515,12 +515,12 @@ export default function Home() {
             </div>
 
             {/* Day 3 - Sunday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
-              <div className="flex mb-4 justify-start items-start">
-                <div className="w-8 h-6 bg-transparent rounded-none flex justify-center items-start mr-0">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[400px]">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="text-[#EBB37E] h-[22px] w-[22px]"
+                    className="h-5 w-5 text-[#EBB37E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -534,7 +534,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">DOMINGO 23 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226]">DOMINGO 23 NOVIEMBRE</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location3")}</p>
                 </div>
               </div>
