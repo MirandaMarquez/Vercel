@@ -601,37 +601,37 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">INFORMACIÓN PARA PATROCINADORES</h2>
-          <div className="flex justify-center">
-            <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl text-center">
-              <p className="text-[#3A3226] text-lg mb-6 leading-relaxed">
-                Conviértete en patrocinador del Congreso y conecta con los referentes más influyentes de la sastrería internacional. Descubre todas nuestras modalidades.
-              </p>
-              <button
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/Dossier_Patrocinadores_Congreso_2025_CAST_v3.pdf';
-                  link.download = 'Dossier Patrocinadores Congreso 2025.pdf';
-                  link.click();
-                }}
-                className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-lg transition-colors flex items-center mx-auto"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-                Descargar Dossier Patrocinadores
-              </button>
+                     <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("sponsors.title")}</h2>
+           <div className="flex justify-center">
+             <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl text-center">
+               <p className="text-[#3A3226] text-lg mb-6 leading-relaxed">
+                 {t("sponsors.description")}
+               </p>
+               <button
+                 onClick={() => {
+                   const link = document.createElement('a');
+                   link.href = '/Dossier_Patrocinadores_Congreso_2025_CAST_v3.pdf';
+                   link.download = 'Dossier Patrocinadores Congreso 2025.pdf';
+                   link.click();
+                 }}
+                 className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-lg transition-colors flex items-center mx-auto"
+               >
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   className="h-5 w-5 mr-2"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                 >
+                   <path
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     strokeWidth={2}
+                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                   />
+                 </svg>
+                 {t("sponsors.download")}
+               </button>
             </div>
           </div>
         </div>
