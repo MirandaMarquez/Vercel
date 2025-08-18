@@ -93,70 +93,44 @@ export default function Home() {
           }}
         />
 
+        {/* Decorative dotted circle */}
+        <div className="absolute top-10 right-10 hidden lg:block"></div>
+
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
 
-          <div className="max-w-6xl mx-auto">
-            {/* Primera fila: Viernes y Domingo */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              {/* Day 1 - Friday */}
-              <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-fit">
-                <div className="flex items-center mb-4">
-                  <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#EBB37E]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-[#3A3226]">VIERNES 21 NOVIEMBRE</h3>
-                    <p className="text-sm text-[#EBB37E] italic">{t("program.location1")}</p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+            {/* Day 1 - Friday */}
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[280px]">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-[#EBB37E]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
                 </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-[#EBB37E]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#3A3226]">20:00h</p>
-                      <p className="text-sm text-[#3A3226]">{t("program.day1.event1")}</p>
-                    </div>
-                  </div>
+                <div>
+                  <h3 className="text-lg font-bold text-[#3A3226]">VIERNES 21 NOVIEMBRE</h3>
+                  <p className="text-sm text-[#EBB37E] italic">{t("program.location1")}</p>
                 </div>
               </div>
 
-              {/* Day 3 - Sunday */}
-              <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-fit">
-                <div className="flex items-center mb-4">
-                  <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+              <div className="space-y-3">
+                <div className="flex items-start">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#EBB37E]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -165,51 +139,50 @@ export default function Home() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#3A3226]">DOMINGO 23 NOVIEMBRE</h3>
-                    <p className="text-sm text-[#EBB37E] italic">{t("program.location3")}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-[#EBB37E]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#3A3226]">11:00h</p>
-                      <p className="text-sm text-[#3A3226]">{t("program.day3.event1")}</p>
-                    </div>
+                    <p className="font-medium text-[#3A3226]">20:00h</p>
+                    <p className="text-sm text-[#3A3226]">{t("program.day1.event1")}</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Segunda fila: Sábado (expandible) */}
-            <div className="flex justify-center">
-              <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md w-full max-w-2xl">
-                <div className="flex items-center mb-4">
-                  <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+            {/* Day 2 - Saturday */}
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md min-h-[280px]">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-[#EBB37E]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-[#3A3226]">SÁBADO 22 NOVIEMBRE</h3>
+                  <p className="text-sm text-[#EBB37E] italic">{t("program.location2")}</p>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                {/* Primeros 3 eventos siempre visibles */}
+                <div className="flex items-start">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#EBB37E]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -218,350 +191,375 @@ export default function Home() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#3A3226]">SÁBADO 22 NOVIEMBRE</h3>
-                    <p className="text-sm text-[#EBB37E] italic">{t("program.location2")}</p>
+                    <p className="font-medium text-[#3A3226] text-sm">09:00h</p>
+                    <p className="text-xs text-[#3A3226]">{t("program.day2.event1")}</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 text-[#EBB37E]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">09:30h</p>
+                    <p className="text-xs text-[#3A3226]">{t("program.day2.event2")}</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 text-[#EBB37E]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226] text-sm">10:30h</p>
+                    <p className="text-xs text-[#3A3226]">{t("program.day2.event3")}</p>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  {/* Primeros 3 eventos siempre visibles */}
-                  <div className="flex items-start">
-                    <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-[#EBB37E]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
+                {/* Eventos adicionales que se muestran/ocultan */}
+                {isExpanded && (
+                  <div className="space-y-2 mt-2">
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">11:30h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event4")}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-medium text-[#3A3226] text-sm">09:00h</p>
-                      <p className="text-xs text-[#3A3226]">{t("program.day2.event1")}</p>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">12:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event5")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">12:30h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event6")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">13:15h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event7")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">14:15h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event8")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">15:15h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event9")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">16:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event10")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">17:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event11")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">21:30h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event12")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">23:45h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event13")}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-[#EBB37E]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#3A3226] text-sm">00:00h</p>
+                        <p className="text-xs text-[#3A3226]">{t("program.day2.event14")}</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-start">
-                    <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-[#EBB37E]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#3A3226] text-sm">09:30h</p>
-                      <p className="text-xs text-[#3A3226]">{t("program.day2.event2")}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-[#EBB37E]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#3A3226] text-sm">10:30h</p>
-                      <p className="text-xs text-[#3A3226]">{t("program.day2.event3")}</p>
-                    </div>
-                  </div>
+                )}
 
-                  {/* Eventos adicionales que se muestran/ocultan */}
-                  {isExpanded && (
-                    <div className="space-y-2 mt-2">
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">11:30h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event4")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">12:00h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event5")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">12:30h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event6")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">13:15h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event7")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">14:15h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event8")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">15:15h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event9")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">16:00h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event10")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">17:00h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event11")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">21:30h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event12")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">23:45h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event13")}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-[#EBB37E]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium text-[#3A3226] text-sm">00:00h</p>
-                          <p className="text-xs text-[#3A3226]">{t("program.day2.event14")}</p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Botón para expandir/contraer */}
-                  <div className="pt-4 text-center">
-                    <button
-                      onClick={() => setIsExpanded(!isExpanded)}
-                      className="text-[#EBB37E] hover:text-[#d4a06b] font-medium text-sm transition-colors flex items-center mx-auto"
+                {/* Botón para expandir/contraer */}
+                <div className="pt-4 text-center">
+                  <button
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className="text-[#EBB37E] hover:text-[#d4a06b] font-medium text-sm transition-colors flex items-center mx-auto"
+                  >
+                    {isExpanded ? "ver menos eventos" : "ver más eventos"}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`h-4 w-4 ml-1 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
-                      {isExpanded ? "ver menos eventos" : "ver más eventos"}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={`h-4 w-4 ml-1 transition-transform ${isExpanded ? "rotate-180" : ""}`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Day 3 - Sunday */}
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[280px]">
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-[#EBB37E]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-[#3A3226]">DOMINGO 23 NOVIEMBRE</h3>
+                  <p className="text-sm text-[#EBB37E] italic">{t("program.location3")}</p>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-start">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 text-[#EBB37E]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#3A3226]">11:00h</p>
+                    <p className="text-sm text-[#3A3226]">{t("program.day3.event1")}</p>
                   </div>
                 </div>
               </div>
