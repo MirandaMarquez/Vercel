@@ -82,7 +82,6 @@ export default function Home() {
       {/* Program */}
       <section className="py-20 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
-        
 
         {/* Decorative dotted circle */}
         <div className="absolute top-10 right-10 hidden lg:block"></div>
@@ -559,43 +558,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ticket Sales */}
-      <section id="entradas" className="py-20 bg-[#EBB37E]">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("tickets.title")}</h2>
-          <div className="max-w-4xl mx-auto bg-[#F7F3EF] p-8 rounded-lg shadow-md">
-            <p className="text-center text-[#3A3226] mb-8 text-lg">{t("tickets.description")}</p>
-            <div className="w-full h-[400px] bg-[#F2DBC5] border border-[#EBB37E] rounded-lg flex items-center justify-center">
-              <p className="text-[#3A3226] text-lg font-medium">{t("tickets.platform")}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Sponsor Logos */}
       <section className="py-20 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("sponsors.ourSponsors")}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {/* Logo real de Pressing */}
-            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm p-4">
+            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm p-4">
               <Image
                 src="/logo-pressing.svg"
                 alt="Pressing Group"
-                width={180}
-                height={60}
+                width={220}
+                height={80}
                 className="w-full h-full object-contain"
               />
             </div>
 
             {/* Espacios promocionales para otros patrocinadores */}
-            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
             </div>
-            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
             </div>
-            <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
+            <div className="w-48 md:w-56 h-24 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300">
               <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
             </div>
           </div>
