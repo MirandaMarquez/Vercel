@@ -596,12 +596,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed border-[]">
             {/* Left Content */}
-            <div className="space-y-8 border-t-4 border-[rgba(235,179,126,1)] border-dashed mx-[] px-0 my-[] py-10">
-              <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8">{t("location.title")}</h2>
+            <div className="space-y-8 border-t-4 border-[rgba(235,179,126,1)] border-dashed mx-[] px-0 my-[] py-12">
+              <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8 leading-3">{t("location.title")}</h2>
 
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold text-[#F2DBC5]">{t("location.venue")}</h3>
-                <p className="text-[#F2DBC5] text-lg leading-relaxed">{t("location.address")}</p>
+                <h3 className="text-2xl font-bold text-[#F2DBC5] leading-4">{t("location.venue")}</h3>
+                <p className="text-[#F2DBC5] text-lg leading-relaxed leading-4">{t("location.address")}</p>
               </div>
 
               <div className="pt-6">
