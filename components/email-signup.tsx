@@ -58,7 +58,7 @@ export default function EmailSignup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t("email.placeholder")}
-              className="flex-1 px-4 py-3 border-2 border-[#EBB37E] rounded-md focus:outline-none focus:ring-2 focus:ring-[#EBB37E] bg-white"
+              className="flex-1 px-4 py-3 border-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#EBB37E] bg-white border-[]"
               aria-label={t("email.label")}
             />
             <button
