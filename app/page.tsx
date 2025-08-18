@@ -65,8 +65,8 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("poster.title")}</h2>
           <div className="flex justify-center">
-            <div className="relative w-full max-w-2xl h-[95vh] shadow-xl">
-              <Image src="/cartel-oficial-2025.jpg" alt={t("poster.alt")} fill className="object-contain rounded-md" />
+            <div className="relative w-full max-w-lg aspect-[3/4] shadow-2xl rounded-lg overflow-hidden">
+              <Image src="/cartel-oficial-2025.jpg" alt={t("poster.alt")} fill className="object-cover" />
             </div>
           </div>
         </div>
