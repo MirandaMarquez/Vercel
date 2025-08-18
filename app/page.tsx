@@ -42,7 +42,7 @@ export default function Home() {
       </header>
 
       {/* Countdown */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("countdown.title")}</h2>
           <p className="text-center text-[#3A3226] mb-12">{t("countdown.subtitle")}</p>
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* Official Poster */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* Program */}
-      <section className="py-16 bg-[#3A3226] relative overflow-hidden">
+      <section className="py-20 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
         <div
           className="absolute inset-0 opacity-100 mx-[100] mr-[] ml-[50%] mb-[-20px]"
@@ -562,9 +562,9 @@ export default function Home() {
       </section>
 
       {/* Ticket Sales */}
-      <section id="entradas" className="py-16 bg-[#EBB37E]">
+      <section id="entradas" className="py-20 bg-[#EBB37E]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("tickets.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("tickets.title")}</h2>
           <div className="max-w-4xl mx-auto bg-[#F7F3EF] p-8 rounded-lg shadow-md">
             <p className="text-center text-[#3A3226] mb-8 text-lg">{t("tickets.description")}</p>
             <div className="w-full h-[400px] bg-[#F2DBC5] border border-[#EBB37E] rounded-lg flex items-center justify-center">
@@ -575,9 +575,9 @@ export default function Home() {
       </section>
 
       {/* Sponsor Logos */}
-      <section className="py-16 bg-[#F7F3EF]">
+      <section className="py-20 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-8">{t("sponsors.ourSponsors")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("sponsors.ourSponsors")}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {/* Logo real de Pressing */}
             <div className="w-40 md:w-48 h-20 bg-white rounded-lg flex items-center justify-center shadow-sm p-4">
@@ -605,7 +605,7 @@ export default function Home() {
       </section>
 
       {/* Location */}
-      <section className="py-16 bg-[#3A3226] relative">
+      <section className="py-20 bg-[#3A3226] relative">
         {/* Decorative dotted line */}
         <div className="absolute top-16 lg:top-0 left-8 hidden md:block"></div>
 
@@ -643,15 +643,15 @@ export default function Home() {
       </section>
 
       {/* Gallery */}
-      <section className="py-16 bg-[#F7F3EF]">
+      <section className="py-20 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("gallery.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("gallery.title")}</h2>
           <Gallery />
         </div>
       </section>
 
       {/* Email Collection */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -663,14 +663,14 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("email.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-4">{t("email.title")}</h2>
           <p className="text-center text-[#3A3226] max-w-2xl mx-auto mb-10">{t("email.description")}</p>
           <EmailSignup />
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-[#EBB37E]">
+      <section className="py-20 bg-[#EBB37E]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-[#3A3226] mb-8">{t("cta.title")}</h2>
           <Link
@@ -683,7 +683,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#3A3226] text-[#F7F3EF] py-16">
+      <footer className="bg-[#3A3226] text-[#F7F3EF] py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Organiza */}
