@@ -18,7 +18,7 @@ const translations = {
     "header.title": "AES",
     "header.subtitle": "II CONGRESO INTERNACIONAL DE SASTRERÍA",
     "header.description": "El evento de sastrería más prestigioso de Europa",
-    "header.cta": "INSCRÍBETE AHORA DISPONIBLE",
+    "header.cta": "inscríbete ahora disponible",
 
     // Countdown
     "countdown.title": "DEL 21 AL 23 DE NOVIEMBRE",
@@ -86,7 +86,7 @@ const translations = {
     "location.phone": "Teléfono",
     "location.email": "info@congresoaes.com",
     "location.phoneNumber": "+34 912 345 678",
-    "location.map": "Ver en Google Maps",
+    "location.map": "ver en google maps",
 
     // Gallery
     "gallery.title": "EDICIÓN ANTERIOR - OVIEDO 2022",
@@ -104,7 +104,7 @@ const translations = {
     "email.description":
       "Suscríbete a nuestra newsletter para recibir las últimas actualizaciones sobre el Congreso AES y no perderte ninguna novedad.",
     "email.placeholder": "Tu email",
-    "email.subscribe": "SUSCRIBIRSE",
+    "email.subscribe": "suscribirse",
     "email.thanks": "¡Gracias por suscribirte!",
     "email.thanksMessage": "Te mantendremos informado sobre todas las novedades del Congreso AES.",
     "email.error.required": "Por favor, introduce tu email",
@@ -113,7 +113,7 @@ const translations = {
 
     // Final CTA
     "cta.title": "NO TE PIERDAS ESTE GRAN EVENTO",
-    "cta.button": "INSCRÍBETE AHORA",
+    "cta.button": "inscríbete ahora",
 
     // Footer
     "footer.location": "MADRID",
@@ -137,7 +137,7 @@ const translations = {
     "header.title": "AES",
     "header.subtitle": "II INTERNATIONAL TAILORING CONGRESS",
     "header.description": "Europe's most prestigious tailoring event",
-    "header.cta": "REGISTER NOW AVAILABLE",
+    "header.cta": "register now available",
 
     // Countdown
     "countdown.title": "NOVEMBER 21ST TO 23RD",
@@ -205,7 +205,7 @@ const translations = {
     "location.phone": "Phone",
     "location.email": "info@congresoaes.com",
     "location.phoneNumber": "+34 912 345 678",
-    "location.map": "View on Google Maps",
+    "location.map": "view on google maps",
 
     // Gallery
     "gallery.title": "PREVIOUS EDITION - OVIEDO 2022",
@@ -223,7 +223,7 @@ const translations = {
     "email.description":
       "Subscribe to our newsletter to receive the latest updates about the AES Congress and don't miss any news.",
     "email.placeholder": "Your email",
-    "email.subscribe": "SUBSCRIBE",
+    "email.subscribe": "subscribe",
     "email.thanks": "Thank you for subscribing!",
     "email.thanksMessage": "We'll keep you informed about all AES Congress news.",
     "email.error.required": "Please enter your email",
@@ -232,7 +232,7 @@ const translations = {
 
     // Final CTA
     "cta.title": "DON'T MISS THIS GREAT EVENT",
-    "cta.button": "REGISTER NOW",
+    "cta.button": "register now",
 
     // Footer
     "footer.location": "MADRID",

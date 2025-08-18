@@ -36,7 +36,7 @@ export default function Home() {
             href="#entradas"
             className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-3 rounded-md transition-colors"
           >
-            {t("header.cta")}
+            {t("header.cta").toLowerCase()}
           </Link>
         </div>
       </header>
@@ -492,7 +492,7 @@ export default function Home() {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="text-[#EBB37E] hover:text-[#d4a06b] font-medium text-sm transition-colors flex items-center mx-auto"
                   >
-                    {isExpanded ? "Ver menos eventos" : "Ver más eventos"}
+                    {isExpanded ? "ver menos eventos" : "ver más eventos"}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className={`h-4 w-4 ml-1 transition-transform ${isExpanded ? "rotate-180" : ""}`}
@@ -575,7 +575,7 @@ export default function Home() {
       </section>
 
       {/* Sponsor Logos */}
-      <section className="py-10 bg-[#F7F3EF]">
+      <section className="py-16 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-8">{t("sponsors.ourSponsors")}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
@@ -627,7 +627,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-block bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-4 rounded-lg transition-colors text-lg"
                 >
-                  {t("location.map")}
+                  {t("location.map").toLowerCase()}
                 </Link>
               </div>
             </div>
@@ -677,7 +677,7 @@ export default function Home() {
             href="#entradas"
             className="inline-flex items-center bg-[#3A3226] hover:bg-[#2a251a] text-[#F7F3EF] font-medium px-8 py-4 rounded-md transition-colors text-lg"
           >
-            {t("cta.button")}
+            {t("cta.button").toLowerCase()}
           </Link>
         </div>
       </section>

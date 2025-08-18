@@ -1,11 +1,11 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import { LanguageProvider } from "@/contexts/language-context"
 import LanguageSwitcher from "@/components/language-switcher"
 
-const inter = Inter({ subsets: ["latin"] })
+const montserrat = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Congreso AES - El evento de sastrería más importante de España",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <LanguageProvider>
           <LanguageSwitcher />
           {children}
