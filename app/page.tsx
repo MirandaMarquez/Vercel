@@ -82,16 +82,7 @@ export default function Home() {
       {/* Program */}
       <section className="py-20 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
-        <div
-          className="absolute inset-0 opacity-100 mx-[100] mr-[] ml-[70%] mb-[-20px]"
-          style={{
-            backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector_Fondo-npC32PdUcLedJAtDTbRMPSlGGdNjcY.svg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
+        
 
         {/* Decorative dotted circle */}
         <div className="absolute top-10 right-10 hidden lg:block"></div>
@@ -102,7 +93,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
             {/* Day 1 - Friday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[320px]">
-              <div className="flex items-center mb-4">
+              <div className="flex mb-4 items-start">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +111,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226]">VIERNES 21 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">VIERNES 21 NOVIEMBRE</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location1")}</p>
                 </div>
               </div>
@@ -153,7 +144,7 @@ export default function Home() {
 
             {/* Day 2 - Saturday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md min-h-[320px]">
-              <div className="flex items-center mb-4">
+              <div className="flex mb-4 items-start">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +162,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226]">SÁBADO 22 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">SÁBADO 22 NOVIEMBRE</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location2")}</p>
                 </div>
               </div>
@@ -516,7 +507,7 @@ export default function Home() {
 
             {/* Day 3 - Sunday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[320px]">
-              <div className="flex items-center mb-4">
+              <div className="flex mb-4 items-start">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -534,7 +525,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226]">DOMINGO 23 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">DOMINGO 23 NOVIEMBRE</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location3")}</p>
                 </div>
               </div>
