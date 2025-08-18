@@ -52,7 +52,7 @@ export default function Gallery() {
   return (
     <div className="max-w-5xl mx-auto">
       <div className="relative">
-        <div className="relative h-[400px] overflow-hidden rounded-lg shadow-xl">
+        <div className="relative h-[600px] overflow-hidden rounded-lg shadow-xl">
           <Image
             src={images[activeIndex].src || "/placeholder.svg"}
             alt={images[activeIndex].alt}

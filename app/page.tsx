@@ -667,7 +667,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#3A3226] text-[#F7F3EF] py-20">
+      <footer className="bg-[#3A3226] text-[#F2DBC5] py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Organiza */}
@@ -685,7 +685,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Entidad subvencionada moved here */}
-              <p className="text-white text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
+              <p className="text-[#F2DBC5] text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
             </div>
 
             {/* Colabora */}
@@ -716,7 +716,7 @@ export default function Home() {
             {/* Contacto */}
             <div className="text-center md:text-right">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Contacto:</h4>
-              <div className="space-y-1 text-white text-sm">
+              <div className="space-y-1 text-[#F2DBC5] text-sm">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
                 <div className="pt-2 space-y-0">
@@ -736,12 +736,14 @@ export default function Home() {
                   href="https://www.aesastreria.es/politica-de-privacidad/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#EBB37E] transition-colors text-xs"
+                  className="text-[#F2DBC5] hover:text-[#EBB37E] transition-colors text-xs"
                 >
                   Política de Privacidad
                 </Link>
               </div>
-              <p className="text-white text-xs">© {new Date().getFullYear()} AES Asociación Española de Sastrería</p>
+              <p className="text-[#F2DBC5] text-xs">
+                © {new Date().getFullYear()} AES Asociación Española de Sastrería
+              </p>
             </div>
           </div>
         </div>
