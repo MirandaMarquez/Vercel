@@ -17,7 +17,7 @@ const translations = {
     // Header
     "header.title": "AES",
     "header.subtitle": "II CONGRESO INTERNACIONAL DE SASTRERÍA",
-    "header.description": "El evento de sastrería más prestigioso de Europa",
+    "header.description": "Un encuentro único que reúne a la comunidad de la sastrería internacional.",
     "header.cta": "inscríbete ahora disponible",
 
     // Countdown
@@ -136,7 +136,7 @@ const translations = {
     // Header
     "header.title": "AES",
     "header.subtitle": "II INTERNATIONAL TAILORING CONGRESS",
-    "header.description": "Europe's most prestigious tailoring event",
+    "header.description": "A unique gathering that brings together the international tailoring community.",
     "header.cta": "register now available",
 
     // Countdown
