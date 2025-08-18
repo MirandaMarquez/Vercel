@@ -599,7 +599,7 @@ export default function Home() {
             <div className="space-y-8 border-t-4 border-[rgba(235,179,126,1)] border-dashed mx-[] px-0 my-[] py-10">
               <h2 className="text-3xl font-bold text-[#F2DBC5] mb-8">{t("location.title")}</h2>
 
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-[#F2DBC5]">{t("location.venue")}</h3>
                 <p className="text-[#F2DBC5] text-lg leading-relaxed">{t("location.address")}</p>
               </div>
@@ -618,7 +618,7 @@ export default function Home() {
 
             {/* Right Image */}
             <div className="relative">
-              <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[300px] lg:h-[350px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image src="/museo-del-traje.jpg" alt={t("location.venue")} fill className="object-cover" />
               </div>
             </div>
