@@ -32,7 +32,7 @@ export default function EmailSignup() {
   return (
     <div className="max-w-xl mx-auto">
       {submitted ? (
-        <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md text-center border-2 border-[#EBB37E]">
+        <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 mx-auto text-green-600 mb-4"
@@ -51,7 +51,7 @@ export default function EmailSignup() {
           <p className="text-[#3A3226]">{t("email.thanksMessage")}</p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="bg-[#F7F3EF] p-6 rounded-lg shadow-md border-2 border-[#EBB37E]">
+        <form onSubmit={handleSubmit} className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-4">
             <input
               type="email"
