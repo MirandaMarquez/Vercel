@@ -101,7 +101,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
             {/* Day 1 - Friday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[400px]">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex items-center mb-4">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
 
             {/* Day 2 - Saturday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md min-h-[400px]">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md min-h-[320px]">
               <div className="flex items-center mb-4">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
@@ -515,7 +515,7 @@ export default function Home() {
             </div>
 
             {/* Day 3 - Sunday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[400px]">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex items-center mb-4">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
