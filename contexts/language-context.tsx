@@ -75,7 +75,7 @@ const translations = {
     "sponsors.title": "INFORMACIÓN PARA PATROCINADORES",
     "sponsors.description":
       "Conviértase en patrocinador del Congreso AES y conecte con los profesionales más destacados del sector de la sastrería. Ofrecemos diferentes paquetes de patrocinio adaptados a sus necesidades.",
-    "sponsors.download": "descargar Dossier Patrocinadores",
+    "sponsors.download": "descargar dossier patrocinadores",
     "sponsors.ourSponsors": "PATROCINADORES OFICIALES",
 
     // Location
@@ -194,7 +194,7 @@ const translations = {
     "sponsors.title": "INFORMATION FOR SPONSORS",
     "sponsors.description":
       "Become a sponsor of the AES Congress and connect with the most outstanding professionals in the tailoring sector. We offer different sponsorship packages adapted to your needs.",
-    "sponsors.download": "download Sponsors Dossier",
+    "sponsors.download": "download sponsors dossier",
     "sponsors.ourSponsors": "OFFICIAL SPONSORS",
 
     // Location
