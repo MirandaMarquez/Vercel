@@ -1,12 +1,17 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 
 export default function Gallery() {
   const { t } = useLanguage()
   const [activeIndex, setActiveIndex] = useState(0)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const images = [
     {
@@ -47,6 +52,10 @@ export default function Gallery() {
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
+  }
+
+  if (!mounted) {
+    return <div className="max-w-5xl mx-auto h-[500px] bg-gray-200 animate-pulse rounded-lg" />
   }
 
   return (

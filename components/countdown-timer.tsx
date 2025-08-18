@@ -42,13 +42,22 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
       return newTimeLeft
     }
 
-    setTimeLeft(calculateTimeLeft())
+    // Set initial time immediately
+    const initialTime = calculateTimeLeft()
+    setTimeLeft(initialTime)
 
+    // Set up interval
     const intervalId = setInterval(() => {
-      setTimeLeft(calculateTimeLeft())
+      const newTime = calculateTimeLeft()
+      setTimeLeft(newTime)
     }, 1000)
 
-    return () => clearInterval(intervalId)
+    // Cleanup function
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId)
+      }
+    }
   }, [targetDate])
 
   return (

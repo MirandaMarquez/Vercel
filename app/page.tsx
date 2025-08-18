@@ -93,12 +93,15 @@ export default function Home() {
           }}
         />
 
+        {/* Decorative dotted circle */}
+        <div className="absolute top-10 right-10 hidden lg:block"></div>
+
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Day 1 - Friday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-fit">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
@@ -512,7 +515,7 @@ export default function Home() {
             </div>
 
             {/* Day 3 - Sunday */}
-            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-fit">
+            <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
