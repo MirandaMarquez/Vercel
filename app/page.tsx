@@ -83,7 +83,7 @@ export default function Home() {
       <section className="py-20 bg-[#3A3226] relative overflow-hidden">
         {/* SVG Background Overlay */}
         <div
-          className="absolute inset-0 opacity-100 mx-[100] mr-[] ml-[50%] mb-[-20px]"
+          className="absolute inset-0 opacity-100 mx-[100] mr-[] ml-[70%] mb-[-20px]"
           style={{
             backgroundImage:
               "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector_Fondo-npC32PdUcLedJAtDTbRMPSlGGdNjcY.svg')",
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="absolute top-10 right-10 hidden lg:block"></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-[#F2DBC5] mb-12">{t("program.title")}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Day 1 - Friday */}
@@ -106,7 +106,7 @@ export default function Home() {
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-[#F2DBC5]"
+                    className="h-5 w-5 text-[#EBB37E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -127,10 +127,10 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#F2DBC5]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -157,7 +157,7 @@ export default function Home() {
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-[#F2DBC5]"
+                    className="h-5 w-5 text-[#EBB37E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -179,10 +179,10 @@ export default function Home() {
               <div className="space-y-2">
                 {/* Primeros 3 eventos siempre visibles */}
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#F2DBC5]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -201,10 +201,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#F2DBC5]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -223,10 +223,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#F2DBC5]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -249,10 +249,10 @@ export default function Home() {
                 {isExpanded && (
                   <div className="space-y-2 mt-2">
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -271,10 +271,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -293,10 +293,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -315,10 +315,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -337,10 +337,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -359,10 +359,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -381,10 +381,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -403,10 +403,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -425,10 +425,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -447,10 +447,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -469,10 +469,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-3 w-3 text-[#F2DBC5]"
+                          className="h-4 w-4 text-[#EBB37E]"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -520,7 +520,7 @@ export default function Home() {
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-[#F2DBC5]"
+                    className="h-5 w-5 text-[#EBB37E]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -541,10 +541,10 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-3 w-3 text-[#F2DBC5]"
+                      className="h-4 w-4 text-[#EBB37E]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
