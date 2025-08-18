@@ -103,7 +103,7 @@ export default function Home() {
             {/* Day 1 - Friday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md">
               <div className="flex mb-4 items-start">
-                <div className="h-6 bg-transparent rounded-none flex items-center justify-center mr-[px] w-6">
+                <div className="h-6 bg-transparent rounded-none flex justify-center mr-[px] w-8 items-start text-left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-[#EBB37E] text-left"
@@ -130,7 +130,7 @@ export default function Home() {
                   <div className="h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0 w-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-[#EBB37E] w-[18px] h-[18px]"
+                      className="text-[#EBB37E] w-[24] h-4"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
