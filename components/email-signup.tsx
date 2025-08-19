@@ -10,7 +10,7 @@ export default function EmailSignup() {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
     if (!email) {
@@ -23,10 +23,27 @@ export default function EmailSignup() {
       return
     }
 
-    console.log("Email enviado:", email)
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
 
-    setSubmitted(true)
-    setError("")
+      if (response.ok) {
+        setSubmitted(true)
+        setError("")
+        console.log("Email guardado exitosamente:", email)
+      } else {
+        const errorData = await response.json()
+        setError(errorData.error || 'Error al guardar el email')
+      }
+    } catch (error) {
+      console.error('Error al guardar email:', error)
+      setError('Error de conexión. Inténtalo de nuevo.')
+    }
   }
 
   return (
