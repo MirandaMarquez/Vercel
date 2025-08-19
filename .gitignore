@@ -37,3 +37,8 @@ next-env.d.ts
 
 # Emails de suscriptores (datos privados)
 /data/
+
+# Archivos de npm que Vercel maneja automáticamente
+package-lock.json
+node_modules/
+.next/
