@@ -562,27 +562,115 @@ export default function Home() {
       <section className="py-20 bg-[#F7F3EF]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-7">{t("sponsors.ourSponsors")}</h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {/* Logo real de Pressing */}
-            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm p-4 h-[120px]">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
+            {/* Davion */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
               <Image
-                src="/logo-pressing.svg"
-                alt="Pressing Group"
-                width={220}
-                height={80}
-                className="w-full h-full object-contain"
+                src="/sponsors/davion-logo.jpg"
+                alt="Davion"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
               />
             </div>
 
-            {/* Espacios promocionales para otros patrocinadores */}
-            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300 h-28">
-              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+            {/* Dormeuil Cloth */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/dormeuil-logo.jpg"
+                alt="Dormeuil Cloth"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
             </div>
-            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300 h-28">
-              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+
+            {/* Carnet Como */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/carnet-como-logo.jpg"
+                alt="Carnet Como"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
             </div>
-            <div className="w-48 md:w-56 bg-white rounded-lg flex items-center justify-center shadow-sm border-2 border-dashed border-gray-300 h-28">
-              <span className="text-gray-400 font-medium text-sm text-center px-2">Tu logo aquí</span>
+
+            {/* Vitale Barberis Canonico */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/vitale-barberis-logo.jpg"
+                alt="Vitale Barberis Canonico"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Fratelli Tallia di Delfino */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/fratelli-tallia-logo.jpg"
+                alt="Fratelli Tallia di Delfino"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Holland & Sherry */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/holland-sherry-logo.jpg"
+                alt="Holland & Sherry"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Drago */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/drago-logo.jpg"
+                alt="Drago"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Scabal */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/scabal-logo.jpg"
+                alt="Scabal"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* IDF Lining */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/idf-lining-logo.jpg"
+                alt="IDF Lining"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Group Pressing+ */}
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-white rounded-lg shadow-sm p-4">
+              <Image
+                src="/sponsors/pressing-group-logo.jpg"
+                alt="Group Pressing+"
+                width={200}
+                height={120}
+                className="object-contain max-w-full max-h-full"
+              />
             </div>
           </div>
         </div>
@@ -601,37 +689,35 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-                     <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("sponsors.title")}</h2>
-           <div className="flex justify-center">
-             <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl text-center">
-               <p className="text-[#3A3226] text-lg mb-6 leading-relaxed">
-                 {t("sponsors.description")}
-               </p>
-               <button
-                 onClick={() => {
-                   const link = document.createElement('a');
-                   link.href = '/Dossier_Patrocinadores_Congreso_2025_CAST_v3.pdf';
-                   link.download = 'Dossier Patrocinadores Congreso 2025.pdf';
-                   link.click();
-                 }}
-                 className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-lg transition-colors flex items-center mx-auto"
-               >
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   className="h-5 w-5 mr-2"
-                   fill="none"
-                   viewBox="0 0 24 24"
-                   stroke="currentColor"
-                 >
-                   <path
-                     strokeLinecap="round"
-                     strokeLinejoin="round"
-                     strokeWidth={2}
-                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                   />
-                 </svg>
-                 {t("sponsors.download")}
-               </button>
+          <h2 className="text-3xl font-bold text-center text-[#3A3226] mb-12">{t("sponsors.title")}</h2>
+          <div className="flex justify-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl text-center">
+              <p className="text-[#3A3226] text-lg mb-6 leading-relaxed">{t("sponsors.description")}</p>
+              <button
+                onClick={() => {
+                  const link = document.createElement("a")
+                  link.href = "/Dossier_Patrocinadores_Congreso_2025_CAST_v3.pdf"
+                  link.download = "Dossier Patrocinadores Congreso 2025.pdf"
+                  link.click()
+                }}
+                className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-lg transition-colors flex items-center mx-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                {t("sponsors.download")}
+              </button>
             </div>
           </div>
         </div>
