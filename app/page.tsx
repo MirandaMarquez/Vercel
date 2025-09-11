@@ -98,7 +98,7 @@ export default function Home() {
             {/* Day 1 - Friday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex mb-4 items-start">
-                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-[#EBB37E]"
@@ -149,7 +149,7 @@ export default function Home() {
             {/* Day 2 - Saturday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md min-h-[320px]">
               <div className="flex mb-4 items-start">
-                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-[#EBB37E]"
@@ -512,7 +512,7 @@ export default function Home() {
             {/* Day 3 - Sunday */}
             <div className="bg-[#F7F3EF] p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex mb-4 items-start">
-                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-center mr-3">
+                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-[#EBB37E]"
@@ -809,7 +809,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#3A3226] text-[#F2DBC5] py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-7">
+          <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5">
             {/* Organiza */}
             <div className="text-center md:text-left leading-4">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Organiza:</h4>
@@ -820,7 +820,7 @@ export default function Home() {
                     alt="AES - Asociación Española de Sastrería"
                     width={144}
                     height={80}
-                    className="w-full h-full object-contain"
+                    className="w-full object-contain h-4/5 items-start"
                   />
                 </div>
               </div>
@@ -829,7 +829,7 @@ export default function Home() {
             </div>
 
             {/* Colabora */}
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left w-max">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Colabora:</h4>
               <div className="flex items-center justify-center md:justify-start space-x-6">
                 <div className="w-48 h-16">
