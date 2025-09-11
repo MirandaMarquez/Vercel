@@ -832,21 +832,21 @@ export default function Home() {
             <div className="text-center md:text-left">
               <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Colabora:</h4>
               <div className="flex items-center justify-center md:justify-start space-x-6">
-                <div className="w-40 h-12">
+                <div className="w-48 h-16">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
                     alt="Ayuntamiento de Madrid"
-                    width={160}
-                    height={48}
+                    width={192}
+                    height={64}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-36 h-14">
+                <div className="w-44 h-18">
                   <Image
                     src="/logo-museo-traje.svg"
                     alt="Museo del Traje"
-                    width={144}
-                    height={56}
+                    width={176}
+                    height={72}
                     className="w-full h-full object-contain brightness-0 invert"
                   />
                 </div>
