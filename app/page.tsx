@@ -17,18 +17,17 @@ export default function Home() {
       {/* Header */}
       <header className="relative w-full h-[80vh] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
-        <Image src="/cabecera-hero.jpg" alt={t("header.title")} fill className="object-cover" priority />
+        <Image src="/cabecera-hero-new.jpg" alt={t("header.title")} fill className="object-cover" priority />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
-          <div className="bg-white p-6 mb-8 shadow-lg rounded-lg">
-            <div className="w-24 h-24 mx-auto mb-0">
-              <Image
-                src="/logo-aes.svg"
-                alt="AES Logo"
-                width={96}
-                height={96}
-                className="w-full h-full object-contain"
-              />
-            </div>
+          <div className="w-32 h-32 mx-auto mb-8">
+            <Image
+              src="/logo-aes-white-new.png"
+              alt="AES - Asociación Española de Sastrería - Congreso Internacional de Sastrería 2025"
+              width={128}
+              height={128}
+              className="w-full h-full object-contain"
+              priority
+            />
           </div>
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">{t("header.subtitle")}</h2>
           <p className="text-lg md:text-xl text-white mb-8 max-w-2xl">{t("header.description")}</p>
