@@ -36,7 +36,7 @@ export default function Home() {
             href="#entradas"
             className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-3 rounded-md transition-colors"
           >
-            inscripciones próximamente
+            {t("header.button").charAt(0).toUpperCase() + t("header.button").slice(1)}
           </Link>
         </div>
       </header>
@@ -716,7 +716,7 @@ export default function Home() {
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
-                {t("sponsors.download")}
+                Descargar Dossier Patrocinadores
               </button>
             </div>
           </div>
@@ -746,7 +746,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-block bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-4 rounded-lg transition-colors text-lg"
                 >
-                  {t("location.map").toLowerCase()}
+                  {t("location.map").charAt(0).toUpperCase() + t("location.map").slice(1)}
                 </Link>
               </div>
             </div>
@@ -796,7 +796,7 @@ export default function Home() {
             href="#entradas"
             className="inline-flex items-center bg-[#3A3226] hover:bg-[#2a251a] text-[#F7F3EF] font-medium px-8 py-4 rounded-md transition-colors text-lg"
           >
-            {t("cta.button").toLowerCase()}
+            {t("cta.button").charAt(0).toUpperCase() + t("cta.button").slice(1).toLowerCase()}
           </Link>
         </div>
       </section>
