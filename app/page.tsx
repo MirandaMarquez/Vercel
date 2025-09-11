@@ -9,7 +9,7 @@ import { useLanguage } from "@/contexts/language-context"
 import { useState } from "react"
 
 export default function Home() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
@@ -36,7 +36,7 @@ export default function Home() {
             href="#entradas"
             className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-8 py-3 rounded-md transition-colors"
           >
-            {t("header.button").charAt(0).toUpperCase() + t("header.button").slice(1)}
+            Inscripciones próximamente
           </Link>
         </div>
       </header>
@@ -73,7 +73,12 @@ export default function Home() {
                 aspectRatio: "210/297", // Proporción A4
               }}
             >
-              <Image src="/cartel-oficial-2025.jpg" alt={t("poster.alt")} fill className="object-contain" />
+              <Image
+                src={language === "en" ? "/cartel-oficial-2025-en.jpg" : "/cartel-oficial-2025.jpg"}
+                alt={t("poster.alt")}
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
@@ -110,7 +115,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">VIERNES 21 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">{t("program.day1")}</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location1")}</p>
                 </div>
               </div>
@@ -161,7 +166,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">SÁBADO 22 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">{t("program.day2")}</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location2")}</p>
                 </div>
               </div>
@@ -489,7 +494,7 @@ export default function Home() {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="text-[#EBB37E] hover:text-[#d4a06b] font-medium text-sm transition-colors flex items-center mx-auto"
                   >
-                    {isExpanded ? "ver menos eventos" : "ver más eventos"}
+                    {isExpanded ? "Ver menos eventos" : "Ver más eventos"}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className={`h-4 w-4 ml-1 transition-transform ${isExpanded ? "rotate-180" : ""}`}
@@ -524,7 +529,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">DOMINGO 23 NOVIEMBRE</h3>
+                  <h3 className="text-lg font-bold text-[#3A3226] leading-5">{t("program.day3")}</h3>
                   <p className="text-sm text-[#EBB37E] italic">{t("program.location3")}</p>
                 </div>
               </div>
@@ -716,7 +721,7 @@ export default function Home() {
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
-                Descargar Dossier Patrocinadores
+                {t("sponsors.download")}
               </button>
             </div>
           </div>
