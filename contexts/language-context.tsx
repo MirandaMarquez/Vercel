@@ -37,7 +37,7 @@ const translations = {
     "program.day1": "VIERNES 21 NOVIEMBRE",
     "program.day2": "SÁBADO 22 NOVIEMBRE",
     "program.day3": "DOMINGO 23 NOVIEMBRE",
-    "program.location1": "Four Seasons Hotel Madrid",
+    "program.location1": "Lugar Emblemático Madrid",
     "program.location2": "Museo del Traje Madrid",
     "program.location3": "Museo del Traje",
 
@@ -156,7 +156,7 @@ const translations = {
     "program.day1": "FRIDAY 21 NOVEMBER",
     "program.day2": "SATURDAY 22 NOVEMBER",
     "program.day3": "SUNDAY 23 NOVEMBER",
-    "program.location1": "Four Seasons Hotel Madrid",
+    "program.location1": "Emblematic Venue Madrid",
     "program.location2": "Costume Museum Madrid",
     "program.location3": "Costume Museum",
 
