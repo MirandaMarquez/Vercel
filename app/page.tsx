@@ -810,8 +810,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5">
             {/* Organiza */}
-            <div className="text-center md:text-left leading-4">
-              <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Organiza:</h4>
+            <div className="text-center md:text-left leading-4 gap-2">
+              <h4 className="text-lg font-semibold text-[#EBB37E] leading-4 gap-1 mb-3.5">Organiza:</h4>
               <div className="flex justify-center md:justify-start mb-4">
                 <div className="w-36 h-20">
                   <Image
@@ -819,7 +819,7 @@ export default function Home() {
                     alt="AES - Asociación Española de Sastrería"
                     width={144}
                     height={80}
-                    className="w-full object-contain h-4/5 items-start"
+                    className="object-contain items-start h-4/5 w-4/5"
                   />
                 </div>
               </div>
@@ -829,7 +829,7 @@ export default function Home() {
 
             {/* Colabora */}
             <div className="text-center md:text-left w-max">
-              <h4 className="text-lg font-semibold text-[#EBB37E] mb-4">Colabora:</h4>
+              <h4 className="text-lg font-semibold text-[#EBB37E] leading-4 mb-1">Colabora:</h4>
               <div className="flex items-center justify-center md:justify-start space-x-6">
                 <div className="w-48 h-16">
                   <Image
