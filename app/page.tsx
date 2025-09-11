@@ -18,7 +18,7 @@ export default function Home() {
       <header className="relative w-full h-[80vh] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image src="/cabecera-hero-new.jpg" alt={t("header.title")} fill className="object-cover" priority />
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4 py-20 h-auto">
           <div className="w-64 h-64 mx-auto mb-8">
             <Image
               src="/logo-aes-white-new.png"
