@@ -74,7 +74,7 @@ const translations = {
     // Sponsors
     "sponsors.title": "INFORMACIÓN PARA PATROCINADORES",
     "sponsors.description":
-      "Conviértase en patrocinador del Congreso AES y conecte con los profesionales más destacados del sector de la sastrería. Ofrecemos diferentes paquetes de patrocinio adaptados a sus necesidades.",
+      "Hazte patrocinador del Congreso AES y conecta con los profesionales más destacados del sector de la sastrería. Ofrecemos diferentes paquetes de patrocinio adaptados a tus necesidades.",
     "sponsors.download": "Descargar Dossier Patrocinadores",
     "sponsors.ourSponsors": "PATROCINADORES OFICIALES",
 
