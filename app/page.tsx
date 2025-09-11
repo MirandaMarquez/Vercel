@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F7F3EF]">
       {/* Header */}
-      <header className="relative w-full h-[80vh] overflow-hidden">
+      <header className="relative w-full h-[90vh] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image src="/cabecera-hero-new.jpg" alt={t("header.title")} fill className="object-cover" priority />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4 py-20 h-auto">
