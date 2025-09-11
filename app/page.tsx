@@ -700,8 +700,13 @@ export default function Home() {
               <button
                 onClick={() => {
                   const link = document.createElement("a")
-                  link.href = "/Dossier_Patrocinadores_Congreso_2025_CAST_v3.pdf"
-                  link.download = "Dossier Patrocinadores Congreso 2025.pdf"
+                  if (language === "es") {
+                    link.href = "/Dossier_Patrocinadores_Congreso_2025_ESP.pdf"
+                    link.download = "Dossier Patrocinadores Congreso 2025.pdf"
+                  } else {
+                    link.href = "/Sponsorship_Modalities_Dossier_2025_ENG (1).pdf"
+                    link.download = "Sponsorship Modalities Dossier 2025.pdf"
+                  }
                   link.click()
                 }}
                 className="bg-[#EBB37E] hover:bg-[#d4a06b] text-[#3A3226] font-medium px-6 py-3 rounded-lg transition-colors flex items-center mx-auto"
