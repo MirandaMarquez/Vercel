@@ -8,10 +8,15 @@ import LanguageSwitcher from "@/components/language-switcher"
 const montserrat = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Congreso AES - El evento de sastrería más importante de España",
-  description:
-    "Congreso AES es el evento más importante de sastrería en España. Únete a profesionales del sector para aprender, compartir y crecer.",
-    generator: 'v0.app'
+  title:
+    "Congreso Internacional de Sastrería - Un encuentro único que reúne a la comunidad de la sastrería internacional",
+  description: "Un encuentro único que reúne a la comunidad de la sastrería internacional.",
+  icons: {
+    icon: "/logo-aes.svg",
+    shortcut: "/logo-aes.svg",
+    apple: "/logo-aes.svg",
+  },
+  generator: "v0.app",
 }
 
 export default function RootLayout({
