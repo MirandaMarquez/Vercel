@@ -19,12 +19,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image src="/cabecera-hero-new.jpg" alt={t("header.title")} fill className="object-cover" priority />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4">
-          <div className="w-32 h-32 mx-auto mb-8">
+          <div className="w-48 h-48 mx-auto mb-8">
             <Image
               src="/logo-aes-white-new.png"
               alt="AES - Asociación Española de Sastrería - Congreso Internacional de Sastrería 2025"
-              width={128}
-              height={128}
+              width={192}
+              height={192}
               className="w-full h-full object-contain"
               priority
             />
