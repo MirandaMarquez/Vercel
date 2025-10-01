@@ -29,7 +29,7 @@ export default function Home() {
               priority
             />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold text-white mb-2">{t("header.subtitle")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{t("header.subtitle")}</h2>
           <p className="text-lg md:text-xl text-white mb-8 max-w-2xl">{t("header.description")}</p>
           <Link
             href="#entradas"
@@ -41,16 +41,18 @@ export default function Home() {
       </header>
 
       {/* Countdown - WHITE BACKGROUND */}
-      <section className="py-20 bg-surface">
+      <section className="py-20 bg-surface overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-surface-foreground mb-4">{t("countdown.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-surface-foreground mb-4">
+            {t("countdown.title")}
+          </h2>
           <p className="text-center text-surface-foreground mb-12">{t("countdown.subtitle")}</p>
           <CountdownTimer targetDate="2025-11-21T20:00:00" />
         </div>
       </section>
 
       {/* Official Poster - LIGHT BEIGE BACKGROUND */}
-      <section className="py-20 bg-background relative">
+      <section className="py-20 bg-background relative overflow-x-hidden">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -62,15 +64,11 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-12">{t("poster.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">{t("poster.title")}</h2>
           <div className="flex justify-center">
             <div
-              className="relative w-full shadow-2xl rounded-lg overflow-hidden"
-              style={{
-                maxWidth: "67.5vh",
-                height: "95vh",
-                aspectRatio: "210/297",
-              }}
+              className="relative w-full max-w-md mx-auto shadow-2xl rounded-lg overflow-hidden"
+              style={{ aspectRatio: "210/297" }}
             >
               <Image
                 src={language === "en" ? "/cartel-oficial-2025-en.jpg" : "/cartel-oficial-2025.jpg"}
@@ -84,9 +82,11 @@ export default function Home() {
       </section>
 
       {/* Program - DARK BROWN BACKGROUND */}
-      <section className="py-20 bg-primary relative overflow-hidden">
+      <section className="py-20 bg-primary relative overflow-hidden overflow-x-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-primary-foreground mb-12">{t("program.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-primary-foreground mb-12">
+            {t("program.title")}
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
             {/* Day 1 - Friday */}
@@ -558,9 +558,11 @@ export default function Home() {
       </section>
 
       {/* Sponsor Logos - WHITE BACKGROUND (as in reference) */}
-      <section className="py-20 bg-surface">
+      <section className="py-20 bg-surface overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-surface-foreground mb-7">{t("sponsors.ourSponsors")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-surface-foreground mb-7">
+            {t("sponsors.ourSponsors")}
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
             {/* Davion */}
             <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
@@ -676,7 +678,7 @@ export default function Home() {
       </section>
 
       {/* Información para Patrocinadores - LIGHT BEIGE BACKGROUND */}
-      <section className="py-20 bg-background relative">
+      <section className="py-20 bg-background relative overflow-x-hidden">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -688,7 +690,7 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-12">{t("sponsors.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">{t("sponsors.title")}</h2>
           <div className="flex justify-center">
             <div className="bg-surface p-8 rounded-lg shadow-lg max-w-2xl text-center">
               <p className="text-surface-foreground text-lg mb-6 leading-relaxed">{t("sponsors.description")}</p>
@@ -728,12 +730,14 @@ export default function Home() {
       </section>
 
       {/* Location - DARK BROWN BACKGROUND */}
-      <section className="py-20 bg-primary relative">
+      <section className="py-20 bg-primary relative overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed">
             {/* Left Content */}
             <div className="space-y-8 border-t-4 border-accent border-dashed mx-[] px-0 my-[] py-12">
-              <h2 className="text-3xl font-bold text-primary-foreground mb-8 leading-7">{t("location.title")}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8 leading-7">
+                {t("location.title")}
+              </h2>
 
               <div className="space-y-2">
                 <h3 className="font-bold text-primary-foreground leading-4 text-xl">{t("location.venue")}</h3>
@@ -763,15 +767,17 @@ export default function Home() {
       </section>
 
       {/* Gallery - WHITE BACKGROUND */}
-      <section className="py-20 bg-surface">
+      <section className="py-20 bg-surface overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-surface-foreground mb-4">{t("gallery.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-surface-foreground mb-4">
+            {t("gallery.title")}
+          </h2>
           <Gallery />
         </div>
       </section>
 
       {/* Email Collection - LIGHT BEIGE BACKGROUND */}
-      <section className="py-20 bg-background relative">
+      <section className="py-20 bg-background relative overflow-x-hidden">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -783,16 +789,16 @@ export default function Home() {
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-4">{t("email.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-4">{t("email.title")}</h2>
           <p className="text-center text-foreground max-w-2xl mx-auto mb-10">{t("email.description")}</p>
           <EmailSignup />
         </div>
       </section>
 
       {/* Final CTA - ACCENT COLOR BACKGROUND */}
-      <section className="py-20 bg-accent">
+      <section className="py-20 bg-accent overflow-x-hidden">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-accent-foreground mb-8">{t("cta.title")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground mb-8">{t("cta.title")}</h2>
           <Link
             href="#entradas"
             className="inline-flex items-center bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-4 rounded-md transition-colors text-lg"
@@ -803,7 +809,7 @@ export default function Home() {
       </section>
 
       {/* Footer - DARK BROWN BACKGROUND */}
-      <footer className="bg-primary text-primary-foreground py-20">
+      <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5">
             {/* Organiza */}
@@ -826,7 +832,7 @@ export default function Home() {
             {/* Colabora */}
             <div className="text-center md:text-left w-max">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex items-center justify-center md:justify-start space-x-6">
+              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 md:space-x-6">
                 <div className="w-48 h-16">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
