@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "Congreso Internacional de Sastrería - Un encuentro único que reúne a la comunidad de la sastrería internacional",
   description: "Un encuentro único que reúne a la comunidad de la sastrería internacional.",
   icons: {
-    icon: "/logo-aes.svg",
-    shortcut: "/logo-aes.svg",
-    apple: "/logo-aes.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   generator: "v0.app",
 }

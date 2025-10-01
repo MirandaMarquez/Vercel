@@ -119,7 +119,7 @@ export default function Home() {
                   <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center flex-shrink-0 mt-1 mr-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-accent my-[] py-0 w-4 h-4 mt-[]"
+                      className="h-5 w-5 text-accent"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -561,113 +561,113 @@ export default function Home() {
       <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-surface-foreground mb-7">{t("sponsors.ourSponsors")}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
             {/* Davion */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/davion-logo.jpg"
                 alt="Davion"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Dormeuil Cloth */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/dormeuil-logo.jpg"
                 alt="Dormeuil Cloth"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Carnet Como */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/carnet-como-logo.jpg"
                 alt="Carnet Como"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Vitale Barberis Canonico */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/vitale-barberis-logo.jpg"
                 alt="Vitale Barberis Canonico"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Fratelli Tallia di Delfino */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/fratelli-tallia-logo.jpg"
                 alt="Fratelli Tallia di Delfino"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Holland & Sherry */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/holland-sherry-logo.jpg"
                 alt="Holland & Sherry"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Drago */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/drago-logo.jpg"
                 alt="Drago"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Scabal */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/scabal-logo.jpg"
                 alt="Scabal"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* IDF Lining */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/idf-lining-logo.jpg"
                 alt="IDF Lining"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
 
             {/* Group Pressing+ */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/pressing-group-logo.jpg"
                 alt="Group Pressing+"
-                width={200}
-                height={120}
+                width={240}
+                height={140}
                 className="object-contain max-w-full max-h-full"
               />
             </div>
