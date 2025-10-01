@@ -40,17 +40,17 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Countdown */}
-      <section className="py-20 bg-card">
+      {/* Countdown - WHITE BACKGROUND */}
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-card-foreground mb-4">{t("countdown.title")}</h2>
-          <p className="text-center text-card-foreground mb-12">{t("countdown.subtitle")}</p>
+          <h2 className="text-3xl font-bold text-center text-surface-foreground mb-4">{t("countdown.title")}</h2>
+          <p className="text-center text-surface-foreground mb-12">{t("countdown.subtitle")}</p>
           <CountdownTimer targetDate="2025-11-21T20:00:00" />
         </div>
       </section>
 
-      {/* Official Poster */}
-      <section className="py-20 relative">
+      {/* Official Poster - LIGHT BEIGE BACKGROUND */}
+      <section className="py-20 bg-background relative">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -83,14 +83,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Program */}
+      {/* Program - DARK BROWN BACKGROUND */}
       <section className="py-20 bg-primary relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-primary-foreground mb-12">{t("program.title")}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
             {/* Day 1 - Friday */}
-            <div className="bg-secondary p-6 rounded-lg shadow-md h-[320px]">
+            <div className="bg-surface p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex mb-4 items-start">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
                   <svg
@@ -109,7 +109,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-secondary-foreground leading-5">{t("program.day1")}</h3>
+                  <h3 className="text-lg font-bold text-surface-foreground leading-5">{t("program.day1")}</h3>
                   <p className="text-sm text-accent italic">{t("program.location1")}</p>
                 </div>
               </div>
@@ -133,15 +133,15 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-secondary-foreground">20:00h</p>
-                    <p className="text-sm text-secondary-foreground">{t("program.day1.event1")}</p>
+                    <p className="font-medium text-surface-foreground">20:00h</p>
+                    <p className="text-sm text-surface-foreground">{t("program.day1.event1")}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Day 2 - Saturday */}
-            <div className="bg-secondary p-6 rounded-lg shadow-md min-h-[320px]">
+            <div className="bg-surface p-6 rounded-lg shadow-md min-h-[320px]">
               <div className="flex mb-4 items-start">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
                   <svg
@@ -160,7 +160,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-secondary-foreground leading-5">{t("program.day2")}</h3>
+                  <h3 className="text-lg font-bold text-surface-foreground leading-5">{t("program.day2")}</h3>
                   <p className="text-sm text-accent italic">{t("program.location2")}</p>
                 </div>
               </div>
@@ -185,8 +185,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-secondary-foreground text-sm">09:00h</p>
-                    <p className="text-xs text-secondary-foreground">{t("program.day2.event1")}</p>
+                    <p className="font-medium text-surface-foreground text-sm">09:00h</p>
+                    <p className="text-xs text-surface-foreground">{t("program.day2.event1")}</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -207,8 +207,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-secondary-foreground text-sm">09:30h</p>
-                    <p className="text-xs text-secondary-foreground">{t("program.day2.event2")}</p>
+                    <p className="font-medium text-surface-foreground text-sm">09:30h</p>
+                    <p className="text-xs text-surface-foreground">{t("program.day2.event2")}</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -229,8 +229,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-secondary-foreground text-sm">10:30h</p>
-                    <p className="text-xs text-secondary-foreground">{t("program.day2.event3")}</p>
+                    <p className="font-medium text-surface-foreground text-sm">10:30h</p>
+                    <p className="text-xs text-surface-foreground">{t("program.day2.event3")}</p>
                   </div>
                 </div>
 
@@ -255,8 +255,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">11:30h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event4")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">11:30h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event4")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -277,8 +277,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">12:00h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event5")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">12:00h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event5")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -299,8 +299,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">12:30h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event6")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">12:30h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event6")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -321,8 +321,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">13:15h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event7")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">13:15h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event7")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -343,8 +343,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">14:15h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event8")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">14:15h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event8")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -365,8 +365,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">15:15h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event9")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">15:15h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event9")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -387,8 +387,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">16:00h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event10")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">16:00h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event10")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -409,8 +409,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">17:00h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event11")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">17:00h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event11")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -431,8 +431,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">21:30h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event12")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">21:30h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event12")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -453,8 +453,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">23:45h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event13")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">23:45h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event13")}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -475,8 +475,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-secondary-foreground text-sm">00:00h</p>
-                        <p className="text-xs text-secondary-foreground">{t("program.day2.event14")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">00:00h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event14")}</p>
                       </div>
                     </div>
                   </div>
@@ -504,7 +504,7 @@ export default function Home() {
             </div>
 
             {/* Day 3 - Sunday */}
-            <div className="bg-secondary p-6 rounded-lg shadow-md h-[320px]">
+            <div className="bg-surface p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex mb-4 items-start">
                 <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
                   <svg
@@ -523,7 +523,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-secondary-foreground leading-5">{t("program.day3")}</h3>
+                  <h3 className="text-lg font-bold text-surface-foreground leading-5">{t("program.day3")}</h3>
                   <p className="text-sm text-accent italic">{t("program.location3")}</p>
                 </div>
               </div>
@@ -547,8 +547,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-secondary-foreground">11:00h</p>
-                    <p className="text-sm text-secondary-foreground">{t("program.day3.event1")}</p>
+                    <p className="font-medium text-surface-foreground">11:00h</p>
+                    <p className="text-sm text-surface-foreground">{t("program.day3.event1")}</p>
                   </div>
                 </div>
               </div>
@@ -557,13 +557,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sponsor Logos */}
-      <section className="py-20 bg-background">
+      {/* Sponsor Logos - WHITE BACKGROUND (as in reference) */}
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-7">{t("sponsors.ourSponsors")}</h2>
+          <h2 className="text-3xl font-bold text-center text-surface-foreground mb-7">{t("sponsors.ourSponsors")}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center">
             {/* Davion */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/davion-logo.jpg"
                 alt="Davion"
@@ -574,7 +574,7 @@ export default function Home() {
             </div>
 
             {/* Dormeuil Cloth */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/dormeuil-logo.jpg"
                 alt="Dormeuil Cloth"
@@ -585,7 +585,7 @@ export default function Home() {
             </div>
 
             {/* Carnet Como */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/carnet-como-logo.jpg"
                 alt="Carnet Como"
@@ -596,7 +596,7 @@ export default function Home() {
             </div>
 
             {/* Vitale Barberis Canonico */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/vitale-barberis-logo.jpg"
                 alt="Vitale Barberis Canonico"
@@ -607,7 +607,7 @@ export default function Home() {
             </div>
 
             {/* Fratelli Tallia di Delfino */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/fratelli-tallia-logo.jpg"
                 alt="Fratelli Tallia di Delfino"
@@ -618,7 +618,7 @@ export default function Home() {
             </div>
 
             {/* Holland & Sherry */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/holland-sherry-logo.jpg"
                 alt="Holland & Sherry"
@@ -629,7 +629,7 @@ export default function Home() {
             </div>
 
             {/* Drago */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/drago-logo.jpg"
                 alt="Drago"
@@ -640,7 +640,7 @@ export default function Home() {
             </div>
 
             {/* Scabal */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/scabal-logo.jpg"
                 alt="Scabal"
@@ -651,7 +651,7 @@ export default function Home() {
             </div>
 
             {/* IDF Lining */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/idf-lining-logo.jpg"
                 alt="IDF Lining"
@@ -662,7 +662,7 @@ export default function Home() {
             </div>
 
             {/* Group Pressing+ */}
-            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-card rounded-lg shadow-sm p-4">
+            <div className="w-full max-w-[200px] h-[120px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-4 border border-gray-100">
               <Image
                 src="/sponsors/pressing-group-logo.jpg"
                 alt="Group Pressing+"
@@ -675,8 +675,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Información para Patrocinadores */}
-      <section className="py-20 relative">
+      {/* Información para Patrocinadores - LIGHT BEIGE BACKGROUND */}
+      <section className="py-20 bg-background relative">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -690,8 +690,8 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center text-foreground mb-12">{t("sponsors.title")}</h2>
           <div className="flex justify-center">
-            <div className="bg-card p-8 rounded-lg shadow-lg max-w-2xl text-center">
-              <p className="text-card-foreground text-lg mb-6 leading-relaxed">{t("sponsors.description")}</p>
+            <div className="bg-surface p-8 rounded-lg shadow-lg max-w-2xl text-center">
+              <p className="text-surface-foreground text-lg mb-6 leading-relaxed">{t("sponsors.description")}</p>
               <button
                 onClick={() => {
                   const link = document.createElement("a")
@@ -727,7 +727,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location */}
+      {/* Location - DARK BROWN BACKGROUND */}
       <section className="py-20 bg-primary relative">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed">
@@ -762,16 +762,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery */}
-      <section className="py-20 bg-background">
+      {/* Gallery - WHITE BACKGROUND */}
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-4">{t("gallery.title")}</h2>
+          <h2 className="text-3xl font-bold text-center text-surface-foreground mb-4">{t("gallery.title")}</h2>
           <Gallery />
         </div>
       </section>
 
-      {/* Email Collection */}
-      <section className="py-20 relative">
+      {/* Email Collection - LIGHT BEIGE BACKGROUND */}
+      <section className="py-20 bg-background relative">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -789,7 +789,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA - ACCENT COLOR BACKGROUND */}
       <section className="py-20 bg-accent">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-accent-foreground mb-8">{t("cta.title")}</h2>
@@ -802,7 +802,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5">
@@ -820,7 +820,6 @@ export default function Home() {
                   />
                 </div>
               </div>
-              {/* Entidad subvencionada moved here */}
               <p className="text-primary-foreground text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
             </div>
 

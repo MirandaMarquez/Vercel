@@ -49,7 +49,7 @@ export default function EmailSignup() {
   return (
     <div className="max-w-xl mx-auto">
       {submitted ? (
-        <div className="bg-secondary p-6 rounded-lg shadow-md text-center">
+        <div className="bg-surface p-6 rounded-lg shadow-md text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 mx-auto text-green-600 mb-4"
@@ -64,18 +64,18 @@ export default function EmailSignup() {
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <h3 className="text-xl font-semibold text-secondary-foreground mb-2">{t("email.thanks")}</h3>
-          <p className="text-secondary-foreground">{t("email.thanksMessage")}</p>
+          <h3 className="text-xl font-semibold text-surface-foreground mb-2">{t("email.thanks")}</h3>
+          <p className="text-surface-foreground">{t("email.thanksMessage")}</p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="bg-secondary p-6 rounded-lg shadow-md">
+        <form onSubmit={handleSubmit} className="bg-surface p-6 rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-4">
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t("email.placeholder")}
-              className="flex-1 px-4 py-3 border-2 border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring bg-card text-foreground"
+              className="flex-1 px-4 py-3 border-2 border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring bg-surface text-surface-foreground"
               aria-label={t("email.label")}
             />
             <button
