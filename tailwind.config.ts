@@ -61,14 +61,6 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        beige: {
-          light: "#f8f5f0",
-          DEFAULT: "#e9e1d3",
-          dark: "#d4c3a3",
-        },
-        brown: {
-          DEFAULT: "#3a3226",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -65,7 +65,7 @@ export default function Gallery() {
         </div>
         <button
           onClick={handlePrev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#3a3226] p-2 rounded-full shadow-md transition-colors"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-card/80 hover:bg-card text-card-foreground p-2 rounded-full shadow-md transition-colors"
           aria-label={t("gallery.prevImage")}
         >
           <svg
@@ -80,7 +80,7 @@ export default function Gallery() {
         </button>
         <button
           onClick={handleNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#3a3226] p-2 rounded-full shadow-md transition-colors"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-card/80 hover:bg-card text-card-foreground p-2 rounded-full shadow-md transition-colors"
           aria-label={t("gallery.nextImage")}
         >
           <svg
@@ -100,7 +100,7 @@ export default function Gallery() {
             key={index}
             onClick={() => setActiveIndex(index)}
             className={`relative h-20 overflow-hidden rounded-md ${
-              index === activeIndex ? "ring-2 ring-[#d4c3a3]" : "opacity-70 hover:opacity-100"
+              index === activeIndex ? "ring-2 ring-accent" : "opacity-70 hover:opacity-100"
             }`}
           >
             <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
