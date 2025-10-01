@@ -18,7 +18,7 @@ export default function Home() {
       <header className="relative w-full h-[90vh] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image src="/cabecera-hero-new.jpg" alt={t("header.title")} fill className="object-cover" priority />
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4 py-20 h-auto">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-4 py-20 h-auto px-5">
           <div className="w-64 h-64 mx-auto mb-8">
             <Image
               src="/logo-aes-white-new.png"
@@ -695,7 +695,7 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">{t("sponsors.title")}</h2>
           <div className="flex justify-center">
             <div className="bg-surface p-8 rounded-lg shadow-lg max-w-2xl text-center">
-              <p className="text-surface-foreground text-lg mb-6 leading-relaxed">{t("sponsors.description")}</p>
+              <p className="text-surface-foreground leading-relaxed leading-4 mb-5 text-base">{t("sponsors.description")}</p>
               <button
                 onClick={() => {
                   const link = document.createElement("a")
@@ -736,7 +736,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed">
             {/* Left Content */}
-            <div className="space-y-8 border-t-4 border-accent border-dashed mx-[] px-0 my-[] py-12">
+            <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-2.5 py-1">
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8 leading-7">
                 {t("location.title")}
               </h2>
@@ -792,7 +792,7 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-4">{t("email.title")}</h2>
-          <p className="text-center text-foreground max-w-2xl mx-auto mb-10">{t("email.description")}</p>
+          <p className="text-center text-foreground max-w-2xl mx-auto mb-10 font-normal text-base">{t("email.description")}</p>
           <EmailSignup />
         </div>
       </section>
@@ -815,26 +815,26 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5 text-center">
             {/* Organiza */}
-            <div className="text-center md:text-left leading-4 gap-2">
+            <div className="md:text-left leading-4 text-left gap-0.5">
               <h4 className="text-lg font-semibold text-accent leading-4 gap-1 mb-3.5">Organiza:</h4>
-              <div className="flex justify-center md:justify-start mb-4">
-                <div className="w-36 h-20">
+              <div className="flex md:justify-start mb-4 text-left flex-row justify-start">
+                <div className="w-auto h-[ato] text-center">
                   <Image
                     src="/logo-aes-blanco.svg"
                     alt="AES - Asociación Española de Sastrería"
                     width={144}
                     height={80}
-                    className="object-contain items-start w-[70%] h-[70%]"
+                    className="object-contain items-start text-center w-auto h-[3rem]"
                   />
                 </div>
               </div>
-              <p className="text-primary-foreground text-xs">Entidad subvencionada por el Ayuntamiento de Madrid</p>
+              <p className="text-primary-foreground text-xs text-left">Entidad subvencionada por el Ayuntamiento de Madrid</p>
             </div>
 
             {/* Colabora */}
-            <div className="md:text-left w-auto">
+            <div className="md:text-left w-auto text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-start md:space-x-6">
+              <div className="flex items-center justify-center gap-4 md:flex-row md:justify-start md:space-x-6 text-left flex-row">
                 <div className="w-48 h-16">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
@@ -858,14 +858,14 @@ export default function Home() {
 
             {/* Contacto */}
             <div className="text-center md:text-right">
-              <h4 className="text-lg font-semibold text-accent mb-4">Contacto:</h4>
+              <h4 className="text-lg font-semibold text-accent mb-4 text-left">Contacto:</h4>
               <div className="space-y-1 text-primary-foreground text-sm">
-                <p>info@aesastreria.es</p>
-                <p>www.aesastreria.es</p>
+                <p className="text-left">info@aesastreria.es</p>
+                <p className="text-left">www.aesastreria.es</p>
                 <div className="pt-2 space-y-0">
-                  <p>Paseo de la</p>
-                  <p>Castellana 210 5-9,</p>
-                  <p>28046 Madrid</p>
+                  <p className="text-left">Paseo de la</p>
+                  <p className="text-left">Castellana 210 5-9,</p>
+                  <p className="text-left">28046 Madrid</p>
                 </div>
               </div>
             </div>
