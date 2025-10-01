@@ -92,7 +92,7 @@ export default function Home() {
             {/* Day 1 - Friday */}
             <div className="bg-surface p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex mb-4 items-start">
-                <div className="w-8 h-6 bg-transparent rounded-none flex items-center justify-start mr-0">
+                <div className="w-8 bg-transparent rounded-none flex items-center justify-start mr-0 h-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-accent"
@@ -116,10 +116,10 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center flex-shrink-0 mt-1 mr-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 text-accent"
+                      className="text-accent my-[] py-0 w-4 h-4 mt-[]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -168,7 +168,7 @@ export default function Home() {
               <div className="space-y-2">
                 {/* Primeros 3 eventos siempre visibles */}
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4 w-4 text-accent"
@@ -212,7 +212,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4 w-4 text-accent"
@@ -530,7 +530,7 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4 w-4 text-accent"
