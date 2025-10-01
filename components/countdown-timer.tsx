@@ -52,22 +52,22 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
   }, [targetDate])
 
   return (
-    <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto">
-      <div className="bg-background p-6 rounded-lg shadow-md text-center">
-        <div className="text-4xl md:text-5xl font-bold text-foreground">{timeLeft.days}</div>
-        <div className="text-muted-foreground font-medium mt-2 text-sm">{t("countdown.days")}</div>
+    <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto bg-white">
+      <div className="bg-secondary p-6 rounded-lg shadow-md text-center">
+        <div className="text-4xl md:text-5xl font-bold text-secondary-foreground">{timeLeft.days}</div>
+        <div className="text-accent font-medium mt-2 text-sm">{t("countdown.days")}</div>
       </div>
-      <div className="bg-background p-6 rounded-lg shadow-md text-center">
-        <div className="text-4xl md:text-5xl font-bold text-foreground">{timeLeft.hours}</div>
-        <div className="text-muted-foreground font-medium mt-2 text-sm">{t("countdown.hours")}</div>
+      <div className="bg-secondary p-6 rounded-lg shadow-md text-center">
+        <div className="text-4xl md:text-5xl font-bold text-secondary-foreground">{timeLeft.hours}</div>
+        <div className="text-accent font-medium mt-2 text-sm">{t("countdown.hours")}</div>
       </div>
-      <div className="bg-background p-6 rounded-lg shadow-md text-center">
-        <div className="text-4xl md:text-5xl font-bold text-foreground">{timeLeft.minutes}</div>
-        <div className="text-muted-foreground font-medium mt-2 text-sm">{t("countdown.minutes")}</div>
+      <div className="bg-secondary p-6 rounded-lg shadow-md text-center">
+        <div className="text-4xl md:text-5xl font-bold text-secondary-foreground">{timeLeft.minutes}</div>
+        <div className="text-accent font-medium mt-2 text-sm">{t("countdown.minutes")}</div>
       </div>
-      <div className="bg-background p-6 rounded-lg shadow-md text-center">
-        <div className="text-4xl md:text-5xl font-bold text-foreground">{timeLeft.seconds}</div>
-        <div className="text-muted-foreground font-medium mt-2 text-sm">{t("countdown.seconds")}</div>
+      <div className="bg-secondary p-6 rounded-lg shadow-md text-center">
+        <div className="text-4xl md:text-5xl font-bold text-secondary-foreground">{timeLeft.seconds}</div>
+        <div className="text-accent font-medium mt-2 text-sm">{t("countdown.seconds")}</div>
       </div>
     </div>
   )
