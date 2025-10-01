@@ -830,9 +830,9 @@ export default function Home() {
             </div>
 
             {/* Colabora */}
-            <div className="text-center md:text-left w-max">
+            <div className="text-center md:text-left mx-auto md:mx-0">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 md:space-x-6">
+              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
                 <div className="w-48 h-16">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
