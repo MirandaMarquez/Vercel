@@ -47,7 +47,9 @@ export default function Home() {
             {t("countdown.title")}
           </h2>
           <p className="text-center text-surface-foreground mb-12">{t("countdown.subtitle")}</p>
-          <CountdownTimer targetDate="2025-11-21T20:00:00" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto bg-white">
+            <CountdownTimer targetDate="2025-11-21T20:00:00" />
+          </div>
         </div>
       </section>
 
@@ -710,7 +712,7 @@ export default function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2"
+                  className="hidden md:block h-5 w-5 mr-2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -830,9 +832,9 @@ export default function Home() {
             </div>
 
             {/* Colabora */}
-            <div className="text-center md:text-left mx-auto md:mx-0">
+            <div className="text-center md:text-left w-max">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
+              <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-start md:space-x-6">
                 <div className="w-48 h-16">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
