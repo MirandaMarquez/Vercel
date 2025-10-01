@@ -813,7 +813,7 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5">
+          <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5 text-center">
             {/* Organiza */}
             <div className="text-center md:text-left leading-4 gap-2">
               <h4 className="text-lg font-semibold text-accent leading-4 gap-1 mb-3.5">Organiza:</h4>
@@ -824,7 +824,7 @@ export default function Home() {
                     alt="AES - Asociación Española de Sastrería"
                     width={144}
                     height={80}
-                    className="object-contain items-start h-4/5 w-4/5"
+                    className="object-contain items-start w-[70%] h-[70%]"
                   />
                 </div>
               </div>
@@ -832,7 +832,7 @@ export default function Home() {
             </div>
 
             {/* Colabora */}
-            <div className="text-center md:text-left w-max">
+            <div className="md:text-left w-auto">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
               <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-start md:space-x-6">
                 <div className="w-48 h-16">
