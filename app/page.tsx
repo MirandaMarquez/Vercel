@@ -190,7 +190,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                  <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4 w-4 text-accent"
@@ -238,7 +238,7 @@ export default function Home() {
                 {isExpanded && (
                   <div className="space-y-2 mt-2">
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -260,7 +260,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -282,7 +282,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -304,7 +304,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -326,7 +326,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -348,7 +348,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -370,7 +370,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -392,7 +392,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -414,7 +414,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -436,7 +436,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
@@ -458,7 +458,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 mt-0 flex-shrink-0">
+                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-4 w-4 text-accent"
