@@ -736,7 +736,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed">
             {/* Left Content */}
-            <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-2.5 py-1">
+            <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-2.5 py-12">
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8 leading-7">
                 {t("location.title")}
               </h2>
