@@ -19,6 +19,7 @@ const translations = {
     "header.subtitle": "II CONGRESO INTERNACIONAL DE SASTRERÍA",
     "header.description": "Un encuentro único que reúne a la comunidad de la sastrería internacional.",
     "header.cta": "inscríbete ahora disponible",
+    "header.registrationSoon": "Inscripciones próximamente",
 
     // Countdown
     "countdown.title": "DEL 21 AL 23 DE NOVIEMBRE",
@@ -64,6 +65,8 @@ const translations = {
     "program.day3.event1": "Visita: El protocolo a través de los siglos en el Museo del Traje",
 
     "program.viewFull": "Ver programa completo",
+    "program.viewMore": "Ver más eventos",
+    "program.viewLess": "Ver menos eventos",
 
     // Ticket Sales
     "tickets.title": "VENTA DE ENTRADAS",
@@ -138,6 +141,7 @@ const translations = {
     "header.subtitle": "II INTERNATIONAL TAILORING CONGRESS",
     "header.description": "A unique gathering that brings together the international tailoring community.",
     "header.cta": "register now available",
+    "header.registrationSoon": "Registration coming soon",
 
     // Countdown
     "countdown.title": "NOVEMBER 21ST TO 23RD",
@@ -183,6 +187,8 @@ const translations = {
     "program.day3.event1": "Visit: Protocol through the centuries at the Costume Museum",
 
     "program.viewFull": "View full program",
+    "program.viewMore": "View more events",
+    "program.viewLess": "View fewer events",
 
     // Ticket Sales
     "tickets.title": "TICKET SALES",

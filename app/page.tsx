@@ -35,7 +35,7 @@ export default function Home() {
             href="#entradas"
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-md transition-colors"
           >
-            Inscripciones próximamente
+            {t("header.registrationSoon")}
           </Link>
         </div>
       </header>
@@ -488,7 +488,7 @@ export default function Home() {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="text-accent hover:text-accent/80 font-medium text-sm transition-colors flex items-center mx-auto"
                   >
-                    {isExpanded ? "Ver menos eventos" : "Ver más eventos"}
+                    {isExpanded ? t("program.viewLess") : t("program.viewMore")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className={`h-4 w-4 ml-1 transition-transform ${isExpanded ? "rotate-180" : ""}`}
