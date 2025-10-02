@@ -47,9 +47,7 @@ export default function Home() {
             {t("countdown.title")}
           </h2>
           <p className="text-center text-surface-foreground mb-12">{t("countdown.subtitle")}</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 max-w-2xl mx-auto bg-white gap-3">
-            <CountdownTimer targetDate="2025-11-21T20:00:00" />
-          </div>
+          <CountdownTimer targetDate="2025-11-21T20:00:00" />
         </div>
       </section>
 
@@ -695,7 +693,9 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">{t("sponsors.title")}</h2>
           <div className="flex justify-center">
             <div className="bg-surface p-8 rounded-lg shadow-lg max-w-2xl text-center">
-              <p className="text-surface-foreground leading-relaxed leading-4 mb-5 text-base">{t("sponsors.description")}</p>
+              <p className="text-surface-foreground leading-relaxed leading-4 mb-5 text-base">
+                {t("sponsors.description")}
+              </p>
               <button
                 onClick={() => {
                   const link = document.createElement("a")
@@ -792,7 +792,9 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-4">{t("email.title")}</h2>
-          <p className="text-center text-foreground max-w-2xl mx-auto mb-10 font-normal text-base">{t("email.description")}</p>
+          <p className="text-center text-foreground max-w-2xl mx-auto mb-10 font-normal text-base">
+            {t("email.description")}
+          </p>
           <EmailSignup />
         </div>
       </section>
@@ -828,7 +830,9 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <p className="text-primary-foreground text-xs text-left">Entidad subvencionada por el Ayuntamiento de Madrid</p>
+              <p className="text-primary-foreground text-xs text-left">
+                Entidad subvencionada por el Ayuntamiento de Madrid
+              </p>
             </div>
 
             {/* Colabora */}
