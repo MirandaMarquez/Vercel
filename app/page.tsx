@@ -565,7 +565,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
             {/* Davion */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/davion-logo.jpg"
                 alt="Davion"
@@ -576,7 +576,7 @@ export default function Home() {
             </div>
 
             {/* Dormeuil Cloth */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/dormeuil-logo.jpg"
                 alt="Dormeuil Cloth"
@@ -587,7 +587,7 @@ export default function Home() {
             </div>
 
             {/* Carnet Como */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/carnet-como-logo.jpg"
                 alt="Carnet Como"
@@ -598,7 +598,7 @@ export default function Home() {
             </div>
 
             {/* Vitale Barberis Canonico */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/vitale-barberis-logo.jpg"
                 alt="Vitale Barberis Canonico"
@@ -609,7 +609,7 @@ export default function Home() {
             </div>
 
             {/* Fratelli Tallia di Delfino */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/fratelli-tallia-logo.jpg"
                 alt="Fratelli Tallia di Delfino"
@@ -620,7 +620,7 @@ export default function Home() {
             </div>
 
             {/* Holland & Sherry */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/holland-sherry-logo.jpg"
                 alt="Holland & Sherry"
@@ -631,7 +631,7 @@ export default function Home() {
             </div>
 
             {/* Drago */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/drago-logo.jpg"
                 alt="Drago"
@@ -642,7 +642,7 @@ export default function Home() {
             </div>
 
             {/* Scabal */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/scabal-logo.jpg"
                 alt="Scabal"
@@ -653,7 +653,7 @@ export default function Home() {
             </div>
 
             {/* IDF Lining */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/idf-lining-logo.jpg"
                 alt="IDF Lining"
@@ -664,7 +664,7 @@ export default function Home() {
             </div>
 
             {/* Group Pressing+ */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[160px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/pressing-group-logo.jpg"
                 alt="Group Pressing+"
