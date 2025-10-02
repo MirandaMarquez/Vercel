@@ -30,7 +30,7 @@ export default function Home() {
             />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{t("header.subtitle")}</h2>
-          <p className="text-lg md:text-xl text-white mb-8 max-w-2xl">{t("header.description")}</p>
+          <p className="text-lg md:text-xl text-white mb-8 max-w-2xl leading-4">{t("header.description")}</p>
           <Link
             href="#entradas"
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-md transition-colors"
@@ -693,7 +693,7 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">{t("sponsors.title")}</h2>
           <div className="flex justify-center">
             <div className="bg-surface p-8 rounded-lg shadow-lg max-w-2xl text-center">
-              <p className="text-surface-foreground leading-relaxed leading-4 mb-5 text-base">
+              <p className="text-surface-foreground leading-relaxed leading-4 mb-5 text-sm">
                 {t("sponsors.description")}
               </p>
               <button
@@ -708,7 +708,7 @@ export default function Home() {
                   }
                   link.click()
                 }}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-6 py-3 rounded-lg transition-colors flex items-center mx-auto"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-lg transition-colors flex items-center mx-auto text-sm font-semibold"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -734,7 +734,7 @@ export default function Home() {
       {/* Location - DARK BROWN BACKGROUND */}
       <section className="py-20 bg-primary relative overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-6xl mx-auto border-dashed gap-5">
             {/* Left Content */}
             <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-4 md:space-y-2.5 py-8 md:py-12">
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8 leading-7">
@@ -840,7 +840,7 @@ export default function Home() {
             {/* Colabora */}
             <div className="md:text-left w-auto text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex items-center justify-center gap-4 md:flex-row md:justify-start md:space-x-6 text-left flex-row">
+              <div className="flex items-center gap-4 md:flex-row md:justify-start md:space-x-6 text-left flex-row justify-start">
                 <div className="w-48 h-16">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
