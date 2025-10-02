@@ -736,17 +736,19 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto border-dashed">
             {/* Left Content */}
-            <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-2.5 py-12">
+            <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-4 md:space-y-2.5 py-8 md:py-12">
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8 leading-7">
                 {t("location.title")}
               </h2>
 
               <div className="space-y-2">
                 <h3 className="font-bold text-primary-foreground leading-4 text-xl">{t("location.venue")}</h3>
-                <p className="text-primary-foreground text-lg leading-relaxed leading-4">{t("location.address")}</p>
+                <p className="text-primary-foreground text-base md:text-lg leading-tight md:leading-relaxed">
+                  {t("location.address")}
+                </p>
               </div>
 
-              <div className="pt-6">
+              <div className="pt-4 md:pt-6">
                 <Link
                   href="https://maps.app.goo.gl/VaJcoBBA11WAqJnr5"
                   target="_blank"
