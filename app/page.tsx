@@ -25,11 +25,11 @@ export default function Home() {
               alt="AES - Asociación Española de Sastrería - Congreso Internacional de Sastrería 2025"
               width={256}
               height={256}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain mx-0 px-5"
               priority
             />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{t("header.subtitle")}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-6">{t("header.subtitle")}</h2>
           <p className="text-lg md:text-xl text-white mb-8 max-w-2xl leading-4">{t("header.description")}</p>
           <Link
             href="#entradas"
