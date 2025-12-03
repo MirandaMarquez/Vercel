@@ -39,7 +39,7 @@ const translations = {
     "program.day2": "SÁBADO 14 MARZO",
     "program.day3": "DOMINGO 15 MARZO",
     "program.location1": "Lugar Emblemático Madrid",
-    "program.location2": "Museo del Traje Madrid",
+    "program.location2": "Museo del Traje Madrid y Forbes House Madrid",
     "program.location3": "Museo del Traje",
 
     // Day 1 Events
@@ -57,9 +57,12 @@ const translations = {
     "program.day2.event9": "Representación sectorial",
     "program.day2.event10": "Formación artesanal e industrial",
     "program.day2.event11": "Sastrería internacional - Inspiraciones y evolución",
-    "program.day2.event12": "Cena (Lugar a confirmar)",
-    "program.day2.event13": "Entrega de Premios AES (Lugar a confirmar)",
-    "program.day2.event14": "Clausura (Lugar a confirmar)",
+    "program.day2.event12": "Cena",
+    "program.day2.event12.location": "Forbes House Madrid",
+    "program.day2.event13": "Entrega de Premios AES",
+    "program.day2.event13.location": "Forbes House Madrid",
+    "program.day2.event14": "Clausura",
+    "program.day2.event14.location": "Forbes House Madrid",
 
     // Day 3 Events
     "program.day3.event1": "Visita: El protocolo a través de los siglos en el Museo del Traje",
@@ -161,7 +164,7 @@ const translations = {
     "program.day2": "SATURDAY 14 MARCH",
     "program.day3": "SUNDAY 15 MARCH",
     "program.location1": "Emblematic Venue Madrid",
-    "program.location2": "Costume Museum Madrid",
+    "program.location2": "Costume Museum Madrid & Forbes House Madrid",
     "program.location3": "Costume Museum",
 
     // Day 1 Events
@@ -179,9 +182,12 @@ const translations = {
     "program.day2.event9": "Sectoral representation",
     "program.day2.event10": "Artisanal and industrial training",
     "program.day2.event11": "International tailoring - Inspirations and evolution",
-    "program.day2.event12": "Dinner (Venue to be confirmed)",
-    "program.day2.event13": "AES Awards Ceremony (Venue to be confirmed)",
-    "program.day2.event14": "Closing (Venue to be confirmed)",
+    "program.day2.event12": "Dinner",
+    "program.day2.event12.location": "Forbes House Madrid",
+    "program.day2.event13": "AES Awards Ceremony",
+    "program.day2.event13.location": "Forbes House Madrid",
+    "program.day2.event14": "Closing",
+    "program.day2.event14.location": "Forbes House Madrid",
 
     // Day 3 Events
     "program.day3.event1": "Visit: Protocol through the centuries at the Costume Museum",

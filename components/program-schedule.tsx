@@ -59,9 +59,9 @@ export default function ProgramSchedule() {
         { time: "15:15h", title: t("program.day2.event9") },
         { time: "16:00h", title: t("program.day2.event10") },
         { time: "17:00h", title: t("program.day2.event11") },
-        { time: "21:30h", title: t("program.day2.event12") },
-        { time: "23:45h", title: t("program.day2.event13") },
-        { time: "00:00h", title: t("program.day2.event14") },
+        { time: "21:30h", title: t("program.day2.event12"), location: t("program.day2.event12.location") },
+        { time: "23:45h", title: t("program.day2.event13"), location: t("program.day2.event13.location") },
+        { time: "00:00h", title: t("program.day2.event14"), location: t("program.day2.event14.location") },
       ],
       isShort: false,
     },
@@ -138,6 +138,7 @@ export default function ProgramSchedule() {
                   <div className="flex-1">
                     <p className={`text-[#3A3226] ${dayData.isShort ? "text-base font-medium" : "text-sm"}`}>
                       {event.title}
+                      {event.location && <span className="font-bold"> - {event.location}</span>}
                     </p>
                   </div>
                 </div>
