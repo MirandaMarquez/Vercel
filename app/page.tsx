@@ -698,11 +698,11 @@ export default function Home() {
                 onClick={() => {
                   const link = document.createElement("a")
                   if (language === "es") {
-                    link.href = "/Dossier_Patrocinadores_Congreso_2025_ESP.pdf"
-                    link.download = "Dossier Patrocinadores Congreso 2025.pdf"
+                    link.href = "/Dossier_Patrocinadores_Congreso_2026_ESP.pdf"
+                    link.download = "Dossier Patrocinadores Congreso 2026.pdf"
                   } else {
-                    link.href = "/Sponsorship_Modalities_Dossier_2025_ENG (1).pdf"
-                    link.download = "Sponsorship Modalities Dossier 2025.pdf"
+                    link.href = "/Sponsorship_Dossier_Congress_2026_ENG.pdf"
+                    link.download = "Sponsorship Dossier Congress 2026.pdf"
                   }
                   link.click()
                 }}
