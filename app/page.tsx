@@ -47,7 +47,7 @@ export default function Home() {
             {t("countdown.title")}
           </h2>
           <p className="text-center text-surface-foreground mb-12">{t("countdown.subtitle")}</p>
-          <CountdownTimer targetDate="2025-03-13T20:00:00" />
+          <CountdownTimer targetDate="2026-03-13T20:00:00" />
         </div>
       </section>
 
