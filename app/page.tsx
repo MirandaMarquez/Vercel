@@ -70,7 +70,7 @@ export default function Home() {
               style={{ aspectRatio: "210/297" }}
             >
               <Image
-                src={language === "en" ? "/cartel-oficial-2025-en.jpg" : "/cartel-oficial-2025.jpg"}
+                src={language === "en" ? "/cartel-oficial-2026-en.jpg" : "/cartel-oficial-2026.jpg"}
                 alt={t("poster.alt")}
                 fill
                 className="object-contain"

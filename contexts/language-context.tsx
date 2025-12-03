@@ -30,11 +30,11 @@ const translations = {
     "countdown.seconds": "SEG",
 
     // Official Poster
-    "poster.title": "CARTEL EDICIÓN 2025",
-    "poster.alt": "Cartel Oficial Congreso AES 2025",
+    "poster.title": "CARTEL EDICIÓN 2026",
+    "poster.alt": "Cartel Oficial Congreso AES 2026",
 
     // Program
-    "program.title": "PROGRAMA 2025",
+    "program.title": "PROGRAMA 2026",
     "program.day1": "VIERNES 13 MARZO",
     "program.day2": "SÁBADO 14 MARZO",
     "program.day3": "DOMINGO 15 MARZO",
@@ -71,7 +71,7 @@ const translations = {
     // Ticket Sales
     "tickets.title": "VENTA DE ENTRADAS",
     "tickets.description":
-      "Las inscripciones para el Congreso AES 2025 ya están abiertas. Reserve su plaza ahora y benefíciese de la tarifa anticipada.",
+      "Las inscripciones para el Congreso AES 2026 ya están abiertas. Reserve su plaza ahora y benefíciese de la tarifa anticipada.",
     "tickets.platform": "Plataforma de inscripción",
 
     // Sponsors
@@ -152,11 +152,11 @@ const translations = {
     "countdown.seconds": "SEC",
 
     // Official Poster
-    "poster.title": "2025 EDITION POSTER",
-    "poster.alt": "AES Congress 2025 Official Poster",
+    "poster.title": "2026 EDITION POSTER",
+    "poster.alt": "AES Congress 2026 Official Poster",
 
     // Program
-    "program.title": "2025 PROGRAM",
+    "program.title": "2026 PROGRAM",
     "program.day1": "FRIDAY 13 MARCH",
     "program.day2": "SATURDAY 14 MARCH",
     "program.day3": "SUNDAY 15 MARCH",
@@ -193,7 +193,7 @@ const translations = {
     // Ticket Sales
     "tickets.title": "TICKET SALES",
     "tickets.description":
-      "Registration for AES Congress 2025 is now open. Reserve your spot now and benefit from the early bird rate.",
+      "Registration for AES Congress 2026 is now open. Reserve your spot now and benefit from the early bird rate.",
     "tickets.platform": "Registration platform",
 
     // Sponsors
