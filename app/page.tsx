@@ -47,7 +47,7 @@ export default function Home() {
             {t("countdown.title")}
           </h2>
           <p className="text-center text-surface-foreground mb-12">{t("countdown.subtitle")}</p>
-          <CountdownTimer targetDate="2025-11-21T20:00:00" />
+          <CountdownTimer targetDate="2025-03-13T20:00:00" />
         </div>
       </section>
 
@@ -56,8 +56,7 @@ export default function Home() {
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/83a3df5c6e214b6c369f6b4360604de279697fcb.jpg-NPCaXInxOoRMy3O4QXwHTQ2nkyrAH8.jpeg')",
+            backgroundImage: "url('/images/83a3df5c6e214b6c369f6b4360604de279697fcb.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -682,8 +681,7 @@ export default function Home() {
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/83a3df5c6e214b6c369f6b4360604de279697fcb.jpg-NPCaXInxOoRMy3O4QXwHTQ2nkyrAH8.jpeg')",
+            backgroundImage: "url('/images/83a3df5c6e214b6c369f6b4360604de279697fcb.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -785,8 +783,7 @@ export default function Home() {
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/83a3df5c6e214b6c369f6b4360604de279697fcb.jpg-NPCaXInxOoRMy3O4QXwHTQ2nkyrAH8.jpeg')",
+            backgroundImage: "url('/images/83a3df5c6e214b6c369f6b4360604de279697fcb.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

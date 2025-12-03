@@ -22,7 +22,7 @@ const translations = {
     "header.registrationSoon": "Inscripciones próximamente",
 
     // Countdown
-    "countdown.title": "DEL 21 AL 23 DE NOVIEMBRE",
+    "countdown.title": "DEL 13 AL 15 DE MARZO",
     "countdown.subtitle": "Faltan tan solo estos días",
     "countdown.days": "DÍAS",
     "countdown.hours": "HORAS",
@@ -35,9 +35,9 @@ const translations = {
 
     // Program
     "program.title": "PROGRAMA 2025",
-    "program.day1": "VIERNES 21 NOVIEMBRE",
-    "program.day2": "SÁBADO 22 NOVIEMBRE",
-    "program.day3": "DOMINGO 23 NOVIEMBRE",
+    "program.day1": "VIERNES 13 MARZO",
+    "program.day2": "SÁBADO 14 MARZO",
+    "program.day3": "DOMINGO 15 MARZO",
     "program.location1": "Lugar Emblemático Madrid",
     "program.location2": "Museo del Traje Madrid",
     "program.location3": "Museo del Traje",
@@ -144,7 +144,7 @@ const translations = {
     "header.registrationSoon": "Registration coming soon",
 
     // Countdown
-    "countdown.title": "NOVEMBER 21ST TO 23RD",
+    "countdown.title": "MARCH 13TH TO 15TH",
     "countdown.subtitle": "Only these days left",
     "countdown.days": "DAYS",
     "countdown.hours": "HOURS",
@@ -157,9 +157,9 @@ const translations = {
 
     // Program
     "program.title": "2025 PROGRAM",
-    "program.day1": "FRIDAY 21 NOVEMBER",
-    "program.day2": "SATURDAY 22 NOVEMBER",
-    "program.day3": "SUNDAY 23 NOVEMBER",
+    "program.day1": "FRIDAY 13 MARCH",
+    "program.day2": "SATURDAY 14 MARCH",
+    "program.day3": "SUNDAY 15 MARCH",
     "program.location1": "Emblematic Venue Madrid",
     "program.location2": "Costume Museum Madrid",
     "program.location3": "Costume Museum",
