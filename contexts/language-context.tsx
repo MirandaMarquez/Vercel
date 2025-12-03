@@ -92,7 +92,7 @@ const translations = {
     "location.phone": "Teléfono",
     "location.email": "info@congresoaes.com",
     "location.phoneNumber": "+34 912 345 678",
-    "location.map": "ver en google maps",
+    "location.map": "Ver en Google Maps",
 
     // Gallery
     "gallery.title": "EDICIÓN ANTERIOR - OVIEDO 2022",
@@ -108,9 +108,9 @@ const translations = {
     // Email Signup
     "email.title": "MANTENTE INFORMADO",
     "email.description":
-      "Suscríbete a nuestra newsletter para recibir las últimas actualizaciones sobre el Congreso AES y no perderte ninguna novedad.",
+      "Suscríbete para recibir las últimas actualizaciones sobre el Congreso AES y no perderte ninguna novedad.",
     "email.placeholder": "Tu email",
-    "email.subscribe": "suscribirse",
+    "email.subscribe": "Suscribirse",
     "email.thanks": "¡Gracias por suscribirte!",
     "email.thanksMessage": "Te mantendremos informado sobre todas las novedades del Congreso AES.",
     "email.error.required": "Por favor, introduce tu email",
@@ -217,7 +217,7 @@ const translations = {
     "location.phone": "Phone",
     "location.email": "info@congresoaes.com",
     "location.phoneNumber": "+34 912 345 678",
-    "location.map": "view on google maps",
+    "location.map": "View on Google Maps",
 
     // Gallery
     "gallery.title": "PREVIOUS EDITION - OVIEDO 2022",
@@ -232,10 +232,9 @@ const translations = {
 
     // Email Signup
     "email.title": "STAY INFORMED",
-    "email.description":
-      "Subscribe to our newsletter to receive the latest updates about the AES Congress and don't miss any news.",
+    "email.description": "Subscribe to receive the latest updates about the AES Congress and don't miss any news.",
     "email.placeholder": "Your email",
-    "email.subscribe": "subscribe",
+    "email.subscribe": "Subscribe",
     "email.thanks": "Thank you for subscribing!",
     "email.thanksMessage": "We'll keep you informed about all AES Congress news.",
     "email.error.required": "Please enter your email",

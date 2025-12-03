@@ -818,16 +818,14 @@ export default function Home() {
             {/* Organiza */}
             <div className="md:text-left leading-4 text-left gap-0.5">
               <h4 className="text-lg font-semibold text-accent leading-4 gap-1 mb-3.5">Organiza:</h4>
-              <div className="flex md:justify-start mb-4 text-left flex-row justify-start">
-                <div className="w-auto h-[ato] text-center">
-                  <Image
-                    src="/logo-aes-blanco.svg"
-                    alt="AES - Asociación Española de Sastrería"
-                    width={144}
-                    height={80}
-                    className="object-contain items-start text-center w-auto h-[3rem]"
-                  />
-                </div>
+              <div className="flex justify-start mb-4">
+                <Image
+                  src="/logo-aes-blanco.svg"
+                  alt="AES - Asociación Española de Sastrería"
+                  width={144}
+                  height={80}
+                  className="object-contain h-[3rem] w-auto"
+                />
               </div>
               <p className="text-primary-foreground text-xs text-left">
                 Entidad subvencionada por el Ayuntamiento de Madrid
@@ -860,15 +858,14 @@ export default function Home() {
             </div>
 
             {/* Contacto */}
-            <div className="text-center md:text-right">
-              <h4 className="text-lg font-semibold text-accent mb-4 text-left">Contacto:</h4>
-              <div className="space-y-1 text-primary-foreground text-sm">
-                <p className="text-left">info@aesastreria.es</p>
-                <p className="text-left">www.aesastreria.es</p>
-                <div className="pt-2 space-y-0">
-                  <p className="text-left">Paseo de la</p>
-                  <p className="text-left">Castellana 210 5-9,</p>
-                  <p className="text-left">28046 Madrid</p>
+            <div className="text-left md:text-right">
+              <h4 className="text-lg font-semibold text-accent mb-4 text-left md:text-right">Contacto:</h4>
+              <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right">
+                <p>info@aesastreria.es</p>
+                <p>www.aesastreria.es</p>
+                <div className="pt-2">
+                  <p>Paseo de la Castellana 210 5-9,</p>
+                  <p>28046 Madrid</p>
                 </div>
               </div>
             </div>
