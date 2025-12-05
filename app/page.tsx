@@ -6,11 +6,25 @@ import CountdownTimer from "@/components/countdown-timer"
 import Gallery from "@/components/gallery"
 import EmailSignup from "@/components/email-signup"
 import { useLanguage } from "@/contexts/language-context"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function Home() {
   const { t, language } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
+
+  // Cargar script de Weezevent
+  useEffect(() => {
+    // Verificar si el script ya existe
+    const existingScript = document.querySelector('script[src="https://widget.weezevent.com/weez.js"]')
+    if (existingScript) {
+      return
+    }
+
+    const script = document.createElement("script")
+    script.src = "https://widget.weezevent.com/weez.js"
+    script.async = true
+    document.body.appendChild(script)
+  }, [])
 
   return (
     <div className="min-h-screen bg-background">
@@ -552,6 +566,38 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Venta de Entradas - #EBB37E BACKGROUND */}
+      <section className="py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Header con fondo marrón oscuro */}
+          <div className="bg-primary py-6 mb-12 rounded-lg">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary-foreground">
+              {t("tickets.title")}
+            </h2>
+          </div>
+          
+          {/* Widget de Weezevent */}
+          <div className="flex justify-center">
+            <a
+              title="Venta de entradas en línea"
+              href="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
+              className="weezevent-widget-integration"
+              data-src="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
+              data-id="1486253"
+              data-resize="1"
+              data-width_auto="1"
+              data-noscroll="0"
+              data-use-container="yes"
+              data-type="neo"
+              data-o="Webespa%C3%B1ol"
+              target="_blank"
+            >
+              Billetterie Weezevent
+            </a>
           </div>
         </div>
       </section>
