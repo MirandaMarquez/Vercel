@@ -573,31 +573,35 @@ export default function Home() {
       {/* Venta de Entradas - #EBB37E BACKGROUND */}
       <section className="py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
         <div className="container mx-auto px-4 relative z-10">
-          {/* Header con fondo marrón oscuro */}
-          <div className="bg-primary py-6 mb-12 rounded-lg">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary-foreground">
+          {/* Header con texto marrón */}
+          <div className="bg-white py-6 mb-12 rounded-2xl shadow-md">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary">
               {t("tickets.title")}
             </h2>
           </div>
           
           {/* Widget de Weezevent */}
-          <div className="flex justify-center">
-            <a
-              title="Venta de entradas en línea"
-              href="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
-              className="weezevent-widget-integration"
-              data-src="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
-              data-id="1486253"
-              data-resize="1"
-              data-width_auto="1"
-              data-noscroll="0"
-              data-use-container="yes"
-              data-type="neo"
-              data-o="Webespa%C3%B1ol"
-              target="_blank"
-            >
-              Billetterie Weezevent
-            </a>
+          <div className="flex justify-center px-4">
+            <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
+              <div className="w-full" style={{ minHeight: "400px" }}>
+                <a
+                  title="Venta de entradas en línea"
+                  href="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
+                  className="weezevent-widget-integration block w-full"
+                  data-src="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
+                  data-id="1486253"
+                  data-resize="1"
+                  data-width_auto="1"
+                  data-noscroll="0"
+                  data-use-container="yes"
+                  data-type="neo"
+                  data-o="Webespa%C3%B1ol"
+                  target="_blank"
+                >
+                  Billetterie Weezevent
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
