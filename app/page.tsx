@@ -611,7 +611,7 @@ export default function Home() {
       </section>
 
       {/* Venta de Entradas - #EBB37E BACKGROUND */}
-      <section className="py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
+      <section id="entradas" className="py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
         <div className="container mx-auto px-4 relative z-10">
           {/* Header con texto marrón */}
          

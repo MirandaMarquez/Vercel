@@ -19,7 +19,7 @@ const translations = {
     "header.subtitle": "II CONGRESO INTERNACIONAL DE SASTRERÍA",
     "header.description": "Un encuentro único que reúne a la comunidad de la sastrería internacional.",
     "header.cta": "inscríbete ahora disponible",
-    "header.registrationSoon": "Inscripciones próximamente",
+    "header.registrationSoon": "Inscribirse al evento",
 
     // Countdown
     "countdown.title": "DEL 13 AL 15 DE MARZO",
@@ -144,7 +144,7 @@ const translations = {
     "header.subtitle": "II INTERNATIONAL TAILORING CONGRESS",
     "header.description": "A unique gathering that brings together the international tailoring community.",
     "header.cta": "register now available",
-    "header.registrationSoon": "Registration coming soon",
+    "header.registrationSoon": "Register for the event",
 
     // Countdown
     "countdown.title": "MARCH 13TH TO 15TH",
