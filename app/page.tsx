@@ -13,7 +13,7 @@ export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false)
 
   // Configuración del widget según el idioma
-  const weezeventLocale = language === "en" ? "en-US" : "es-ES"
+  const weezeventLocale = language === "en" ? "en" : "es-ES"
   const weezeventOrigin = language === "en" ? "Webenglish" : "Webespa%C3%B1ol"
   const weezeventUrl = `https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e&o=${weezeventOrigin}`
 
@@ -615,7 +615,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           {/* Header con texto marrón */}
          
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary mb-16">
               {t("tickets.title")}
             </h2>
           
