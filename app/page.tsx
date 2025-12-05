@@ -12,6 +12,11 @@ export default function Home() {
   const { t, language } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
 
+  // Configuración del widget según el idioma
+  const weezeventLocale = language === "en" ? "en-US" : "es-ES"
+  const weezeventOrigin = language === "en" ? "Webenglish" : "Webespa%C3%B1ol"
+  const weezeventUrl = `https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e&o=${weezeventOrigin}`
+
   // Cargar script de Weezevent
   useEffect(() => {
     // Verificar si el script ya existe
@@ -25,6 +30,41 @@ export default function Home() {
     script.async = true
     document.body.appendChild(script)
   }, [])
+
+  // Reinicializar widget cuando cambie el idioma
+  useEffect(() => {
+    const initWidget = () => {
+      // Esperar a que el script de Weezevent esté cargado
+      if (typeof window !== "undefined" && (window as any).weezevent) {
+        // El widget se reinicializa automáticamente cuando cambian los atributos data-src
+        // La key en el contenedor fuerza el re-render del componente
+        const widgetElements = document.querySelectorAll(".weezevent-widget-integration")
+        widgetElements.forEach((el) => {
+          // Actualizar los atributos data-* para forzar reinicialización
+          const anchor = el as HTMLAnchorElement
+          if (anchor) {
+            anchor.setAttribute("data-src", weezeventUrl)
+            anchor.setAttribute("href", weezeventUrl)
+            anchor.setAttribute("data-o", weezeventOrigin)
+          }
+        })
+        
+        // Intentar reinicializar el widget si tiene un método para ello
+        if ((window as any).weezevent && typeof (window as any).weezevent.init === "function") {
+          try {
+            (window as any).weezevent.init()
+          } catch (e) {
+            // Si falla, el widget se reinicializará automáticamente al cambiar los atributos
+            console.log("Widget se reinicializará automáticamente")
+          }
+        }
+      }
+    }
+
+    // Intentar inicializar después de un delay para asegurar que el DOM esté actualizado
+    const timer = setTimeout(initWidget, 300)
+    return () => clearTimeout(timer)
+  }, [language, weezeventUrl, weezeventOrigin])
 
   return (
     <div className="min-h-screen bg-background">
@@ -574,31 +614,31 @@ export default function Home() {
       <section className="py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
         <div className="container mx-auto px-4 relative z-10">
           {/* Header con texto marrón */}
-          <div className="bg-white py-6 mb-12 rounded-2xl shadow-md">
+         
             <h2 className="text-2xl md:text-3xl font-bold text-center text-primary">
               {t("tickets.title")}
             </h2>
-          </div>
+          
           
           {/* Widget de Weezevent */}
           <div className="flex justify-center px-4">
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
-              <div className="w-full" style={{ minHeight: "400px" }}>
+              <div className="w-full" style={{ minHeight: "400px" }} key={`weezevent-${language}`}>
                 <a
-                  title="Venta de entradas en línea"
-                  href="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
+                  title={language === "en" ? "Online ticket sales" : "Venta de entradas en línea"}
+                  href={weezeventUrl}
                   className="weezevent-widget-integration block w-full"
-                  data-src="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1&color_primary=ebb37e&o=Webespa%C3%B1ol"
+                  data-src={weezeventUrl}
                   data-id="1486253"
                   data-resize="1"
                   data-width_auto="1"
                   data-noscroll="0"
                   data-use-container="yes"
                   data-type="neo"
-                  data-o="Webespa%C3%B1ol"
+                  data-o={weezeventOrigin}
                   target="_blank"
                 >
-                  Billetterie Weezevent
+                  {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
                 </a>
               </div>
             </div>
