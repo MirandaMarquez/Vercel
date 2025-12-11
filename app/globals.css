@@ -133,33 +133,5 @@
   }
 }
 
-/* Estilos para el widget de Weezevent */
-/* Asegurar que el texto del widget tenga un color apropiado (gris oscuro en lugar de negro) */
-.weezevent-widget-integration,
-.weezevent-widget-integration * {
-  color: #4a4a4a !important;
-}
-
-/* Estilos específicos para elementos de texto comunes en el widget */
-.weezevent-widget-integration p,
-.weezevent-widget-integration span,
-.weezevent-widget-integration div,
-.weezevent-widget-integration label,
-.weezevent-widget-integration a:not([class*="button"]):not([class*="btn"]) {
-  color: #4a4a4a !important;
-}
-
-/* Asegurar que el texto "pago seguro" y elementos relacionados sean visibles */
-.weezevent-widget-integration [class*="secure"],
-.weezevent-widget-integration [class*="payment"],
-.weezevent-widget-integration [class*="pago"],
-.weezevent-widget-integration [id*="secure"],
-.weezevent-widget-integration [id*="payment"] {
-  color: #4a4a4a !important;
-}
-
-/* Contenedor del widget - asegurar color de texto */
-.w-full.max-w-6xl.bg-white .weezevent-widget-integration,
-.w-full.max-w-6xl.bg-white .weezevent-widget-integration * {
-  color: #4a4a4a !important;
-}
+/* Estilos para el widget de Weezevent - Permitir que el widget use sus propios estilos nativos */
+/* No aplicar estilos personalizados que puedan interferir con el diseño del widget */
