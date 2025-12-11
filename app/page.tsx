@@ -669,7 +669,7 @@ export default function Home() {
           {/* Widget de Weezevent */}
           <div className="flex justify-center px-4">
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8" style={{ color: "#4a4a4a" }}>
-              <div className="w-full" style={{ minHeight: "400px", color: "#4a4a4a" }} key={`weezevent-${language}`}>
+              <div className="w-full" style={{ minHeight: "400px"}} key={`weezevent-${language}`}>
                 <a
                   title={language === "en" ? "Online ticket sales" : "Venta de entradas en línea"}
                   href={weezeventUrl}
@@ -683,7 +683,6 @@ export default function Home() {
                   data-type="neo"
                   data-o={weezeventOrigin}
                   target="_blank"
-                  style={{ color: "#4a4a4a" }}
                 >
                   {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
                 </a>
