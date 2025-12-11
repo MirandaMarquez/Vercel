@@ -767,7 +767,7 @@ export default function Home() {
       </section>
 
       {/* Información para Patrocinadores - LIGHT BEIGE BACKGROUND */}
-      <section className="py-20 bg-background relative overflow-x-hidden">
+      <section className="hidden py-20 bg-background relative overflow-x-hidden">
         <div
           className="absolute inset-0 opacity-30"
           style={{
