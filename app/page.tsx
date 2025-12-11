@@ -66,6 +66,52 @@ export default function Home() {
     return () => clearTimeout(timer)
   }, [language, weezeventUrl, weezeventOrigin])
 
+  // Aplicar estilos al contenido del widget después de que se cargue
+  useEffect(() => {
+    const applyWidgetStyles = () => {
+      const widgetContainer = document.querySelector(".weezevent-widget-integration")
+      if (widgetContainer) {
+        // Buscar todos los elementos dentro del widget y aplicar color de texto
+        const allElements = widgetContainer.querySelectorAll("*")
+        allElements.forEach((el) => {
+          const htmlEl = el as HTMLElement
+          // Solo aplicar si el elemento tiene texto y no tiene un color específico ya definido
+          if (htmlEl.tagName && !["SCRIPT", "STYLE", "IFRAME"].includes(htmlEl.tagName)) {
+            const computedStyle = window.getComputedStyle(htmlEl)
+            // Si el color es muy oscuro (casi negro), cambiarlo a un gris más claro
+            if (computedStyle.color === "rgb(0, 0, 0)" || computedStyle.color === "rgba(0, 0, 0, 0)") {
+              htmlEl.style.color = "#4a4a4a"
+            }
+          }
+        })
+
+        // Buscar específicamente elementos relacionados con "pago seguro"
+        const secureElements = widgetContainer.querySelectorAll(
+          '[class*="secure"], [class*="payment"], [class*="pago"], [id*="secure"], [id*="payment"], [id*="pago"]'
+        )
+        secureElements.forEach((el) => {
+          const htmlEl = el as HTMLElement
+          htmlEl.style.color = "#4a4a4a"
+        })
+      }
+    }
+
+    // Aplicar estilos después de que el widget se cargue
+    const interval = setInterval(() => {
+      applyWidgetStyles()
+    }, 500)
+
+    // Limpiar después de 10 segundos (tiempo suficiente para que el widget cargue)
+    const timeout = setTimeout(() => {
+      clearInterval(interval)
+    }, 10000)
+
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timeout)
+    }
+  }, [language])
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -622,8 +668,8 @@ export default function Home() {
           
           {/* Widget de Weezevent */}
           <div className="flex justify-center px-4">
-            <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
-              <div className="w-full" style={{ minHeight: "400px" }} key={`weezevent-${language}`}>
+            <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8" style={{ color: "#4a4a4a" }}>
+              <div className="w-full" style={{ minHeight: "400px", color: "#4a4a4a" }} key={`weezevent-${language}`}>
                 <a
                   title={language === "en" ? "Online ticket sales" : "Venta de entradas en línea"}
                   href={weezeventUrl}
@@ -637,6 +683,7 @@ export default function Home() {
                   data-type="neo"
                   data-o={weezeventOrigin}
                   target="_blank"
+                  style={{ color: "#4a4a4a" }}
                 >
                   {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
                 </a>
