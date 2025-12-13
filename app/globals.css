@@ -131,10 +131,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* El widget de Weezevent no debe heredar el color de texto del body */
-  .weezevent-widget-integration,
-  .weezevent-widget-integration * {
-    color: unset;
-  }
 }

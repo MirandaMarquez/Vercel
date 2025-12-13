@@ -638,6 +638,7 @@ export default function Home() {
                   data-type="neo"
                   data-o={weezeventOrigin}
                   target="_blank"
+                  style={{ color: "unset" }}
                 >
                   {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
                 </a>
