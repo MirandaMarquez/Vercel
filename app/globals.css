@@ -131,7 +131,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* El contenedor del widget no debe heredar el color de texto del body */
+  .w-full.max-w-6xl.bg-white {
+    color: initial;
+  }
 }
-
-/* Estilos para el widget de Weezevent - Permitir que el widget use sus propios estilos nativos */
-/* No aplicar estilos personalizados que puedan interferir con el diseño del widget */
