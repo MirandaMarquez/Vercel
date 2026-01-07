@@ -14,8 +14,7 @@ export default function Home() {
 
   // Configuración del widget según el idioma
   const weezeventLocale = language === "en" ? "en" : "es-ES"
-  const weezeventOrigin = language === "en" ? "Webenglish" : "Webespa%C3%B1ol"
-  const weezeventUrl = `https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e&o=${weezeventOrigin}`
+  const weezeventUrl = `https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e`
 
   // Cargar script de Weezevent
   useEffect(() => {
@@ -40,12 +39,10 @@ export default function Home() {
         // La key en el contenedor fuerza el re-render del componente
         const widgetElements = document.querySelectorAll(".weezevent-widget-integration")
         widgetElements.forEach((el) => {
-          // Actualizar los atributos data-* para forzar reinicialización
           const anchor = el as HTMLAnchorElement
           if (anchor) {
             anchor.setAttribute("data-src", weezeventUrl)
             anchor.setAttribute("href", weezeventUrl)
-            anchor.setAttribute("data-o", weezeventOrigin)
           }
         })
         
@@ -64,7 +61,7 @@ export default function Home() {
     // Intentar inicializar después de un delay para asegurar que el DOM esté actualizado
     const timer = setTimeout(initWidget, 300)
     return () => clearTimeout(timer)
-  }, [language, weezeventUrl, weezeventOrigin])
+  }, [language, weezeventUrl])
 
 
   return (
@@ -624,25 +621,22 @@ export default function Home() {
           {/* Widget de Weezevent */}
           <div className="flex justify-center px-4">
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
-              <div className="w-full" style={{ minHeight: "400px" }} key={`weezevent-${language}`}>
-                <a
-                  title={language === "en" ? "Online ticket sales" : "Venta de entradas en línea"}
-                  href={weezeventUrl}
-                  className="weezevent-widget-integration block w-full"
-                  data-src={weezeventUrl}
-                  data-id="1486253"
-                  data-resize="1"
-                  data-width_auto="1"
-                  data-noscroll="0"
-                  data-use-container="yes"
-                  data-type="neo"
-                  data-o={weezeventOrigin}
-                  target="_blank"
-                  style={{ color: "unset" }}
-                >
-                  {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
-                </a>
-              </div>
+              <a
+                title={language === "en" ? "Online ticket sales" : "Venta de entradas en línea"}
+                href={weezeventUrl}
+                className="weezevent-widget-integration"
+                data-src={weezeventUrl}
+                data-id="1486253"
+                data-resize="1"
+                data-width_auto="1"
+                data-noscroll="0"
+                data-use-container="yes"
+                data-type="neo"
+                target="_blank"
+                key={`weezevent-${language}`}
+              >
+                {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
+              </a>
             </div>
           </div>
         </div>
