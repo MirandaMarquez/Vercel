@@ -619,21 +619,24 @@ export default function Home() {
           
           
           {/* Widget de Weezevent */}
-          <div className="flex justify-center px-4">
+          <div className="flex justify-center px-4" suppressHydrationWarning>
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
-            <a title="Logiciel billetterie en ligne"
-                href="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1"
-                class="weezevent-widget-integration"
-                data-src="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1"
-                 data-id="1486253"
+              <a
+                title="Logiciel billetterie en ligne"
+                href={`https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1`}
+                className="weezevent-widget-integration"
+                data-src={`https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1`}
+                data-id="1486253"
                 data-resize="1"
                 data-width_auto="1"
                 data-noscroll="0"
                 data-use-container="yes"
                 data-type="neo"
-                target="_blank">Billetterie Weezevent
+                target="_blank"
+                key={`weezevent-${language}`}
+              >
+                Billetterie Weezevent
               </a>
-                <script type="text/javascript" src="https://widget.weezevent.com/weez.js"></script>
             </div>
           </div>
         </div>
@@ -918,23 +921,32 @@ export default function Home() {
             {/* Colabora */}
             <div className="md:text-left w-auto text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex items-center gap-4 md:flex-row md:justify-start md:space-x-6 text-left flex-row justify-start">
-                <div className="w-48 h-16">
+              <div className="flex items-center gap-6 md:flex-row md:justify-start md:space-x-8 text-left flex-row justify-start">
+                <div className="w-64 h-24">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
                     alt="Ayuntamiento de Madrid"
-                    width={192}
-                    height={64}
+                    width={256}
+                    height={96}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-44 h-18">
+                <div className="w-72 h-28">
                   <Image
                     src="/logo-museo-traje.svg"
                     alt="Museo del Traje"
-                    width={176}
-                    height={72}
+                    width={288}
+                    height={112}
                     className="w-full h-full object-contain brightness-0 invert"
+                  />
+                </div>
+                <div className="w-40 h-16">
+                  <Image
+                    src="/Forbes_logo_white.png"
+                    alt="Forbes House Madrid"
+                    width={160}
+                    height={64}
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
