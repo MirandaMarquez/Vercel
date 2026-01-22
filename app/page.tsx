@@ -621,22 +621,19 @@ export default function Home() {
           {/* Widget de Weezevent */}
           <div className="flex justify-center px-4">
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
-              <a
-                title={language === "en" ? "Online ticket sales" : "Venta de entradas en línea"}
-                href={weezeventUrl}
-                className="weezevent-widget-integration"
-                data-src={weezeventUrl}
-                data-id="1486253"
+            <a title="Logiciel billetterie en ligne"
+                href="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1"
+                class="weezevent-widget-integration"
+                data-src="https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=es-ES&width_auto=1"
+                 data-id="1486253"
                 data-resize="1"
                 data-width_auto="1"
                 data-noscroll="0"
                 data-use-container="yes"
                 data-type="neo"
-                target="_blank"
-                key={`weezevent-${language}`}
-              >
-                {language === "en" ? "Weezevent Ticketing" : "Billetterie Weezevent"}
+                target="_blank">Billetterie Weezevent
               </a>
+                <script type="text/javascript" src="https://widget.weezevent.com/weez.js"></script>
             </div>
           </div>
         </div>
