@@ -18,6 +18,8 @@ export default function Home() {
 
   // Cargar script de Weezevent
   useEffect(() => {
+    if (typeof window === "undefined") return
+    
     // Verificar si el script ya existe
     const existingScript = document.querySelector('script[src="https://widget.weezevent.com/weez.js"]')
     if (existingScript) {
@@ -29,39 +31,6 @@ export default function Home() {
     script.async = true
     document.body.appendChild(script)
   }, [])
-
-  // Reinicializar widget cuando cambie el idioma
-  useEffect(() => {
-    const initWidget = () => {
-      // Esperar a que el script de Weezevent esté cargado
-      if (typeof window !== "undefined" && (window as any).weezevent) {
-        // El widget se reinicializa automáticamente cuando cambian los atributos data-src
-        // La key en el contenedor fuerza el re-render del componente
-        const widgetElements = document.querySelectorAll(".weezevent-widget-integration")
-        widgetElements.forEach((el) => {
-          const anchor = el as HTMLAnchorElement
-          if (anchor) {
-            anchor.setAttribute("data-src", weezeventUrl)
-            anchor.setAttribute("href", weezeventUrl)
-          }
-        })
-        
-        // Intentar reinicializar el widget si tiene un método para ello
-        if ((window as any).weezevent && typeof (window as any).weezevent.init === "function") {
-          try {
-            (window as any).weezevent.init()
-          } catch (e) {
-            // Si falla, el widget se reinicializará automáticamente al cambiar los atributos
-            console.log("Widget se reinicializará automáticamente")
-          }
-        }
-      }
-    }
-
-    // Intentar inicializar después de un delay para asegurar que el DOM esté actualizado
-    const timer = setTimeout(initWidget, 300)
-    return () => clearTimeout(timer)
-  }, [language, weezeventUrl])
 
 
   return (
@@ -633,7 +602,6 @@ export default function Home() {
                 data-use-container="yes"
                 data-type="neo"
                 target="_blank"
-                key={`weezevent-${language}`}
               >
                 Billetterie Weezevent
               </a>
