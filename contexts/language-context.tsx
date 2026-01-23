@@ -132,6 +132,9 @@ const translations = {
     "footer.registration": "Inscripciones",
     "footer.follow": "Síguenos",
     "footer.rights": "Todos los derechos reservados",
+    "footer.organizes": "Organiza:",
+    "footer.collaborates": "Colabora:",
+    "footer.galaDinner": "Organiza la Cena de Gala y la Entrega de Premios:",
 
     // Language Switcher
     "lang.switchTo": "Cambiar idioma a",
@@ -256,6 +259,9 @@ const translations = {
     "footer.registration": "Registration",
     "footer.follow": "Follow us",
     "footer.rights": "All rights reserved",
+    "footer.organizes": "Organizes:",
+    "footer.collaborates": "Collaborates:",
+    "footer.galaDinner": "Organizes the Gala Dinner and Awards Ceremony:",
 
     // Language Switcher
     "lang.switchTo": "Switch language to",

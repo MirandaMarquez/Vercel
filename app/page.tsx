@@ -871,7 +871,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_350px_1fr_1fr] mb-7 gap-4">
             {/* Organiza */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px">Organiza:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px">{t("footer.organizes")}</h4>
               <div className="flex justify-start items-end h-20">
                 <Image
                   src="/logo-aes-blanco.svg"
@@ -885,7 +885,7 @@ export default function Home() {
 
             {/* Colabora */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 flex items-start h-5 mb-2.5">Colabora:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 flex items-start h-5 mb-2.5">{t("footer.collaborates")}</h4>
               <div className="flex h-20 items-end gap-1">
                 <div className="w-48 h-16 flex items-end">
                   <Image
@@ -910,7 +910,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 flex items-start mb-2.5 h-5">Organiza la Cena de Gala y la Entrega de Premios:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 flex items-start mb-2.5 h-5">{t("footer.galaDinner")}</h4>
               <div className="flex justify-start items-end h-20">
                 <div className="w-48 h-16">
                   <Image
