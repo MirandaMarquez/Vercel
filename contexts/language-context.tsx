@@ -124,6 +124,9 @@ const translations = {
     // Footer
     "footer.location": "MADRID",
     "footer.description": "Evento especializado para la Asociación Española de Sastrería",
+    "footer.organizes": "Organiza:",
+    "footer.collaborates": "Colabora:",
+    "footer.organizesGala": "Organiza la Cena de Gala y la Entrega de Premios:",
     "footer.contact": "Contacto",
     "footer.information": "Información",
     "footer.program": "Programa",
@@ -132,6 +135,9 @@ const translations = {
     "footer.registration": "Inscripciones",
     "footer.follow": "Síguenos",
     "footer.rights": "Todos los derechos reservados",
+    "footer.subsidized": "Entidad subvencionada por el Ayuntamiento de Madrid",
+    "footer.privacy": "Política de Privacidad",
+    "footer.copyright": "AES Asociación Española de Sastrería",
 
     // Language Switcher
     "lang.switchTo": "Cambiar idioma a",
@@ -248,6 +254,9 @@ const translations = {
     // Footer
     "footer.location": "MADRID",
     "footer.description": "Specialized event for the Spanish Tailoring Association",
+    "footer.organizes": "Organizes:",
+    "footer.collaborates": "Collaborates:",
+    "footer.organizesGala": "Organizes the Gala Dinner and Awards Ceremony:",
     "footer.contact": "Contact",
     "footer.information": "Information",
     "footer.program": "Program",
@@ -256,6 +265,9 @@ const translations = {
     "footer.registration": "Registration",
     "footer.follow": "Follow us",
     "footer.rights": "All rights reserved",
+    "footer.subsidized": "Entity subsidized by the Madrid City Council",
+    "footer.privacy": "Privacy Policy",
+    "footer.copyright": "AES Spanish Tailoring Association",
 
     // Language Switcher
     "lang.switchTo": "Switch language to",

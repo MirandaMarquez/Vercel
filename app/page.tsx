@@ -871,7 +871,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-6">
             {/* Organiza */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Organiza:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
               <div className="flex justify-start items-end h-20">
                 <Image
                   src="/logo-aes-blanco.svg"
@@ -885,7 +885,7 @@ export default function Home() {
 
             {/* Colabora */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Colabora:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.collaborates")}</h4>
               <div className="flex items-end gap-4 h-20">
                 <div className="w-48 h-16 flex items-end">
                   <Image
@@ -910,7 +910,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Organiza la Cena de Gala y la Entrega de Premios:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizesGala")}</h4>
               <div className="flex justify-start items-end h-20">
                 <div className="w-48 h-16">
                   <Image
@@ -926,7 +926,7 @@ export default function Home() {
 
             {/* Contacto */}
             <div className="text-left md:text-right">
-              <h4 className="text-lg font-semibold text-accent mb-3.5 h-6 flex items-end md:justify-end text-left md:text-right">Contacto:</h4>
+              <h4 className="text-lg font-semibold text-accent mb-3.5 h-6 flex items-end md:justify-end text-left md:text-right">{t("footer.contact")}</h4>
               <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right h-20 flex flex-col justify-end">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
@@ -941,7 +941,7 @@ export default function Home() {
           {/* Entidad subvencionada */}
           <div className="mb-7 text-left">
             <p className="text-primary-foreground text-xs">
-              Entidad subvencionada por el Ayuntamiento de Madrid
+              {t("footer.subsidized")}
             </p>
           </div>
 
@@ -955,11 +955,11 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-primary-foreground hover:text-accent transition-colors text-xs"
                 >
-                  Política de Privacidad
+                  {t("footer.privacy")}
                 </Link>
               </div>
               <p className="text-primary-foreground text-xs">
-                © {new Date().getFullYear()} AES Asociación Española de Sastrería
+                © {new Date().getFullYear()} {t("footer.copyright")}
               </p>
             </div>
           </div>
