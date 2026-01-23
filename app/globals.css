@@ -131,4 +131,12 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Fix para problemas de renderizado con zoom */
+  section.bg-primary {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

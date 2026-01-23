@@ -102,13 +102,13 @@ export default function Home() {
       </section>
 
       {/* Program - DARK BROWN BACKGROUND */}
-      <section className="py-20 bg-primary relative overflow-hidden overflow-x-hidden">
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="py-20 bg-primary relative overflow-hidden" style={{ transform: 'translateZ(0)', backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
+        <div className="container mx-auto px-4 relative z-10" style={{ transform: 'translateZ(0)' }}>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-primary-foreground mb-12">
             {t("program.title")}
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start" style={{ transform: 'translateZ(0)' }}>
             {/* Day 1 - Friday */}
             <div className="bg-surface p-6 rounded-lg shadow-md h-[320px]">
               <div className="flex mb-4 items-start">
