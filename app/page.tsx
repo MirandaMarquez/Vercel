@@ -868,7 +868,7 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_1fr_1fr_auto] mb-7 gap-2 lg:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-4">
             {/* Organiza */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px">Organiza:</h4>
@@ -925,15 +925,12 @@ export default function Home() {
             </div>
 
             {/* Contacto */}
-            <div className="text-left md:text-right">
-              <h4 className="text-lg font-semibold text-accent mb-3.5 h-6 flex items-end md:justify-end text-left md:text-right">Contacto:</h4>
-              <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right h-20 flex flex-col justify-end">
+            <div className="text-left lg:text-right">
+              <h4 className="text-lg font-semibold text-accent mb-3.5 h-6 flex items-start lg:items-end lg:justify-end">Contacto:</h4>
+              <div className="space-y-0 text-primary-foreground text-sm text-left lg:text-right">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
-                <div className="pt-2">
-                  <p>Paseo de la Castellana 210 5-9,</p>
-                  <p>28046 Madrid</p>
-                </div>
+                <p className="pt-2">Paseo de la Castellana 210 5-9, 28046 Madrid</p>
               </div>
             </div>
           </div>
