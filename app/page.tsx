@@ -786,7 +786,7 @@ export default function Home() {
       {/* Location - DARK BROWN BACKGROUND */}
       <section className="py-20 bg-primary relative overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-6xl mx-auto border-dashed gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-6xl mx-auto gap-5">
             {/* Left Content */}
             <div className="border-t-4 border-accent border-dashed mx-[] px-0 my-[] space-y-4 md:space-y-2.5 py-8 md:py-12">
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8 leading-7">
