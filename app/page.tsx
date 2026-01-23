@@ -870,8 +870,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-2">
             {/* Organiza */}
-            <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px w-[15%]">Organiza:</h4>
+            <div className="md:text-left text-left max-w-[160px]">
+              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px">Organiza:</h4>
               <div className="flex justify-start items-end h-20">
                 <Image
                   src="/logo-aes-blanco.svg"
