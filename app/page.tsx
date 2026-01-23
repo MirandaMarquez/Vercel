@@ -868,7 +868,7 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_350px_1fr_1fr] mb-7 gap-4">
             {/* Organiza */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
@@ -902,7 +902,7 @@ export default function Home() {
                     alt="Museo del Traje"
                     width={224}
                     height={96}
-                    className="w-full h-full object-contain brightness-0 invert"
+                    className="object-contain brightness-0 invert h-20 w-4/5"
                   />
                 </div>
               </div>
@@ -930,10 +930,7 @@ export default function Home() {
               <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right h-20 flex flex-col justify-end">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
-                <div className="pt-2">
-                  <p>Paseo de la Castellana 210 5-9,</p>
-                  <p>28046 Madrid</p>
-                </div>
+                <p className="pt-2">Paseo de la Castellana 210 5-9, 28046 Madrid</p>
               </div>
             </div>
           </div>
