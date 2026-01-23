@@ -885,7 +885,7 @@ export default function Home() {
 
             {/* Colabora */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-start">Colabora:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 flex items-start h-5 mb-2.5">Colabora:</h4>
               <div className="flex h-20 items-end gap-1">
                 <div className="w-48 h-16 flex items-end">
                   <Image
@@ -902,7 +902,7 @@ export default function Home() {
                     alt="Museo del Traje"
                     width={224}
                     height={96}
-                    className="w-full h-full object-contain brightness-0 invert"
+                    className="object-contain brightness-0 invert h-20 w-4/5"
                   />
                 </div>
               </div>
@@ -910,7 +910,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-2.5">Organiza la Cena de Gala y la Entrega de Premios:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 flex items-start mb-2.5 h-5">Organiza la Cena de Gala y la Entrega de Premios:</h4>
               <div className="flex justify-start items-end h-20">
                 <div className="w-48 h-16">
                   <Image
