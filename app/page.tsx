@@ -617,6 +617,17 @@ export default function Home() {
             {t("sponsors.ourSponsors")}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
+            {/* Carnet Como */}
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+              <Image
+                src="/sponsors/carnet-como-logo.jpg"
+                alt="Carnet Como"
+                width={240}
+                height={140}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
             {/* Davion */}
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
@@ -639,22 +650,11 @@ export default function Home() {
               />
             </div>
 
-            {/* Carnet Como */}
+            {/* Drago */}
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
-                src="/sponsors/carnet-como-logo.jpg"
-                alt="Carnet Como"
-                width={240}
-                height={140}
-                className="object-contain max-w-full max-h-full"
-              />
-            </div>
-
-            {/* Vitale Barberis Canonico */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
-              <Image
-                src="/sponsors/vitale-barberis-logo.jpg"
-                alt="Vitale Barberis Canonico"
+                src="/sponsors/drago-logo.jpg"
+                alt="Drago"
                 width={240}
                 height={140}
                 className="object-contain max-w-full max-h-full"
@@ -672,33 +672,22 @@ export default function Home() {
               />
             </div>
 
+            {/* Group Pressing+ */}
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+              <Image
+                src="/sponsors/pressing-group-logo.jpg"
+                alt="Group Pressing+"
+                width={240}
+                height={140}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
             {/* Holland & Sherry */}
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/holland-sherry-logo.jpg"
                 alt="Holland & Sherry"
-                width={240}
-                height={140}
-                className="object-contain max-w-full max-h-full"
-              />
-            </div>
-
-            {/* Drago */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
-              <Image
-                src="/sponsors/drago-logo.jpg"
-                alt="Drago"
-                width={240}
-                height={140}
-                className="object-contain max-w-full max-h-full"
-              />
-            </div>
-
-            {/* Scabal */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
-              <Image
-                src="/sponsors/scabal-logo.jpg"
-                alt="Scabal"
                 width={240}
                 height={140}
                 className="object-contain max-w-full max-h-full"
@@ -716,11 +705,22 @@ export default function Home() {
               />
             </div>
 
-            {/* Group Pressing+ */}
+            {/* Scabal */}
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
-                src="/sponsors/pressing-group-logo.jpg"
-                alt="Group Pressing+"
+                src="/sponsors/scabal-logo.jpg"
+                alt="Scabal"
+                width={240}
+                height={140}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Vitale Barberis Canonico */}
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+              <Image
+                src="/sponsors/vitale-barberis-logo.jpg"
+                alt="Vitale Barberis Canonico"
                 width={240}
                 height={140}
                 className="object-contain max-w-full max-h-full"
@@ -868,11 +868,11 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 mb-7 gap-2.5 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-6">
             {/* Organiza */}
-            <div className="md:text-left leading-4 text-left gap-0.5">
-              <h4 className="text-lg font-semibold text-accent leading-4 gap-1 mb-3.5">Organiza:</h4>
-              <div className="flex justify-start mb-4">
+            <div className="md:text-left text-left">
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Organiza:</h4>
+              <div className="flex justify-start items-end h-20">
                 <Image
                   src="/logo-aes-blanco.svg"
                   alt="AES - Asociación Española de Sastrería"
@@ -881,39 +881,43 @@ export default function Home() {
                   className="object-contain h-[3rem] w-auto"
                 />
               </div>
-              <p className="text-primary-foreground text-xs text-left">
-                Entidad subvencionada por el Ayuntamiento de Madrid
-              </p>
             </div>
 
             {/* Colabora */}
-            <div className="md:text-left w-auto text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-1">Colabora:</h4>
-              <div className="flex items-center gap-6 md:flex-row md:justify-start md:space-x-8 text-left flex-row justify-start">
-                <div className="w-64 h-24">
+            <div className="md:text-left text-left">
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Colabora:</h4>
+              <div className="flex items-end gap-4 h-20">
+                <div className="w-48 h-16 flex items-end">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
                     alt="Ayuntamiento de Madrid"
-                    width={256}
-                    height={96}
+                    width={192}
+                    height={80}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-72 h-28">
+                <div className="w-56 h-20 flex items-end">
                   <Image
                     src="/logo-museo-traje.svg"
                     alt="Museo del Traje"
-                    width={288}
-                    height={112}
+                    width={224}
+                    height={96}
                     className="w-full h-full object-contain brightness-0 invert"
                   />
                 </div>
-                <div className="w-40 h-16">
+              </div>
+            </div>
+
+            {/* Organiza la Cena de Gala y la Entrega de Premios */}
+            <div className="md:text-left text-left">
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Organiza la Cena de Gala y la Entrega de Premios:</h4>
+              <div className="flex justify-start items-end h-20">
+                <div className="w-48 h-16">
                   <Image
-                    src="/Forbes_logo_white.png"
+                    src="/thread-viewer-1.png"
                     alt="Forbes House Madrid"
-                    width={160}
-                    height={64}
+                    width={192}
+                    height={80}
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -922,8 +926,8 @@ export default function Home() {
 
             {/* Contacto */}
             <div className="text-left md:text-right">
-              <h4 className="text-lg font-semibold text-accent mb-4 text-left md:text-right">Contacto:</h4>
-              <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right">
+              <h4 className="text-lg font-semibold text-accent mb-3.5 h-6 flex items-end md:justify-end text-left md:text-right">Contacto:</h4>
+              <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right h-20 flex flex-col justify-end">
                 <p>info@aesastreria.es</p>
                 <p>www.aesastreria.es</p>
                 <div className="pt-2">
@@ -932,6 +936,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Entidad subvencionada */}
+          <div className="mb-7 text-left">
+            <p className="text-primary-foreground text-xs">
+              Entidad subvencionada por el Ayuntamiento de Madrid
+            </p>
           </div>
 
           {/* Footer bottom */}

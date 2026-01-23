@@ -38,7 +38,7 @@ const translations = {
     "program.day1": "VIERNES 13 MARZO",
     "program.day2": "SÁBADO 14 MARZO",
     "program.day3": "DOMINGO 15 MARZO",
-    "program.location1": "Lugar Emblemático Madrid",
+    "program.location1": "Forbes House Madrid",
     "program.location2": "Museo del Traje Madrid y Forbes House Madrid",
     "program.location3": "Museo del Traje",
 
@@ -53,11 +53,11 @@ const translations = {
     "program.day2.event5": 'Presentación de la exposición "Sastrería, del taller a la calle"',
     "program.day2.event6": "Representación sectorial",
     "program.day2.event7": "Sostenibilidad en la industria textil",
-    "program.day2.event8": "Catering",
+    "program.day2.event8": "Almuerzo",
     "program.day2.event9": "Representación sectorial",
     "program.day2.event10": "Formación artesanal e industrial",
     "program.day2.event11": "Sastrería internacional - Inspiraciones y evolución",
-    "program.day2.event12": "Cena",
+    "program.day2.event12": "Cena en Forbes House Madrid",
     "program.day2.event12.location": "Forbes House Madrid",
     "program.day2.event13": "Entrega de Premios AES",
     "program.day2.event13.location": "Forbes House Madrid",
@@ -65,7 +65,7 @@ const translations = {
     "program.day2.event14.location": "Forbes House Madrid",
 
     // Day 3 Events
-    "program.day3.event1": "Visita: El protocolo a través de los siglos en el Museo del Traje",
+    "program.day3.event1": "Visita Guiada Museo del Traje",
 
     "program.viewFull": "Ver programa completo",
     "program.viewMore": "Ver más eventos",
@@ -163,7 +163,7 @@ const translations = {
     "program.day1": "FRIDAY 13 MARCH",
     "program.day2": "SATURDAY 14 MARCH",
     "program.day3": "SUNDAY 15 MARCH",
-    "program.location1": "Emblematic Venue Madrid",
+    "program.location1": "Forbes House Madrid",
     "program.location2": "Costume Museum Madrid & Forbes House Madrid",
     "program.location3": "Costume Museum",
 
@@ -178,11 +178,11 @@ const translations = {
     "program.day2.event5": 'Presentation of the exhibition "Tailoring, from workshop to street"',
     "program.day2.event6": "Sectoral representation",
     "program.day2.event7": "Sustainability in the textile industry",
-    "program.day2.event8": "Catering",
+    "program.day2.event8": "Lunch",
     "program.day2.event9": "Sectoral representation",
     "program.day2.event10": "Artisanal and industrial training",
     "program.day2.event11": "International tailoring - Inspirations and evolution",
-    "program.day2.event12": "Dinner",
+    "program.day2.event12": "Dinner at Forbes House Madrid",
     "program.day2.event12.location": "Forbes House Madrid",
     "program.day2.event13": "AES Awards Ceremony",
     "program.day2.event13.location": "Forbes House Madrid",
@@ -190,7 +190,7 @@ const translations = {
     "program.day2.event14.location": "Forbes House Madrid",
 
     // Day 3 Events
-    "program.day3.event1": "Visit: Protocol through the centuries at the Costume Museum",
+    "program.day3.event1": "Guided Visit Costume Museum",
 
     "program.viewFull": "View full program",
     "program.viewMore": "View more events",
