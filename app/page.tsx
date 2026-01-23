@@ -868,9 +868,9 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_1fr_1fr_auto] mb-7 gap-2 lg:gap-6">
             {/* Organiza */}
-            <div className="md:text-left text-left max-w-[160px]">
+            <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px">Organiza:</h4>
               <div className="flex justify-start items-end h-20">
                 <Image
