@@ -868,10 +868,10 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-7 gap-2">
             {/* Organiza */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Organiza:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-px w-[15%]">Organiza:</h4>
               <div className="flex justify-start items-end h-20">
                 <Image
                   src="/logo-aes-blanco.svg"
@@ -885,8 +885,8 @@ export default function Home() {
 
             {/* Colabora */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Colabora:</h4>
-              <div className="flex items-end gap-4 h-20">
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-start">Colabora:</h4>
+              <div className="flex h-20 items-end gap-1">
                 <div className="w-48 h-16 flex items-end">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
@@ -910,7 +910,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">Organiza la Cena de Gala y la Entrega de Premios:</h4>
+              <h4 className="text-lg font-semibold text-accent leading-4 h-6 flex items-start mb-2.5">Organiza la Cena de Gala y la Entrega de Premios:</h4>
               <div className="flex justify-start items-end h-20">
                 <div className="w-48 h-16">
                   <Image
