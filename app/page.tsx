@@ -910,7 +910,21 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizesGala")}</h4>
+              <h4 className="text-lg font-semibold text-accent leading-6 mb-3.5 min-h-[3rem] flex items-end">
+                {language === "es" ? (
+                  <>
+                    Organiza la Cena de Gala
+                    <br />
+                    y la Entrega de Premios:
+                  </>
+                ) : (
+                  <>
+                    Organizes the Gala Dinner
+                    <br />
+                    and Awards Ceremony:
+                  </>
+                )}
+              </h4>
               <div className="flex justify-start items-end h-20">
                 <div className="w-48 h-16">
                   <Image
