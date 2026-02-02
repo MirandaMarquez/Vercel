@@ -868,7 +868,7 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_350px_1fr_1fr] mb-7 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_480px_1fr_1fr] mb-7 gap-4">
             {/* Organiza */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
@@ -883,16 +883,16 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Colabora */}
+            {/* Colabora - Orden: Ministerio de Cultura, Museo del Traje, Madrid */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.collaborates")}</h4>
               <div className="flex items-end gap-4 h-20">
-                <div className="w-48 h-16 flex items-end">
+                <div className="w-32 h-16 flex items-end">
                   <Image
-                    src="/logo-ayuntamiento-madrid.svg"
-                    alt="Ayuntamiento de Madrid"
-                    width={192}
-                    height={80}
+                    src="/Logo_MinisterioCult_withe.png"
+                    alt="Ministerio de Cultura"
+                    width={128}
+                    height={64}
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -903,6 +903,15 @@ export default function Home() {
                     width={224}
                     height={96}
                     className="object-contain brightness-0 invert h-20 w-4/5"
+                  />
+                </div>
+                <div className="w-48 h-16 flex items-end">
+                  <Image
+                    src="/logo-ayuntamiento-madrid.svg"
+                    alt="Ayuntamiento de Madrid"
+                    width={192}
+                    height={80}
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
