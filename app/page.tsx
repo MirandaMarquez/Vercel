@@ -91,7 +91,7 @@ export default function Home() {
               style={{ aspectRatio: "210/297" }}
             >
               <Image
-                src={language === "en" ? "/cartel-oficial-2026-en.jpg" : "/cartel-oficial-2026.jpg"}
+                src={language === "en" ? "/Main_Poster_AES_Congress_2026_A4.jpg" : "/Cartel_principal_CongresoAES_2026_A4.jpg"}
                 alt={t("poster.alt")}
                 fill
                 className="object-contain"
@@ -752,11 +752,11 @@ export default function Home() {
                 onClick={() => {
                   const link = document.createElement("a")
                   if (language === "es") {
-                    link.href = "/Dossier_Patrocinadores_Congreso_2026_ESP.pdf"
-                    link.download = "Dossier Patrocinadores Congreso 2026.pdf"
+                    link.href = "/Dossier_General_Congreso_2026_ESP.pdf"
+                    link.download = "Dossier General Congreso 2026.pdf"
                   } else {
-                    link.href = "/Sponsorship_Dossier_Congress_2026_ENG.pdf"
-                    link.download = "Sponsorship Dossier Congress 2026.pdf"
+                    link.href = "/General_Dossier_Congress_2026_ENG.pdf"
+                    link.download = "General Dossier Congress 2026.pdf"
                   }
                   link.click()
                 }}
@@ -910,7 +910,21 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizesGala")}</h4>
+              <h4 className="text-lg font-semibold text-accent leading-6 mb-3.5 min-h-[3rem] flex items-end">
+                {language === "es" ? (
+                  <>
+                    Organiza la Cena de Gala
+                    <br />
+                    y la Entrega de Premios:
+                  </>
+                ) : (
+                  <>
+                    Organizes the Gala Dinner
+                    <br />
+                    and Awards Ceremony:
+                  </>
+                )}
+              </h4>
               <div className="flex justify-start items-end h-20">
                 <div className="w-48 h-16">
                   <Image
