@@ -14,7 +14,7 @@ export default function Home() {
 
   // Configuración del widget según el idioma
   const weezeventLocale = language === "en" ? "en" : "es-ES"
-  const weezeventUrl = `https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e`
+  const weezeventUrl = `https://widget.weezevent.com/ticket/E1676249/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e`
 
   // Cargar script de Weezevent
   useEffect(() => {
@@ -570,10 +570,10 @@ export default function Home() {
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
               <a
                 title="Logiciel billetterie en ligne"
-                href={`https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1`}
+                href={`https://widget.weezevent.com/ticket/E1676249/?code=15835&locale=${weezeventLocale}&width_auto=1`}
                 className="weezevent-widget-integration"
-                data-src={`https://widget.weezevent.com/ticket/E1486253/?code=15835&locale=${weezeventLocale}&width_auto=1`}
-                data-id="1486253"
+                data-src={`https://widget.weezevent.com/ticket/E1676249/?code=15835&locale=${weezeventLocale}&width_auto=1`}
+                data-id="1676249"
                 data-resize="1"
                 data-width_auto="1"
                 data-noscroll="0"
