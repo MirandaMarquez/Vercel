@@ -451,29 +451,7 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-surface-foreground text-sm">21:30h</p>
-                        <p className="text-xs text-surface-foreground">{t("program.day2.event12")}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="w-6 h-4 bg-transparent rounded-none flex items-center justify-center mr-2 flex-shrink-0 mt-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 text-accent"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="font-medium text-surface-foreground text-sm">23:45h</p>
+                        <p className="font-medium text-surface-foreground text-sm">20:30h</p>
                         <p className="text-xs text-surface-foreground">{t("program.day2.event13")}</p>
                       </div>
                     </div>
@@ -495,8 +473,8 @@ export default function Home() {
                         </svg>
                       </div>
                       <div>
-                        <p className="font-medium text-surface-foreground text-sm">00:00h</p>
-                        <p className="text-xs text-surface-foreground">{t("program.day2.event14")}</p>
+                        <p className="font-medium text-surface-foreground text-sm">21:15h</p>
+                        <p className="text-xs text-surface-foreground">{t("program.day2.event12")}</p>
                       </div>
                     </div>
                   </div>
