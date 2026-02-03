@@ -897,7 +897,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-2">
+              <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-8">
                 {language === "es" ? (
                   <>
                     Organiza la Cena de Gala
