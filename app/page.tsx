@@ -912,14 +912,14 @@ export default function Home() {
                   </>
                 )}
               </h4>
-              <div className="flex justify-start items-end h-20 mt-0">
-                <div className="w-48 h-16">
+              <div className="flex justify-start items-end mt-0">
+                <div className="w-48">
                   <Image
                     src="/thread-viewer-1.png"
                     alt="Forbes House Madrid"
                     width={192}
                     height={80}
-                    className="w-full h-full object-contain"
+                    className="w-full object-contain"
                   />
                 </div>
               </div>
