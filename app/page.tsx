@@ -897,7 +897,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-6 mb-3.5 min-h-[3rem] flex items-end">
+              <h4 className="text-lg font-semibold text-accent leading-5 mb-1 min-h-[3rem] flex items-end">
                 {language === "es" ? (
                   <>
                     Organiza la Cena de Gala
@@ -912,7 +912,7 @@ export default function Home() {
                   </>
                 )}
               </h4>
-              <div className="flex justify-start items-end h-20">
+              <div className="flex justify-start items-end h-20 mt-0">
                 <div className="w-48 h-16">
                   <Image
                     src="/thread-viewer-1.png"
