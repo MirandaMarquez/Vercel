@@ -639,7 +639,7 @@ export default function Home() {
               />
             </div>
 
-            {/* Fratelli Tallia di Delfino */}
+            {/* Fratelli Tallia di Delfino 
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/fratelli-tallia-logo.jpg"
@@ -648,7 +648,7 @@ export default function Home() {
                 height={140}
                 className="object-contain max-w-full max-h-full"
               />
-            </div>
+            </div>*/}
 
             {/* Group Pressing+ */}
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">

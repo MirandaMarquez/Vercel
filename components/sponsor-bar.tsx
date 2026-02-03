@@ -24,7 +24,7 @@ export default function SponsorBar() {
       logo: "/sponsors/vitale-barberis-logo.jpg",
     },
     {
-      name: "Fratelli Tallia di Delfino",
+      name: "Fratelli Tallia Delfino",
       logo: "/sponsors/fratelli-tallia-logo.jpg",
     },
     {
