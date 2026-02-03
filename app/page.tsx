@@ -846,7 +846,7 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_480px_1fr_1fr] mb-7 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_480px_1fr_1fr] mb-7 gap-4 lg:gap-8">
             {/* Organiza */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
@@ -897,7 +897,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios */}
             <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-5 mb-1 min-h-[3rem] flex items-end">
+              <h4 className="text-lg font-semibold text-accent leading-5  min-h-[3rem] flex items-end">
                 {language === "es" ? (
                   <>
                     Organiza la Cena de Gala
