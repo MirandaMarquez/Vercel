@@ -704,6 +704,17 @@ export default function Home() {
                 className="object-contain max-w-full max-h-full"
               />
             </div>
+
+            {/* Patrocinador - Logos-11 */}
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+              <Image
+                src="/Logos-11.jpg"
+                alt="Patrocinador"
+                width={240}
+                height={140}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
           </div>
         </div>
       </section>
