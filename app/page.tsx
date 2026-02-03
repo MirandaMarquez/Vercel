@@ -16,21 +16,21 @@ export default function Home() {
   const weezeventLocale = language === "en" ? "en" : "es-ES"
   const weezeventUrl = `https://widget.weezevent.com/ticket/E1676249/?code=15835&locale=${weezeventLocale}&width_auto=1&color_primary=ebb37e`
 
-  // Cargar script de Weezevent
+  // Cargar/re-cargar script de Weezevent cuando cambie el idioma (para que el widget se refresque con el locale correcto)
   useEffect(() => {
     if (typeof window === "undefined") return
-    
-    // Verificar si el script ya existe
-    const existingScript = document.querySelector('script[src="https://widget.weezevent.com/weez.js"]')
+
+    const scriptUrl = "https://widget.weezevent.com/weez.js"
+    const existingScript = document.querySelector(`script[src="${scriptUrl}"]`)
     if (existingScript) {
-      return
+      existingScript.remove()
     }
 
     const script = document.createElement("script")
-    script.src = "https://widget.weezevent.com/weez.js"
+    script.src = scriptUrl
     script.async = true
     document.body.appendChild(script)
-  }, [])
+  }, [language])
 
 
   return (
@@ -565,8 +565,8 @@ export default function Home() {
             </h2>
           
           
-          {/* Widget de Weezevent */}
-          <div className="flex justify-center px-4" suppressHydrationWarning>
+          {/* Widget de Weezevent: key por idioma para que al cambiar se monte de nuevo y el script lo procese con el locale correcto */}
+          <div className="flex justify-center px-4" key={language} suppressHydrationWarning>
             <div className="w-full max-w-6xl rounded-2xl overflow-hidden bg-white shadow-lg p-4 md:p-8">
               <a
                 title="Logiciel billetterie en ligne"
