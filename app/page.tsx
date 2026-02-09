@@ -892,8 +892,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Colabora: Ay. Madrid */}
-            <div className="md:text-left text-left flex flex-col">
+            {/* Colabora: Ay. Madrid - en móvil más margen arriba para no solaparse con AES */}
+            <div className="md:text-left text-left flex flex-col mt-8 md:mt-0">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.collaborates")}</h4>
               <div className="flex items-end h-20">
                 <div className="w-48 h-16 flex items-end">
@@ -938,8 +938,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Contacto */}
-            <div className="text-left md:text-right">
+            {/* Contacto - en móvil más margen arriba para separar de Forbes */}
+            <div className="text-left md:text-right mt-8 md:mt-0">
               <h4 className="text-lg font-semibold text-accent mb-3.5 h-6 flex items-end md:justify-end text-left md:text-right">{t("footer.contact")}</h4>
               <div className="space-y-1 text-primary-foreground text-sm text-left md:text-right h-20 flex flex-col justify-end">
                 <p>info@aesastreria.es</p>
