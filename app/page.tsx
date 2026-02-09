@@ -909,7 +909,7 @@ export default function Home() {
             </div>
 
             {/* Organiza la Cena de Gala y la Entrega de Premios: Forbes House - misma línea que Organiza y Colabora */}
-            <div className="md:text-left text-left flex flex-col">
+            <div className="md:text-left text-left flex flex-col mt-12">
               <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-3">
                 {language === "es" ? (
                   <>
