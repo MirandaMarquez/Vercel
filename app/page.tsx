@@ -925,7 +925,7 @@ export default function Home() {
                   </>
                 )}
               </h4>
-              <div className="flex items-end h-20">
+              <div className="flex items-end">
                 <div className="flex items-end w-auto max-w-48">
                   <Image
                     src="/thread-viewer-1.png"
