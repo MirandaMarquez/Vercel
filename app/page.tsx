@@ -910,7 +910,7 @@ export default function Home() {
 
             {/* Organiza la Cena de Gala y la Entrega de Premios: Forbes House - misma línea que Organiza y Colabora */}
             <div className="md:text-left text-left flex flex-col">
-              <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-1">
+              <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-3">
                 {language === "es" ? (
                   <>
                     Organiza la Cena de Gala
@@ -925,7 +925,7 @@ export default function Home() {
                   </>
                 )}
               </h4>
-              <div className="flex items-end mt-1">
+              <div className="flex items-end">
                 <div className="flex items-end w-auto max-w-48">
                   <Image
                     src="/thread-viewer-1.png"
