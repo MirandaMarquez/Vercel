@@ -926,13 +926,13 @@ export default function Home() {
                 )}
               </h4>
               <div className="flex items-end h-20">
-                <div className="w-48 h-16 flex items-end">
+                <div className="flex items-end w-auto max-w-48">
                   <Image
                     src="/thread-viewer-1.png"
                     alt="Forbes House Madrid"
                     width={192}
                     height={80}
-                    className="w-full h-full object-contain"
+                    className="object-contain max-h-16 w-auto h-auto"
                   />
                 </div>
               </div>
