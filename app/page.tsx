@@ -719,7 +719,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Información para Patrocinadores - LIGHT BEIGE BACKGROUND */}
+      {/* Información para Patrocinadores - LIGHT BEIGE BACKGROUND hidden */}
       <section className="hidden py-20 bg-background relative overflow-x-hidden">
         <div
           className="absolute inset-0 opacity-30"
@@ -857,25 +857,11 @@ export default function Home() {
       {/* Footer - DARK BROWN BACKGROUND */}
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[120px_480px_1fr_1fr] mb-7 gap-4 lg:gap-8">
-            {/* Organiza */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_auto_auto_1fr] mb-7 gap-4 lg:gap-8">
+            {/* Organiza: Ministerio / Museo del Traje / AES */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
-              <div className="flex justify-start items-end h-20">
-                <Image
-                  src="/logo-aes-blanco.svg"
-                  alt="AES - Asociación Española de Sastrería"
-                  width={144}
-                  height={80}
-                  className="object-contain h-[3rem] w-auto"
-                />
-              </div>
-            </div>
-
-            {/* Colabora - Orden: Ministerio de Cultura, Museo del Traje, Madrid */}
-            <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.collaborates")}</h4>
-              <div className="flex items-end gap-4 h-20">
+              <div className="flex flex-wrap items-end gap-4 h-20">
                 <div className="w-32 h-16 flex items-end">
                   <Image
                     src="/Logo_MinisterioCult_withe.png"
@@ -894,6 +880,22 @@ export default function Home() {
                     className="object-contain brightness-0 invert h-20 w-4/5"
                   />
                 </div>
+                <div className="flex items-end">
+                  <Image
+                    src="/logo-aes-blanco.svg"
+                    alt="AES - Asociación Española de Sastrería"
+                    width={144}
+                    height={80}
+                    className="object-contain h-[3rem] w-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Colabora: Ay. Madrid */}
+            <div className="md:text-left text-left">
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.collaborates")}</h4>
+              <div className="flex items-end h-20">
                 <div className="w-48 h-16 flex items-end">
                   <Image
                     src="/logo-ayuntamiento-madrid.svg"
@@ -906,7 +908,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Organiza la Cena de Gala y la Entrega de Premios */}
+            {/* Organiza la Cena de Gala y la Entrega de Premios: Forbes House */}
             <div className="md:text-left text-left">
               <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-6">
                 {language === "es" ? (
