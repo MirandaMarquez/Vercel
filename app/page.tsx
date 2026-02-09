@@ -858,11 +858,11 @@ export default function Home() {
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_auto_auto_1fr] mb-7 gap-4 lg:gap-8">
-            {/* Organiza: Ministerio / Museo del Traje / AES */}
-            <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-4 mb-2 h-6 flex items-end">{t("footer.organizes")}</h4>
-              <div className="flex flex-wrap items-center gap-2 min-h-0">
-                <div className="w-32 h-16 flex items-center shrink-0">
+            {/* Organiza: Ministerio / Museo del Traje / AES - misma línea que Colabora y Forbes */}
+            <div className="md:text-left text-left flex flex-col">
+              <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
+              <div className="flex flex-wrap items-end gap-2 h-20">
+                <div className="w-32 h-16 flex items-end shrink-0">
                   <Image
                     src="/Logo_MinisterioCult_withe.png"
                     alt="Ministerio de Cultura"
@@ -871,29 +871,29 @@ export default function Home() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-56 h-16 flex items-center shrink-0">
+                <div className="h-16 flex items-end shrink-0">
                   <Image
                     src="/logo-museo-traje.svg"
                     alt="Museo del Traje"
                     width={224}
                     height={96}
-                    className="object-contain brightness-0 invert h-16 w-4/5"
+                    className="object-contain brightness-0 invert h-16 w-auto"
                   />
                 </div>
-                <div className="flex items-center shrink-0">
+                <div className="h-16 flex items-end shrink-0 pt-1">
                   <Image
                     src="/logo-aes-blanco.svg"
                     alt="AES - Asociación Española de Sastrería"
                     width={144}
                     height={80}
-                    className="object-contain h-12 w-auto"
+                    className="object-contain h-[3.25rem] w-auto"
                   />
                 </div>
               </div>
             </div>
 
             {/* Colabora: Ay. Madrid */}
-            <div className="md:text-left text-left">
+            <div className="md:text-left text-left flex flex-col">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.collaborates")}</h4>
               <div className="flex items-end h-20">
                 <div className="w-48 h-16 flex items-end">
@@ -908,9 +908,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Organiza la Cena de Gala y la Entrega de Premios: Forbes House */}
-            <div className="md:text-left text-left">
-              <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-6">
+            {/* Organiza la Cena de Gala y la Entrega de Premios: Forbes House - misma línea que Organiza y Colabora */}
+            <div className="md:text-left text-left flex flex-col">
+              <h4 className="text-lg font-semibold text-accent leading-5 min-h-[3rem] flex items-end mb-3.5">
                 {language === "es" ? (
                   <>
                     Organiza la Cena de Gala
@@ -925,14 +925,14 @@ export default function Home() {
                   </>
                 )}
               </h4>
-              <div className="flex justify-start items-end mt-0">
-                <div className="w-48">
+              <div className="flex items-end h-20">
+                <div className="w-48 h-16 flex items-end">
                   <Image
                     src="/thread-viewer-1.png"
                     alt="Forbes House Madrid"
                     width={192}
                     height={80}
-                    className="w-full object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
