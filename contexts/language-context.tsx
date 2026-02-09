@@ -77,11 +77,11 @@ const translations = {
       "Las inscripciones para el Congreso AES 2026 ya están abiertas. Reserve su plaza ahora y benefíciese de la tarifa anticipada.",
     "tickets.platform": "Plataforma de inscripción",
 
-    // Sponsors
-    "sponsors.title": "INFORMACIÓN PARA PATROCINADORES",
+    // Sponsors / Dossier
+    "sponsors.title": "CONOCE TODOS LOS DETALLES DEL EVENTO",
     "sponsors.description":
-      "Hazte patrocinador del Congreso AES y conecta con los profesionales más destacados del sector de la sastrería. Ofrecemos diferentes paquetes de patrocinio adaptados a tus necesidades.",
-    "sponsors.download": "Descargar Dossier Patrocinadores",
+      "Descarga el dossier del evento y accede a toda la información detallada de esta edición. Consulta el programa completo, contenidos, actividades, localizaciones y modalidades de inscripción.",
+    "sponsors.download": "Descargar dossier",
     "sponsors.ourSponsors": "PATROCINADORES OFICIALES",
 
     // Location
@@ -208,11 +208,11 @@ const translations = {
       "Registration for AES Congress 2026 is now open. Reserve your spot now and benefit from the early bird rate.",
     "tickets.platform": "Registration platform",
 
-    // Sponsors
-    "sponsors.title": "INFORMATION FOR SPONSORS",
+    // Sponsors / Dossier
+    "sponsors.title": "DISCOVER ALL THE EVENT DETAILS",
     "sponsors.description":
-      "Become a sponsor of the AES Congress and connect with the most outstanding professionals in the tailoring sector. We offer different sponsorship packages adapted to your needs.",
-    "sponsors.download": "Download Sponsors Dossier",
+      "Download the event dossier and access all the detailed information for this edition. Check the full programme, contents, activities, venues and registration options.",
+    "sponsors.download": "Download dossier",
     "sponsors.ourSponsors": "OFFICIAL SPONSORS",
 
     // Location
