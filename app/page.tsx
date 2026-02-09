@@ -858,10 +858,10 @@ export default function Home() {
       <footer className="bg-primary text-primary-foreground py-20 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_auto_auto_1fr] mb-7 gap-4 lg:gap-8">
-            {/* Organiza: Ministerio / Museo del Traje / AES - misma línea que Colabora y Forbes */}
-            <div className="md:text-left text-left flex flex-col">
+            {/* Organiza: Ministerio / Museo del Traje / AES - min-h en móvil para que al romperse en 2 filas no solape con Colabora */}
+            <div className="md:text-left text-left flex flex-col pb-4 md:pb-0">
               <h4 className="text-lg font-semibold text-accent leading-4 mb-3.5 h-6 flex items-end">{t("footer.organizes")}</h4>
-              <div className="flex flex-wrap items-end gap-2 h-20">
+              <div className="flex flex-wrap items-end gap-2 min-h-20 h-auto">
                 <div className="w-32 h-16 flex items-end shrink-0">
                   <Image
                     src="/Logo_MinisterioCult_withe.png"
