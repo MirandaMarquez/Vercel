@@ -683,11 +683,33 @@ export default function Home() {
               />
             </div>
 
+            {/* Reda */}
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+              <Image
+                src="/Logos-12.jpg"
+                alt="Reda"
+                width={240}
+                height={140}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
             {/* Scabal */}
             <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
               <Image
                 src="/sponsors/scabal-logo.jpg"
                 alt="Scabal"
+                width={240}
+                height={140}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            {/* Skoctas */}
+            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
+              <Image
+                src="/Logos-13.jpg"
+                alt="Skoctas"
                 width={240}
                 height={140}
                 className="object-contain max-w-full max-h-full"
@@ -716,27 +738,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Patrocinador - Logos-12 */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
-              <Image
-                src="/Logos-12.jpg"
-                alt="Patrocinador"
-                width={240}
-                height={140}
-                className="object-contain max-w-full max-h-full"
-              />
-            </div>
-
-            {/* Patrocinador - Logos-13 */}
-            <div className="w-full max-w-[240px] h-[80px] md:h-[140px] lg:h-[140px] flex items-center justify-center bg-surface rounded-lg shadow-sm p-2 border border-gray-100">
-              <Image
-                src="/Logos-13.jpg"
-                alt="Patrocinador"
-                width={240}
-                height={140}
-                className="object-contain max-w-full max-h-full"
-              />
-            </div>
           </div>
         </div>
       </section>
