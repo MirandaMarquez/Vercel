@@ -921,7 +921,7 @@ export default function Home() {
               <div className="flex items-end h-20">
                 <div className="w-48 h-16 flex items-end">
                   <Image
-                    src="/logo-ayuntamiento-madrid.svg"
+                    src="/nuevo_logo_madrid.png"
                     alt="Ayuntamiento de Madrid"
                     width={192}
                     height={80}
