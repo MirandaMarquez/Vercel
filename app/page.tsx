@@ -54,7 +54,7 @@ export default function Home() {
           <p className="text-lg md:text-xl text-white mb-8 max-w-2xl leading-4">{t("header.description")}</p>
           <Link
             href="#entradas"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-md transition-colors"
+            className="hidden bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-md transition-colors"
           >
             {t("header.registrationSoon")}
           </Link>
@@ -62,7 +62,7 @@ export default function Home() {
       </header>
 
       {/* Countdown - WHITE BACKGROUND */}
-      <section className="py-20 bg-surface overflow-x-hidden">
+      <section className="hidden py-20 bg-surface overflow-x-hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-surface-foreground mb-4">
             {t("countdown.title")}
@@ -556,7 +556,7 @@ export default function Home() {
       </section>
 
       {/* Venta de Entradas - #EBB37E BACKGROUND */}
-      <section id="entradas" className="py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
+      <section id="entradas" className="hidden py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
         <div className="container mx-auto px-4 relative z-10">
           {/* Header con texto marrón */}
          
@@ -865,7 +865,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA - ACCENT COLOR BACKGROUND */}
-      <section className="py-20 bg-accent overflow-x-hidden">
+      <section className="hidden py-20 bg-accent overflow-x-hidden">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground mb-8">{t("cta.title")}</h2>
           <Link
