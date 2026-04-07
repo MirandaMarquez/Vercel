@@ -71,6 +71,18 @@ const translations = {
     "program.viewMore": "Ver más eventos",
     "program.viewLess": "Ver menos eventos",
 
+    // Winners / Awards
+    "winners.title": "GANADORES PREMIOS AES 2026",
+    "winners.subtitle": "RECONOCIENDO LA EXCELENCIA EN LA SASTRERÍA",
+    "winners.award1.name": "Premio AES 2026",
+    "winners.award1.person": "Boris Izaguirre",
+    "winners.award1.text1": "La Junta Directiva de la Asociación Española de Sastrería concedió el Premio AES 2026, en su segunda edición, al escritor y comunicador Boris Izaguirre.",
+    "winners.award1.text2": "Este reconocimiento destacó su extraordinaria trayectoria como comunicador y referente cultural, así como su constante apoyo a la moda española y a la artesanía como expresiones vivas de nuestro patrimonio. A lo largo de su carrera, Boris Izaguirre ha contribuido a acercar el mundo de la moda, la cultura y el estilo a un público amplio, poniendo en valor la creatividad y la identidad cultural, crecimiento y prestigio de esta noble profesión.",
+    "winners.award2.name": "Premio AES Honorífico",
+    "winners.award2.person": "Antonio Puebla",
+    "winners.award2.text1": "La Asociación Española de Sastrería concedió el Premio AES Honorífico a Don Antonio Puebla, en reconocimiento a su destacado recorrido profesional, su admirable carrera y su valiosa dedicación a la enseñanza dentro del mundo de la sastrería.",
+    "winners.award2.text2": "A lo largo de los años, su trabajo ha sido un ejemplo de excelencia, tradición y compromiso con el oficio, transmitiendo conocimientos y pasión a nuevas generaciones de sastres. Este reconocimiento puso en valor no solo su maestría en el arte de la sastrería, sino también su generosidad al compartir su experiencia y contribuir al crecimiento y prestigio de esta noble profesión.",
+
     // Ticket Sales
     "tickets.title": "VENTA DE ENTRADAS",
     "tickets.description":
@@ -201,6 +213,18 @@ const translations = {
     "program.viewFull": "View full program",
     "program.viewMore": "View more events",
     "program.viewLess": "View fewer events",
+
+    // Winners / Awards
+    "winners.title": "AES AWARDS 2026 WINNERS",
+    "winners.subtitle": "RECOGNIZING EXCELLENCE IN TAILORING",
+    "winners.award1.name": "AES Award 2026",
+    "winners.award1.person": "Boris Izaguirre",
+    "winners.award1.text1": "The Board of Directors of the Spanish Tailoring Association awarded the AES Award 2026, in its second edition, to the writer and communicator Boris Izaguirre.",
+    "winners.award1.text2": "This recognition highlighted his extraordinary career as a communicator and cultural reference, as well as his constant support for Spanish fashion and craftsmanship as living expressions of our heritage. Throughout his career, Boris Izaguirre has helped bring the world of fashion, culture and style to a wide audience, promoting creativity and cultural identity, growth and prestige of this noble profession.",
+    "winners.award2.name": "AES Honorary Award",
+    "winners.award2.person": "Antonio Puebla",
+    "winners.award2.text1": "The Spanish Tailoring Association awarded the AES Honorary Award to Don Antonio Puebla, in recognition of his outstanding professional career, his admirable trajectory and his valuable dedication to teaching within the world of tailoring.",
+    "winners.award2.text2": "Over the years, his work has been an example of excellence, tradition and commitment to the craft, transmitting knowledge and passion to new generations of tailors. This recognition valued not only his mastery in the art of tailoring, but also his generosity in sharing his experience and contributing to the growth and prestige of this noble profession.",
 
     // Ticket Sales
     "tickets.title": "TICKET SALES",

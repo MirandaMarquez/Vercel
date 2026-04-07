@@ -555,6 +555,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ganadores Premios AES 2026 */}
+      <section className="py-20 overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#3a3226] mb-2">
+            {t("winners.title")}
+          </h2>
+          <p className="text-center text-[#3a3226] font-semibold text-base md:text-lg mb-12 tracking-wide">
+            {t("winners.subtitle")}
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Boris Izaguirre - Premio AES 2026 */}
+            <div className="bg-white/90 rounded-2xl shadow-lg p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-md">
+                  <Image
+                    src="/Foto_Apartado_Gandores-01.png"
+                    alt={t("winners.award1.person")}
+                    width={192}
+                    height={192}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-[#3a3226] mt-4 text-center">{t("winners.award1.name")}</h3>
+                <p className="text-[#3a3226] text-center">{t("winners.award1.person")}</p>
+              </div>
+              <div className="flex-1 text-sm md:text-base text-[#3a3226] leading-relaxed">
+                <p className="mb-4">{t("winners.award1.text1")}</p>
+                <p>{t("winners.award1.text2")}</p>
+              </div>
+            </div>
+
+            {/* Antonio Puebla - Premio AES Honorífico */}
+            <div className="bg-white/90 rounded-2xl shadow-lg p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
+              <div className="flex flex-col items-center flex-shrink-0">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-md">
+                  <Image
+                    src="/Foto_Apartado_Gandores-02.png"
+                    alt={t("winners.award2.person")}
+                    width={192}
+                    height={192}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-[#3a3226] mt-4 text-center">{t("winners.award2.name")}</h3>
+                <p className="text-[#3a3226] text-center">{t("winners.award2.person")}</p>
+              </div>
+              <div className="flex-1 text-sm md:text-base text-[#3a3226] leading-relaxed">
+                <p className="mb-4">{t("winners.award2.text1")}</p>
+                <p>{t("winners.award2.text2")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Venta de Entradas - #EBB37E BACKGROUND */}
       <section id="entradas" className="hidden py-20 relative overflow-x-hidden" style={{ backgroundColor: "#EBB37E" }}>
         <div className="container mx-auto px-4 relative z-10">
