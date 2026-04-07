@@ -581,8 +581,8 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-[#3a3226] mt-4 text-center">{t("winners.award1.name")}</h3>
                 <p className="text-[#3a3226] text-center">{t("winners.award1.person")}</p>
               </div>
-              <div className="flex-1 text-sm md:text-base text-[#3a3226] leading-relaxed">
-                <p className="mb-4">{t("winners.award1.text1")}</p>
+              <div className="flex-1 text-xs md:text-sm text-[#3a3226] leading-snug">
+                <p className="mb-2">{t("winners.award1.text1")}</p>
                 <p>{t("winners.award1.text2")}</p>
               </div>
             </div>
@@ -602,8 +602,8 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-[#3a3226] mt-4 text-center">{t("winners.award2.name")}</h3>
                 <p className="text-[#3a3226] text-center">{t("winners.award2.person")}</p>
               </div>
-              <div className="flex-1 text-sm md:text-base text-[#3a3226] leading-relaxed">
-                <p className="mb-4">{t("winners.award2.text1")}</p>
+              <div className="flex-1 text-xs md:text-sm text-[#3a3226] leading-snug">
+                <p className="mb-2">{t("winners.award2.text1")}</p>
                 <p>{t("winners.award2.text2")}</p>
               </div>
             </div>
